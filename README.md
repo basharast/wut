@@ -21,18 +21,18 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 - OCR Engine.
 - And more..
 
-# Supported Platforms:
+## Supported Platforms:
 Windows 10 & Windows 11 (x64 - x86 - arm)
 
 ARM based devices are strongly supported as the app made on the lowest possible target (14393)
 
 Ex: Surface and for sure any Windows Phone with W10
 
-# Installation:
+## Installation:
 Get Windows Universal Tool (Click here)
 
 
-# About Commander (Scripts Engine):
+## About Commander (Scripts Engine):
 Commander built to help anyone to create unlimited scripts for different purposes using GUI elements
 
 The script structure is very simple.
@@ -45,9 +45,9 @@ Commander can be used like Automate.
 
 Checkout the documentation with the installation file for more details and demos.
 
-# Thanks:
+## Thanks:
 Special thanks for all the friends in W10M Community and for their suggestions and support.
 
 
-# More Detailes:
+## More Detailes:
 https://forum.xda-developers.com/t/introducing-windows-universal-tool.4323993/
