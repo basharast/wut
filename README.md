@@ -28,8 +28,8 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 
 Ex: Surface and for sure any Windows Phone with W10
 
-## Installation:
-Get Windows Universal Tool (Click here)
+## Download:
+https://basharast.github.io/wut/
 
 
 ## About Commander (Scripts Engine):
