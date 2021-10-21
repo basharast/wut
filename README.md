@@ -25,6 +25,7 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 - Media Preview (PDF, Videos..etc).
 - Advanced Settings.
 - OCR Engine.
+- Store Search
 - And more..
 
 ## Supported Platforms:
