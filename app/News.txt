@@ -1,3 +1,0 @@
-type:success
-message:Test News Message
-link:wutb:https://google.com
