@@ -1,3 +1,0 @@
-type:success
-message:test message2
-link:none
