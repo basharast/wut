@@ -15,6 +15,7 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 - Privacy (0% data collection).
 - Scripts Engine (Commander).
 - Cloud Client.
+- Print Service
 - Network Client.
 - Files Browser.
 - Built-in Browser.
