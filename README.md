@@ -12,6 +12,7 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 
 ## Features:
 - Universal (UWP).
+- Multi languages
 - Privacy (0% data collection).
 - Scripts Engine (Commander).
 - Cloud Client.
