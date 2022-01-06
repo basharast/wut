@@ -1,0 +1,11 @@
+notelnet
+
+status To finish press on the button
+
+waitb Finish Script
+
+waitn Hold Button;, press on the button to finish
+
+waithb Whatever
+
+exit

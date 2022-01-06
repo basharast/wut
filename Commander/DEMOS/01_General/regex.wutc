@@ -1,0 +1,10 @@
+notelnet
+
+define [sourceID];, Welcome To (W10M)
+regex [testID];, \(.*\);, [sourceID]
+
+status testID
+
+delay 2000
+
+exit

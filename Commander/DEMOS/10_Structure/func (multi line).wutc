@@ -1,0 +1,15 @@
+notelnet
+clean all
+
+func [multipleCommands]{
+status Value is: $currentValue
+delay 1500
+status Next Move..
+delay 1000
+}
+
+define [fullArray];, item1, item2, item3, item4
+
+each [fullArray];, ,;, (call [multipleCommands])
+
+exit

@@ -1,0 +1,9 @@
+notelnet
+
+download [downloadID];, https://w10mgroup.github.io/app/W10M Group 3.9.1.zip
+
+waitd [downloadID];, downloading...
+
+waite [downloadID];, extracting...
+
+exit

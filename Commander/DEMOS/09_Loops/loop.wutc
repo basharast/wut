@@ -1,0 +1,6 @@
+notelnet
+clean all
+
+loop 0;, 1000;, 1;, (status Current Index: $currentIndex)
+
+exit

@@ -1,0 +1,7 @@
+notelnet
+
+slider [sliderID];, Slider Test;, 3|75|1;, Choose|15;, Cancel|cancel
+
+info Slider Result;, your choice is: sliderID;, Done
+
+exit

@@ -1,0 +1,10 @@
+notelnet
+clean all
+
+downloadf [downloadID];, [$InstallFolder];, testInstallFile.txt
+
+waitd [downloadID];, Downloading....
+
+notify Group Downloads;, Files download done;, 5000
+
+exit

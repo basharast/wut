@@ -1,0 +1,18 @@
+notelnet
+
+
+info Background Test;, A notification will be pushed with in 5 seconds\nMinimize the app to test the background feature;, OK
+
+define [countValue];, 6
+
+func [countDown]{
+set [countValue];, --
+delay 1000
+status Notification will be startin in countValue seconds
+}
+
+loop 0;, 5;, 1;, (call [countDown])
+
+notify Background Test;, Nice!, the background support works perfect;, 10000
+
+exit

@@ -1,0 +1,24 @@
+notelnet
+
+status The script will hold in 3 seconds
+
+delay 2000
+
+status 3
+delay 1000
+
+status 2
+delay 1000
+
+status 1
+delay 1000
+
+waitb Press here to release
+hold 1
+
+waithb ...
+status Thanks for using commander
+
+delay 1000
+
+exit

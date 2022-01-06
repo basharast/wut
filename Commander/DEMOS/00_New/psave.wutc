@@ -1,0 +1,13 @@
+notelnet
+
+pget [testID];, No value
+
+input [inputData];, Hello;, Welcome testID;, Enter your name;, Save;, Cancel|cancel
+
+is inputData!=cancel{
+
+psave [testID];, inputData
+
+}
+
+exit

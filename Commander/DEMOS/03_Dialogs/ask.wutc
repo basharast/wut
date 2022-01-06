@@ -1,0 +1,7 @@
+notelnet
+
+ask [askID];, Ask Dialog;, This is ask dialog sample\nNote: with multiple lines\nSuccess: and colored message;, Cool|cool;, Good|good
+
+info Dialog Selection;, Your choice is: askID;, Done
+
+exit

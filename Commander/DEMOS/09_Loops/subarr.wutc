@@ -1,0 +1,12 @@
+notelnet
+clean all
+
+define [fullArray];, item1, item2, item3, item4
+
+subarr [subArray];, [fullArray];, ,;, 1;, 3
+
+status Sub array is: subArray
+
+delay 2500
+
+exit

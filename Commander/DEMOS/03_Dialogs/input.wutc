@@ -1,0 +1,7 @@
+notelnet
+
+input [inputID];, Input Test;, Enter value;, Confirm;, Cancel|cancel
+
+info Input Value;, input value is: inputID;, Done
+
+exit

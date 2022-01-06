@@ -1,0 +1,12 @@
+notelnet
+clean all
+
+define [fullText];, this is full text here
+
+length [textLength];, [fullText]
+
+status full text length: textLength
+
+delay 2500
+
+exit

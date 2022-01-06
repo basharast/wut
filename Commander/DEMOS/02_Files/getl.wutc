@@ -1,0 +1,25 @@
+notelnet
+
+folderf [logsFolder];, [$LocalFolder];, Logs
+
+filesf [logFiles];, [logsFolder];, .txt
+
+reformat [listData];, name:logFiles;, logFiles;, :;, |
+
+area [logsListArea];, (status Loading logs...)
+
+list [selectedFile];, App Logs;, listData;, Select log file;, Open|logFiles:(first,,);, Close|close
+
+breakwhen selectedFile==close;, Thanks for using commander
+
+replace [selectedFile];, ";, 
+
+status Opening selectedFile
+
+getl selectedFile;, [logContents]
+
+text Log Details;, [logContents];, Close
+
+jump logsListArea
+
+exit

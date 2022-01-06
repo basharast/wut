@@ -1,0 +1,35 @@
+notelnet
+
+clean all
+
+delay 1000
+
+info Single File;, Please select single file;, File
+
+file [singleID];, .txt|.appx|.xap
+
+info Single File;, Report: the selected file is\nsingleID;, Next
+
+delay 1000
+
+
+info Single Folder;, Please select single folder;, Folder
+
+folder [singleFolderID];, .txt|.appx|.xap
+
+info Single Folder;, Report: the selected folder is\nsingleFolderID;, Next
+
+delay 1000
+
+
+info Multi File;, Please select multiple files;, Files
+
+files [mulitID];, .txt|.appx|.xap
+
+info Multi File;, Report: the select files are\nname:mulitID;, Done
+
+delay 2000
+
+status Thanks for testing..
+
+exit

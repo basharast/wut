@@ -1,0 +1,9 @@
+notelnet
+
+status A link will open shortly..
+
+delay 2000
+
+browse https://google.com 
+
+exit

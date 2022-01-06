@@ -1,0 +1,12 @@
+notelnet
+clean all
+
+folder [saveFolder];, .zip
+
+downloadfd [downloadID];, [$InstallFolder];, testInstallFile.txt;, [saveFolder]
+
+waitd [downloadID];, Downloading....
+
+notify Group Downloads;, Files download done;, 5000
+
+exit

@@ -1,0 +1,5 @@
+notelnet
+
+waitf test.txt;, waiting for test.txt in (cache or downloads)
+
+exit

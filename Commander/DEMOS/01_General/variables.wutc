@@ -1,0 +1,70 @@
+notelnet
+
+define [testVar];, Welcome 2021
+
+delay 2000
+
+status first value for [testVar]: testVar
+
+delay 2000
+
+status let's try another value..
+
+delay 2000
+
+set [testVar];, Heellow
+
+status the value now [testVar]: testVar
+
+delay 2000
+
+status How about numeric value?
+
+delay 2000
+
+set [testVar];, 0
+
+status start number [testVar]: testVar
+
+delay 2000
+
+status Now lets try ++?
+
+delay 2000
+
+set [testVar];, ++
+
+status current number [testVar]: testVar
+
+delay 2000
+
+status Now lets try +5?
+
+delay 2000
+
+set [testVar];, +5
+
+status current number [testVar]: testVar
+
+delay 2000
+
+status Now lets try --?
+
+delay 2000
+
+set [testVar];, --
+
+status current number [testVar]: testVar
+
+delay 2000
+
+status Do you want more?
+
+delay 2000
+
+status Try to create new one by your self
+
+delay 2000
+
+
+exit

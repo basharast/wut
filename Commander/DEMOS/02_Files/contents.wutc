@@ -1,0 +1,17 @@
+notelnet
+
+clean all
+
+delay 1000
+
+info File Content;, Please select text file to view contents;, Contents
+
+file [singleID];, .txt
+
+get [singleID];, [contentsID]
+
+info File Contents;, Report: contentsID;, Done
+
+delay 1000
+
+exit

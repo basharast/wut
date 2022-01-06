@@ -1,0 +1,12 @@
+notelnet
+clear all
+
+waitpr Waiting Settings to open...;, SystemSettings.exe
+
+notify Settings Started;, SystemSettings.exe is running..;, 5000
+delay 2000
+
+waitpr Waiting Settings To Close...;, !SystemSettings.exe
+notify Settings Closed;, SystemSettings.exe closed..;, 5000
+
+exit

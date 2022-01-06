@@ -1,0 +1,16 @@
+notelnet
+
+define [dialogText];, Hello Mr, name\nthis is test for name
+
+info Replace test;, dialogText\n\nNote: Enter any name to replace;, OK
+
+input [nameGuest];, Name replace;, Enter your name;, Confirm;, Cancel
+
+replace [dialogText];, name;, nameGuest
+
+info Replace test;, dialogText\n\nNote: Final Text;, OK
+
+
+delay 1000
+
+exit

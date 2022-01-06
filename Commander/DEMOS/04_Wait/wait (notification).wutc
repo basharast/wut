@@ -1,0 +1,7 @@
+notelnet
+
+status To finish press on the notification
+
+waitn Hold Notification;, press on this notification to finish
+
+exit

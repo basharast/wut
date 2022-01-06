@@ -1,0 +1,16 @@
+notelnet
+clear all
+
+notifyl normal;, this is normal notification;, 0;, 2000
+delay 2500
+
+notifyl success;, this is success notification;, 0;, 2000
+delay 2500
+
+notifyl warn;, this is warning notification;, 0;, 2000
+delay 2500
+
+notifyl error;, this is error notification;, 0;, 2000
+delay 2500
+
+exit

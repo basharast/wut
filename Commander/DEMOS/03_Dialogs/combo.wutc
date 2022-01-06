@@ -1,0 +1,7 @@
+notelnet
+
+combo [comboID];, Combo Test;, First|Second|Third|Whatever;, Select something;, Select|Second;, Cancel|cancel
+
+info Combo Result;, your selection is: comboID;, Done
+
+exit

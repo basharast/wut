@@ -1,0 +1,11 @@
+notelnet
+
+func [testFunction]{
+status Hello there!
+delay 2000
+notify test Title;, test Message;, 5000
+}
+
+process [testProcess];, (call [testFunction]);, 0
+
+start [testProcess]

@@ -1,0 +1,27 @@
+notelnet
+
+define [counter];, 1
+define [CMin];, 10
+
+area [testArea];, (status Round counter | Remain CMin)
+
+delay 1000 
+
+is counter==5{
+
+is when CMin==2{
+
+jump [breakArea]
+
+}
+
+}
+
+set [counter];, ++
+set [CMin];, -2
+
+jump [testArea]
+
+area [breakArea];, (break Double condition is true)
+
+exit

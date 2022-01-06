@@ -1,0 +1,8 @@
+notelnet
+clear all
+
+speak Hello.. and welcome to speak test;, male
+
+delay 5000
+
+exit

@@ -1,0 +1,12 @@
+notelnet
+clean all
+
+define [fullText];, this is full text here
+
+substr [subText];, [fullText];, 7;, last
+
+status Sub text is: subText
+
+delay 2500
+
+exit

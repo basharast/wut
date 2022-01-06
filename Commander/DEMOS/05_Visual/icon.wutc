@@ -1,0 +1,48 @@
+notelnet
+
+status Icons test demo
+
+icon ms-appx:///Assets/Icons/$AppIcons/security.png
+
+delay 1000
+
+status let try something else
+
+icon ms-appx:///Assets/Icons/$AppIcons/notepad.png
+
+delay 1000
+
+status more icons?
+
+icon ms-appx:///Assets/Icons/$AppIcons/mp4.png
+
+delay 750
+
+status more icons??
+
+icon ms-appx:///Assets/Icons/$AppIcons/mp3.png
+
+
+delay 750
+
+status more icons???
+
+icon ms-appx:///Assets/Icons/$AppIcons/jpg.png
+
+
+delay 750
+
+status more icons????
+
+icon ms-appx:///Assets/Icons/$AppIcons/w10m.png
+
+
+delay 1000
+
+status try whatever you want..
+
+icon ms-appx:///Assets/Icons/$AppIcons/w10mc.png
+
+delay 1000
+
+exit

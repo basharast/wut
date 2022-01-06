@@ -1,0 +1,9 @@
+notelnet
+clean all
+
+filef [localLogsScript];, [$InstallFolder];, LocalLogsNoTelnet.w10mc
+
+include [localLogsScript]
+
+
+exit

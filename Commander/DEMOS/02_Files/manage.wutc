@@ -1,0 +1,32 @@
+notelnet
+
+clean all
+
+delay 1000
+
+info Open File;, Please select single file to launch;, Launch
+
+file [singleID];, .txt|.appx|.xap
+
+open [singleID]
+
+delay 1000
+
+
+info Delete File;, Please select single file to delete;, Delete
+
+file [deleteID];, .txt|.appx|.xap
+
+is deleteID!=null{
+
+delete [deleteID]
+
+}else{
+
+status No file selected
+
+}
+
+delay 2000
+
+exit

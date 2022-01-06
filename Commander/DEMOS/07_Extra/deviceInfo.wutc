@@ -1,0 +1,5 @@
+notelnet
+clean all
+
+info Device Extra;, Model: $Model\nBuild: $Build\n\nBattery: $Battery\nAC State: $ACState\n\nHost: $Host;, Close
+exit

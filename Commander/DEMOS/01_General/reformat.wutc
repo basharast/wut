@@ -1,0 +1,14 @@
+notelnet
+
+define [array1];, Item1, Item2, Item3
+define [array2];, Value1, Value2, Value3
+
+reformat [mixedArray];, array1;, array2;, :;, |
+
+combo [arraySelectedValue];, MixedValues;, mixedArray;, Select Item;, Confirm;, Cancel
+
+info Selected Value;, You value is: arraySelectedValue;, Finish
+
+delay 1000
+
+exit

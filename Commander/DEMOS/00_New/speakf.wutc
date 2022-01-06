@@ -1,0 +1,11 @@
+notelnet
+clear all
+
+createf [audioFile];, [$DownloadsFolder];, testAudio.mp3
+speakf Hello.. and welcome to speak test;, male;, [audioFile]
+
+status file saved to audioFile
+
+delay 2500
+
+exit

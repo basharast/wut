@@ -1,0 +1,9 @@
+notelnet
+
+status Create prg.txt in downloads folder and set the content to 50
+
+progresslink [$DownloadsFolder];, prg.txt
+
+waitp Waiting progress to be 75;, 75
+
+exit

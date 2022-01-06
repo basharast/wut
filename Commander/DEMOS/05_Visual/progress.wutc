@@ -1,0 +1,12 @@
+notelnet
+
+define [currentPrecentage];, 0
+area [startArea];, (progress currentPrecentage)
+
+set [currentPrecentage];, ++
+delay 200
+breakwhen currentPrecentage==100;, Done processing.
+
+jump startArea
+
+exit

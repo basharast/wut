@@ -1,0 +1,13 @@
+notelnet
+
+clean all
+
+define [arrayID];, A,B,C,A,D,R,D,Q,T,R,A
+
+info Current Data;, arrayID;, Remove Duplicates
+
+unique [newArrayID];, [arrayID];, ,
+
+info Cleaned Data;, newArrayID;, Close
+
+exit

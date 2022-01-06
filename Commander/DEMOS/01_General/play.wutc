@@ -1,0 +1,36 @@
+notelnet
+
+clear all
+
+info Audio Test;, this is alert sfx;, Play
+play [$Assets];, SFX\$AppIcons\alert.mp3;, 1.0
+
+delay 1000 
+
+info Audio Test;, this is startup sfx;, Play
+play [$Assets];, SFX\$AppIcons\started.mp3;, 1.0
+
+delay 1000 
+
+info Audio Test;, this is error sfx;, Play
+play [$Assets];, SFX\$AppIcons\error.mp3;, 1.0
+
+delay 1000 
+
+info Audio Test;, this is device connected sfx;, Play
+play [$Assets];, SFX\$AppIcons\ac-on.mp3;, 1.0
+
+delay 1000 
+
+info Audio Test;, this is device disconnected sfx;, Play
+play [$Assets];, SFX\$AppIcons\ac-off.mp3;, 1.0
+
+info Audio Test;, this is startup XP sfx;, Play
+play [$Assets];, SFX\WindowsXP\started.mp3;, 1.0
+
+info Audio Test;, this is startup W98 sfx;, Play and finish
+play [$Assets];, SFX\Windows98\started.mp3;, 1.0
+
+delay 1000
+
+exit

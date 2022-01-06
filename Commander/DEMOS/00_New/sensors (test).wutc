@@ -1,0 +1,21 @@
+notelnet sensors
+clear all
+
+func [testFunction]{
+status Accelerometer:\nX: round:$AccX - Y: round:$AccY - Z: round:$AccZ\n\nGyrometer:\nX: round:$GyrX - Y: round:$GyrY - Z: round:$GyrZ
+}
+
+process [testProcess];, (call [testFunction]);, 0
+
+timer [timerID];, [testProcess];, 250
+start [timerID]
+
+waitb Press Here to end
+waitn Timer Working..;, Press Here to end
+waithb ..
+
+stop [timerID]
+
+delay 2500
+
+exit

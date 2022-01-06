@@ -1,0 +1,7 @@
+clean all
+
+cmdout [commandResult];, (dir C:\)
+
+text Command Output;, [commandResult];, Close
+
+exit

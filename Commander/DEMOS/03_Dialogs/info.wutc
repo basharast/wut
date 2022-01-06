@@ -1,0 +1,5 @@
+notelnet
+
+info Info Dialog Test;, Info Message\nNote: with multi lines\nImportant: Styled text\nSuccess: Colored text;, Done
+
+exit

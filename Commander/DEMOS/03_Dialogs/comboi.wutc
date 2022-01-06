@@ -1,0 +1,19 @@
+notelnet
+
+status Now will appear custom input test
+delay 1500
+
+comboi [comboID];, Combo Test;, First|Second|Third|Whatever;, Select something;, input|This custom input;, Select|Second;, Cancel|cancel
+
+info Combo Result;, your selection is: comboID;, Done
+
+
+status Now will appear custom slider test
+delay 1500
+
+comboi [comboID];, Combo Test;, First|Second|Third|Whatever;, Select something;, slider|1|150|1| unit|Selected:;, Select|Second;, Cancel|cancel
+
+info Combo Result;, your selection is: comboID;, Done
+
+
+exit

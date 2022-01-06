@@ -1,0 +1,31 @@
+notelnet
+clean all
+
+area [formGenerate];, (status Generating form..)
+element [textElement];, TextBox;,  ;, Test text box;, enter text;, General
+element [switchElement];, Switch;, 0;, Test switch;, switch element;, General
+element [ComboElement];, Combo;, First|Second|Third;, Test combo;, Second;, General
+
+
+element [switch2Element];, Switch;, 1;, Test switch 2;, switch element 2;, More
+element [switch3Element];, Switch;, 0;, Test switch 3;, switch element 3;, More
+element [switch4Element];, Switch;, 1;, Test switch 4;, switch element 4;, More
+element [Combo2Element];, Combo;, AAA|BBB|CCC;, Test combo 2;, CCC;, More
+
+container [containerID];, General,More
+
+form [formID];, Test Form;, [containerID];, Reset|reset;, Close
+
+is formID==reset{
+
+clean all
+deletef [$LocalFolder];, [formID].frm
+jump [formGenerate]
+
+}else{
+	
+info Form Data;, text Element: textElement\nswitch Element: switchElement\nCombo Element: ComboElement\n\nswitch Element2: switch2Element\nswitch Element3: switch3Element\nswitch Element4: switch4Element\nCombo Element2: Combo2Element ;, OK
+
+}
+
+exit

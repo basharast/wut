@@ -1,0 +1,5 @@
+notelnet
+
+notify Notification Test;, This just a notification with 6 sec timeout;, 6000
+
+exit

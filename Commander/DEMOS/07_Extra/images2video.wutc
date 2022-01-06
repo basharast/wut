@@ -1,0 +1,64 @@
+notelnet
+
+clean all
+
+status Images2Video..
+delay 500
+
+status By Astifan
+delay 1000
+
+info Images Folder;, select images folder;, Select
+
+area [selectingFolder];, (status Selecting folder..)
+define [reselectFolder];,  none
+folder [imagesFolder];, .jpg|.png
+
+when imagesFolder==null;, (ask [reselectFolder];, Folder Missing;, Folder is not selected, do you want to try again;, Select|select;, Cancel|cancel)
+breakwhen reselectFolder==cancel|null;, no folder selected
+when reselectFolder==select;, (jump [selectingFolder])
+
+combo [imagesType];, Image Type;, JPG:jpg|PNG:png|TIF:tif;, Select type;, Confirm|jpg;, Cancel|cancel
+breakwhen imagesType==cancel|null;, no type selected
+
+combo [videoType];, Video Type;, MP4:mp4|AVI:avi|WMV:wmv;, Output type;, Confirm|mp4;, Cancel|cancel
+breakwhen videoType==cancel|null;, no type selected
+
+slider [frameRate];, Video Framerate;, 1|144|1| (frame/s);, Confirm|7;, Cancel|cancel
+breakwhen frameRate==cancel|null;, no framerate selected
+
+area [fpsSelect];, (status Duration type)
+combo [durationType];, Image Duration;, Custom:time|By FPS:fps;, Image duration type;, Confirm|fps;, Skip|fps
+breakwhen durationType==cancel|null;, no duration selected
+
+define [imageDuration];, 0
+when durationType==time;, (slider [imageDuration];, Image Duration;, 0|60|0.1| Second;, Confirm|3;, Back|back)
+when imageDuration==back;, (jump [fpsSelect])
+
+slider [saturationLevel];, Saturation;, 0|4|0.1;, Confirm|1.0;, Skip|none
+breakwhen saturationLevel==cancel|null;, no saturation selected
+
+slider [zoomLevel];, Zoom;, 0|300|10|#P|%|Default Zoom:;, Confirm|100;, Skip|none
+breakwhen zoomLevel==cancel|null;, no zoom selected
+
+info Save Folder;, select save folder;, Save
+
+area [folderSelecting];, (status Selecting folder..)
+define [reslectFolder];, none
+
+folder [folderID];, .videoType
+
+when folderID==null;, (ask [reslectFolder];, Folder Missing;, No folder selected, do you want to try again;, Select|select;, Cancel|cancel)
+breakwhen reslectFolder==cancel;, no save folder selected
+
+when reslectFolder==select;,  (jump [folderSelecting])
+
+status Please wait..
+define [fileName];, name:imagesFolder
+images2video [folderID];, fileName;, [imagesFolder];, imagesType;, framerate:frameRate|matchfps:1|type:videoType|clipduration:imageDuration|saturation:saturationLevel|zoom:zoomLevel|deloriginal:0
+
+status Convert Done..
+
+openf [folderID];, fileName.videoType
+
+exit

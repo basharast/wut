@@ -1,0 +1,17 @@
+notelnet
+
+info Target Zip;, please select zip file;, Select
+
+file [zipID];, .zip
+
+breakwhen zip==null;, no zip file selected
+
+info Extract Folder;, select the target folder;, Select
+
+folder [extractID];, .zip
+
+breakwhen extractID==null;, no folder selected
+
+unzip [zipID];, [extractID]
+
+exit

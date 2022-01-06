@@ -1,0 +1,24 @@
+notelnet
+clean all
+
+input [ageInput];, Your Age;, Enter Your Age;, Confirm|12;, Cancel
+
+breakwhen ageInput==cancel|null;, Script canceled
+
+is ageInput>=18{
+
+status this command 1
+delay 1000
+status this command 2
+delay 2000
+status this command 3
+delay 1000
+
+}else{
+
+notify Age Notice;, Age is not allowed;, 6000
+
+}
+
+
+exit

@@ -1,0 +1,11 @@
+notelnet
+clean all
+
+file [selectedID];, .png|.mp3|.jpg|.mp4
+folder [saveFolder];, .mp3|.png|.mp4|.jpg
+
+decrypt [selectedID];, [saveFolder]
+
+status Decryption done
+
+exit

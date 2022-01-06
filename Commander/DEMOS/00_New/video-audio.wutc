@@ -1,0 +1,26 @@
+notelnet
+
+combo [SFXsSelection];, Please Select;, Windows 11:Windows11|Windows XP:WindowsXP|WIndows 98:WIndows98;, Select SFX type;, Cofirm|Windows11;, Cancel|cancel
+
+breakwhen SFXsSelection==cancel|null;, Sounds type cannot be empty
+
+folderf [SFXsFolder];, [$Assets];, SFX\SFXsSelection
+
+filesf [SFXsFiles];, [SFXsFolder];, .mp3|.wav
+
+reformat [SoundsArray];, name:SFXsFiles;, SFXsFiles;, :;, |
+
+area [SoundsList];, (status Loading sounds...)
+list [selectedSound];, Sounds List;, SoundsArray;, please select audio;, Play|SFXsFiles:(first,,);, Cancel|cancel
+
+breakwhen selectedSound==cancel;, No Audio Selected
+
+filel [mediaFile];, selectedSound
+
+video [videoDialog];, Media Preview;, To go back press 'Close';, [mediaFile];, Close;, 
+
+jump [SoundsList]
+
+delay 1000
+
+exit

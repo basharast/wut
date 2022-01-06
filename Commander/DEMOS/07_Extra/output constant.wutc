@@ -1,0 +1,9 @@
+notelnet
+
+clean all
+
+deletef [testID];, filename
+
+info Status Output;, This was the output\nStatus: $OutputStatus;, Close
+
+exit

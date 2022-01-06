@@ -1,0 +1,80 @@
+notelnet
+clean all
+
+define [winsCount];, 0
+
+area [gameStart];, (Starting...)
+
+rand [minNumber];, 0;, 50
+rand [maxNumber];, 50;, 100
+
+define [result];, minNumber
+set [result];, +maxNumber
+
+input [QuestAnswer];, Question;, How much is: minNumber + maxNumber ?;, Result?;, Confirm;, Cancel|cancel
+
+is QuestAnswer==cancel{
+
+ask [retryDialog];, Exit game;, Do you want to exit?;, Retry|retry;, Exit|exit
+is retryDialog==retry{
+
+jump [gameStart]
+
+}else (status Thanks, Bye Bye!)
+
+}else{
+
+is QuestAnswer==result{
+
+[winsCount]++
+ask [tryAgain];, Nice!;, Great.. correct answer\nTry again?\n\nTotal Wins: winsCount;, Yes|yes;, No|no 
+
+is tryAgain==no{
+
+ask [retryDialog];, Exit game;, Do you want to exit?;, Retry|retry;, Exit|exit
+is retryDialog==retry{
+
+jump [gameStart]
+
+}else{
+
+status Thanks, Bye Bye!
+
+}
+
+}else tryAgain==yes{
+
+jump [gameStart]
+
+}
+
+}else{
+
+ask [tryAgain];, Opps!;, Sorry.. wrong answer\nTry again?\n\nTotal Wins: winsCount;, Yes|yes;, No|no 
+
+is tryAgain==no{
+
+ask [retryDialog];, Exit game;, Do you want to exit?;, Retry|retry;, Exit|exit
+is retryDialog==retry{
+
+jump [gameStart]
+
+}else{
+
+status Thanks, Bye Bye!
+
+}
+
+}else tryAgain==yes{
+
+jump [gameStart]
+
+}
+
+}
+
+}
+
+break Thanks for using Commander
+
+exit

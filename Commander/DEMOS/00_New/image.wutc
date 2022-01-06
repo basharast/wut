@@ -1,0 +1,26 @@
+notelnet
+
+combo [IconsSelection];, Please Select;, Windows 11:Windows11|Windows XP:WindowsXP|WIndows 98:WIndows98;, Select icons type;, Cofirm|Windows11;, Cancel|cancel
+
+breakwhen IconsSelection==cancel|null;, Icons type cannot be empty
+
+folderf [IconsFolder];, [$Assets];, Icons\IconsSelection
+
+filesf [IconsFiles];, [IconsFolder];, .png|.jpg
+
+reformat [IconsArray];, name:IconsFiles;, IconsFiles;, :;, |
+
+area [IconsList];, (status Loading icons...)
+list [selectedIcon];, Icons List;, IconsArray;, please select icon;, Preview|IconsFiles:(first,,);, Cancel|cancel
+
+breakwhen selectedIcon==cancel;, No Icon Selected
+
+filel [imageFile];, selectedIcon
+
+image [imageDialog];, Icon Preview;, To go back press 'Close';, [imageFile];, Close;, 
+
+jump [IconsList]
+
+delay 1000
+
+exit

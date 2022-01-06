@@ -1,0 +1,12 @@
+notelnet
+clean all
+
+define [fullArray];, item1, item2, item3, item4
+
+count [arrayCount];, [fullArray];, ,
+
+status Array Count: arrayCount
+
+delay 2500
+
+exit

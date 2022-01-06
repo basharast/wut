@@ -1,0 +1,10 @@
+notelnet
+
+define [sourceID];, Welcome To (W10M) Welcome test collection
+regexc [testID];, Welcome (?<middle>\w+);, middle;, [sourceID]
+
+status testID
+
+delay 2000
+
+exit

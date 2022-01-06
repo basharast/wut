@@ -1,0 +1,13 @@
+notelnet
+
+clear all
+
+breakwhen $DeviceType!=Mobile;, Sorry!, this script is not for $DeviceType
+
+barp 1
+
+info Progress Bar;, As you see the status bar progress is active\bPress Close to stop the progress;, Close
+
+barp 0
+
+exit

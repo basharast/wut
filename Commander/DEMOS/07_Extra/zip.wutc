@@ -1,0 +1,13 @@
+notelnet
+
+clear all
+
+info Zip Location;, this demo will use downloads folder for testing;, Start
+
+folder [sourceID];, .appx|.xap|.txt
+
+breakwhen sourceID==null;, no folder selected
+
+zip [sourceID];, [$DownloadsFolder];, name:sourceID.zip
+
+exit

@@ -1,0 +1,25 @@
+notelnet keyboard
+clear all
+
+func [testFunction]{
+status Current Key: $Key
+
+is $Key==N;, (notify Keyboard test;, this is test notification;, 5000)
+}
+
+process [testProcess];, (call [testFunction]);, 0
+
+timer [timerID];, [testProcess];, 250
+start [timerID]
+
+statusd Press 'N' for notification
+
+waitb Press Here to end
+waitn Timer Working..;, Press Here to end
+waithb ..
+
+stop [timerID]
+
+delay 2500
+
+exit

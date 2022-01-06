@@ -1,0 +1,15 @@
+notelnet
+clean all
+
+func [multipleCommands]{
+
+status Index is: $currentIndex
+delay 1500
+status Next Move..
+delay 1000
+
+}
+
+loop 0;, 6;, 1;, (call [multipleCommands])
+
+exit

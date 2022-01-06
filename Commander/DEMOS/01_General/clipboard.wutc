@@ -1,0 +1,14 @@
+notelnet
+
+clear all
+
+input [nameID];, Your Name;, enter your name;, Confirm;, Cancel
+
+breakwhen nameID==1|2;, Name is required
+
+clipboard Name Copied;, your name sent to clipboard;, nameID
+
+
+delay 1000
+
+exit

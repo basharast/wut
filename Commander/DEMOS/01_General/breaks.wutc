@@ -1,0 +1,18 @@
+notelnet
+
+define [counter];, 1
+
+area [testArea];, (status Round counter)
+
+delay 1000 
+
+when counter>5;, (jump [breakArea])
+
+set [counter];, ++
+
+jump [testArea]
+
+
+area [breakArea];, (break Bye Bye)
+
+exit

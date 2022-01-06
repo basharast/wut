@@ -1,0 +1,11 @@
+notelnet
+clean all
+
+info OCR Test;, Select any image contains english text;, Select
+
+file [imageFile];, .png|.jpg
+ocr [outputText];, [imageFile];, en
+
+text OCR Result;, [outputText];, OK
+
+exit

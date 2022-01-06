@@ -1,0 +1,8 @@
+notelnet
+clean all
+
+define [fullArray];, item1, item2, item3, item4
+
+each [fullArray];, ,;, (notify Current value;, $currentValue;, 15000)
+
+exit

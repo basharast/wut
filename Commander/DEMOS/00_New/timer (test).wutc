@@ -1,0 +1,22 @@
+notelnet
+clear all
+
+func [testFunction]{
+define [currentTime];, $Time
+substr [onlyTime];, [currentTime];, 10;, last
+statusd onlyTime
+status currentTime
+}
+
+process [testProcess];, (call [testFunction]);, 0
+
+timer [timerID];, [testProcess];, 1000
+start [timerID]
+
+waitb Press Here to end
+waitn Timer Working..;, Press Here to end
+waithb ..
+
+stop [timerID]
+
+exit

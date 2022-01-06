@@ -1,0 +1,20 @@
+notelnet
+clear all
+
+func [testMemoryFunction]{
+status Memory load $Memory%
+progress $Memory
+}
+
+process [testMemoryProcess];, (call [testMemoryFunction]);, 0
+
+timer [timerMemoryID];, [testMemoryProcess];, 1000
+start [timerMemoryID]
+
+waitb Press Here to end
+waitn Memory Working..;, Press Here to end
+waithb ..
+
+stop [timerMemoryID]
+
+exit

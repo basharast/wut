@@ -1,0 +1,28 @@
+notelnet
+
+clear all
+
+info Appx Folder;, Select folder contains appx files;, Select
+
+folder [appxFolder];, .appx|.xap
+
+breakwhen appxFolder==null;, No folder selected
+
+filesf [appxFiles];, [appxFolder];, .appx|.xap|.appxbundle
+
+breakwhen appxFiles==null;, No appx files found
+
+define [firstFile];, appxFiles:(first,,)
+status Adding name:firstFile to the queue
+
+delay 1500
+
+queuel [queueFileID];, firstFile
+
+waiti [queueFileID];, [outMessage];, Waiting for install..
+
+queuer [queueFileID]
+
+text Install message;, [outMessage];, Close
+
+exit

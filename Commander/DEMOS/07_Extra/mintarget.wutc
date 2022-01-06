@@ -1,0 +1,6 @@
+notelnet
+clean all
+
+mintarget 3.9.6
+
+exit

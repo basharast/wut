@@ -1,0 +1,11 @@
+notelnet
+
+status try to disable the internet first
+
+delay 2000
+
+waitic Waiting internet connection
+
+break You have active internet connection
+
+exit

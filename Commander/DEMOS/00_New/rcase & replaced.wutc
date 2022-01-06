@@ -1,0 +1,20 @@
+notelnet
+clear all
+
+define [testText];, this is test text to try the replace case state
+
+status Trying with 'Match' state..
+delay 1500
+
+rcase match
+replaced [outputText];, [testText];, Repl|state;, ****|match
+info Match Case;, outputText;, OK
+
+status Trying with 'Ignore' state..
+delay 1500
+
+rcase ignore
+replaced [outputText];, [testText];, Repl|state;, ****|ignore
+info Ignore Case;, outputText;, OK
+
+exit

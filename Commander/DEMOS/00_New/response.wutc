@@ -1,0 +1,24 @@
+notelnet
+
+
+define [urlInput];, 
+area [urlArea];, (status Getting URL..)
+
+input [urlInput];, URL;, Please enter url;, Check Response|urlInput;, Cancel|cancel
+
+breakwhen urlInput==cancel|null;, Response check canceled
+
+status Getting response...
+response [responseState];, urlInput
+
+ask [retryState];, Respose Message;, The url response is: [responseState]\n\n$Time;, Retry|retry;, Done
+
+is retryState==retry
+status Retrying...
+jump [urlArea]
+else
+break Thanks for using Commander
+end
+
+
+exit

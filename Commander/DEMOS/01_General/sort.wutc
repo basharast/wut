@@ -1,0 +1,13 @@
+notelnet
+
+clean all
+
+define [arrayID];, A,B,C,A,D,R,D,Q,T,R,A
+
+info Current Data;, arrayID;, Sort Array
+
+sort [newArrayID];, [arrayID];, ,;, aes
+
+info Sorted Array;, newArrayID;, Close
+
+exit
