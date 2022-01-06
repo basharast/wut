@@ -8,9 +8,11 @@
 
 
 ## Overview:
+
 WUT was started as cloud client for W10M Community Group, and by time enhanced and extended to be a very advanced & powerful tool.
 
 ## Features:
+
 - Universal (UWP).
 - Privacy (0% data collection).
 - Multi languages (New).
@@ -33,6 +35,7 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 
 
 ## Supported Platforms:
+
 Windows 10 & Windows 11 (x64 - x86 - arm)
 
 ARM based devices are strongly supported as the app made on the lowest possible target (14393)
@@ -40,6 +43,7 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 Ex: Surface and for sure any Windows Phone with W10
 
 ## Download:
+
 <a href="https://github.com/basharast/wut/releases/latest">Click Here</a>
 
 
@@ -61,6 +65,7 @@ Checkout the documentation with the installation file for more details and demos
 
 
 ## Thanks:
+
 Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M Community</a> and for their suggestions and support.
 
 
