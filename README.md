@@ -40,7 +40,7 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 Ex: Surface and for sure any Windows Phone with W10
 
 ## Download:
-https://basharast.github.io/wut/
+<a href="https://github.com/basharast/wut/releases/latest">Click Here</a>
 
 
 ## About Commander (Scripts Engine):
@@ -65,4 +65,5 @@ Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M
 
 
 ## More Detailes:
-https://forum.xda-developers.com/t/introducing-windows-universal-tool.4323993/
+
+<a href="https://forum.xda-developers.com/t/introducing-windows-universal-tool.4323993/">Read more about WUT at XDA</a>
