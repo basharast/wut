@@ -44,6 +44,9 @@ https://basharast.github.io/wut/
 
 
 ## About Commander (Scripts Engine):
+
+Check out <a href="https://github.com/basharast/wut/wiki">GitHub Wiki</a>
+
 Commander built to help anyone to create unlimited scripts for different purposes using GUI elements
 
 The script structure is very simple.
