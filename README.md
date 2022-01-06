@@ -12,11 +12,12 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 
 ## Features:
 - Universal (UWP).
-- Multi languages
 - Privacy (0% data collection).
+- Multi languages (New).
 - Scripts Engine (Commander).
-- Cloud Client.
-- Print Service
+- Cloud Client (New)
+- Print Service (New)
+- Images Effects (New)
 - Network Client.
 - Files Browser.
 - Built-in Browser.
@@ -24,11 +25,12 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 - Translation Tool.
 - Packages Management.
 - Download Client.
+- Store Search (New)
 - Media Preview (PDF, Videos..etc).
 - Advanced Settings.
 - OCR Engine.
-- Store Search
 - And more..
+
 
 ## Supported Platforms:
 Windows 10 & Windows 11 (x64 - x86 - arm)
@@ -54,8 +56,9 @@ Commander can be used like Automate.
 
 Checkout the documentation with the installation file for more details and demos.
 
+
 ## Thanks:
-Special thanks for all the friends in W10M Community and for their suggestions and support.
+Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M Community</a> and for their suggestions and support.
 
 
 ## More Detailes:
