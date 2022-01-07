@@ -1,5 +1,5 @@
-{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deftab709{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Consolas;}{\f2\fnil Consolas;}{\f3\fnil\fcharset2 Symbol;}}
-{\colortbl ;\red79\green129\blue189;\red0\green176\blue80;\red100\green107\blue134;\red247\green150\blue70;\red0\green77\blue187;\red192\green80\blue77;\red192\green192\blue192;\red155\green0\blue211;\red155\green187\blue89;\red163\green21\blue21;\red255\green0\blue0;\red0\green0\blue0;\red75\green172\blue198;\red102\green102\blue102;\red165\green165\blue165;\red0\green0\blue255;\red243\green164\blue71;\red209\green99\blue73;\red128\green0\blue0;\red255\green192\blue0;\red128\green158\blue194;\red221\green132\blue132;\red0\green128\blue0;\red255\green0\blue128;}
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deftab709{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Cascadia Mono;}{\f2\fnil\fcharset0 Cascadia Mono;}{\f3\fnil\fcharset0 Consolas;}{\f4\fnil Consolas;}{\f5\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red79\green129\blue189;\red0\green176\blue80;\red100\green107\blue134;\red247\green150\blue70;\red163\green21\blue21;\red0\green77\blue187;\red192\green80\blue77;\red192\green192\blue192;\red155\green0\blue211;\red155\green187\blue89;\red255\green0\blue0;\red0\green0\blue0;\red75\green172\blue198;\red102\green102\blue102;\red165\green165\blue165;\red0\green0\blue255;\red243\green164\blue71;\red209\green99\blue73;\red128\green0\blue0;\red255\green192\blue0;\red128\green158\blue194;\red221\green132\blue132;\red0\green128\blue0;\red255\green0\blue128;}
 {\*\generator Riched20 10.0.22000}\viewkind5\uc1\viewbksp1{\*\background 
 {\shp{\*\shpinst{\sp{\sn fillType}{\sv 0}}
 {\sp{\sn fillBackColor}{\sv 0}}
@@ -7,37 +7,37 @@
 {\sp{\sn fillBlip}{\sv {\pict{\*\picprop}\wmetafile0 
 }}}}}}
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf1\b\f0\fs48\lang9 WUT Commander \par
-\cf2\fs22 WUT 1.1.\lang1033 0\fs48\lang9\par
+\pard\sa200\sl276\slmult1\qc\cf1\b\f0\fs48\lang9 WUT Commander \par
+\cf2\fs22 WUT 1.2.\lang1033 12\fs48\lang9\par
 \cf3\fs22 by Bashar Astifan\fs48\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf1\par
+\pard\sa200\sl276\slmult1\cf1\par
 \cf4\fs32 Overview:\cf0\b0\fs24\par
 Commander \fs22 will help the developer to create Batch scripts with \cf2\b GUI interactions\cf0\b0 .\fs24\par
 WUT scripts can connect and execute commands using telnet, so you can create unlimited solutions.\par
 WUT Scripts can run mixed contents (Commander, Batch script)\par
 \fs22\par
 \cf4\b\fs32 Recently Added:\cf0\b0\fs24\par
-\cf2\fs22 exists\cf0 , \cf2 crc\cf0 , \cf2 update\cf0\par
+\cf5\f1\fs19 $AppLang\f2\lang1033 , \cf2\f0\fs22\lang9 exists\cf0 , \cf2 crc\cf0 , \cf2 update\cf0\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf5\b\fs44 COMMANDER SCRIPT\cf4\fs32\par
+\pard\sa200\sl276\slmult1\qc\cf6\b\fs44 COMMANDER SCRIPT\cf4\fs32\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf0\b0\fs22 As I said before \b commander \b0 is built based on dynamic structure so it will help you a lot to build more dynamic scripts.\par
+\pard\sa200\sl276\slmult1\cf0\b0\fs22 As I said before \b commander \b0 is built based on dynamic structure so it will help you a lot to build more dynamic scripts.\par
 \par
 \cf2\b\fs28 Command Structure:\cf0\b0\fs22\par
 \b Commander \b0 use simillar structure to \b Windows CMD \b0 with few differences \par
-\cf6\b command \b0 parm1;, param2;, param3\par
+\cf7\b command \b0 parm1;, param2;, param3\par
 \cf0 as you can see when you have more than param you have to divide them with '\cf4\b\fs32 ;,\cf0\b0\fs22 ' except for the last one\par
-When the command contains another \b (internal command)\b0  the structure will be like:\cf6\highlight7\par
-\highlight0\b command \b0 parm1;, \cf5\b (internal command)\cf6\b0 ;, param2\par
+When the command contains another \b (internal command)\b0  the structure will be like:\cf7\highlight8\par
+\highlight0\b command \b0 parm1;, \cf6\b (internal command)\cf7\b0 ;, param2\par
 \cf0 also you noticed that we added the internal command between '\cf4\b\fs24 (...)\cf0\b0\fs22 '\par
 \par
-\cf8\b Important Note: \cf0 If the command defined with custom ID, the ID should be like:\b0\par
-\cf6\b command \cf5 [customID]\cf6\b0 ;, param1;, param2\par
+\cf9\b Important Note: \cf0 If the command defined with custom ID, the ID should be like:\b0\par
+\cf7\b command \cf6 [customID]\cf7\b0 ;, param1;, param2\par
 \cf0 the reason you should add ID between '\cf4\b\fs28 [...]\cf0\b0\fs22 ' is to prevent the ID from getting replaced by it's value during the compiling, but if you want to use it's value you can place it anywhere you want without brackets.\par
 \par
 When you see \cf4\b timeout \cf0\b0 param. means you have to enter the value in millisecond\par
-\cf9\b 1 Second \cf0\b0 ~ \cf2\b 1000 millisecond\cf0\b0\par
+\cf10\b 1 Second \cf0\b0 ~ \cf2\b 1000 millisecond\cf0\b0\par
 \par
 \cf2\b\fs28 Script Extension:\cf0\b0\fs22\par
 use \cf2\b .wutc \cf0\b0 for commander scripts or \cf2 .wutz\cf0  for script bundle\cf2\b\par
@@ -60,14 +60,16 @@ this list contain some important folders/values you may need:\par
 \cf4\b $TempFolder: \cf0\b0 will be replace by app temp folder (full path)\par
 \cf4\b $LocalFolder: \cf0\b0 will be replace by app local folder (full path)\par
 \cf4\b $AppIcons: \cf0\b0 will be replace by app icons (Windows11, XP..etc)\par
-\cf4\b $AppTheme: \cf0\b0 will be replace by app theme (System, Dark, Light)\par
+\cf4\b $AppTheme: \cf0\b0 will be replace by app language \par
+(ar-AR;de-DE;en-US;es-ES;fr-FR;it-IT;fa-IR;ru-RU;el-GR;hi-IN;ja-JP;si-LK;ta-LK;tr-TR;ur-IN;zh-CH)\par
+\cf4\b $AppLang: \cf0\b0 will be replace by app theme (System, Dark, Light)\par
 \cf4\b $CurrDateTime: \cf0\b0 will be replace by current data-time\strike\par
 \cf4\b\strike0 $ScreenWidth: \cf0\b0 will be replace by screen width\par
 \cf4\b $ScreenHeight: \cf0\b0 will be replace by screen height\par
 \cf4\b $OutputStatus:\cf0\b0  will be replace by the current status message\par
 \cf4\b $AppVer\lang1033 : \cf0\b0\lang9 will be replace by current app ver\par
 \cf4\b $DeviceType:\cf0\b0  will be replace by the device type, can be the following:\par
-\cf10\f1\fs19 Mobile\lang1033 , Desktop, Tablet, IoT, SurfaceHub, Xbox, Unknown\par
+\cf5\f3\fs19 Mobile\lang1033 , Desktop, Tablet, IoT, SurfaceHub, Xbox, Unknown\par
 \cf4\b\f0\fs22\lang9 $Model:\cf0\b0  will be replace by current device model\par
 \cf4\b $Battery:\cf0\b0  battery level (without %) \cf1 ('none' or '255' when not available)\cf0\par
 \cf4\b $Build:\cf0\b0  will be replace by current system build\par
@@ -78,16 +80,16 @@ this list contain some important folders/values you may need:\par
 \cf4\b $FailedLinks: \cf0\b0 will be replace by failed downloads links\par
 \cf4\b $FailedNames: \cf0\b0 will be replace by failed downloads names\par
 \cf4\b $Internet: \cf0\b0 will be replace by 0 or 1 (0->No internet, 1->Internet active)\par
-\cf4\b $TimeTicks: \cf0\b0 will be replace by the total ticks (\cf8 637644400633551041)\par
-\cf4\b $Time: \cf0\b0 will be replace by the current data-time (\cf8 8/12/2021 10:03:35 PM)\cf0\par
+\cf4\b $TimeTicks: \cf0\b0 will be replace by the total ticks (\cf9 637644400633551041)\par
+\cf4\b $Time: \cf0\b0 will be replace by the current data-time (\cf9 8/12/2021 10:03:35 PM)\cf0\par
 \cf4\b $AccX \cf0\b0 ,\cf4\b  $AccY \cf0\b0 ,\cf4\b  $AccZ: \cf12\b0 Accelerometer Reading - (use \cf2 round:\cf4\b $AccX  \cf0\b0 to get short value\b )\cf4\par
 $GyrX \cf12\b0 , \cf4\b $GyrY\cf12\b0  , \cf4\b $GyrZ: \cf12\b0 Gyrometer Reading - (use \cf2 round:\cf4\b $AccX  \cf0\b0 to get short value\b )\b0\par
 \cf4\b $ScriptID: \cf0\b0 will be replace by current script ID\par
-\cf4\b $Key: \cf0\b0 current keyboard key \cf13 [\cf8\b keyboard \cf13 directive \b0 required]\cf0\par
-\cf12 Accelerometer & Gyrometer  required \cf8\b sensors \cf13 directive \cf14\b0 (read details below)\cf0\par
-you can use the constant as ID  instead of value  like \cf4\b [$Constant] \cf5 (for folders only)\cf0\b0\par
+\cf4\b $Key: \cf0\b0 current keyboard key \cf13 [\cf9\b keyboard \cf13 directive \b0 required]\cf0\par
+\cf12 Accelerometer & Gyrometer  required \cf9\b sensors \cf13 directive \cf14\b0 (read details below)\cf0\par
+you can use the constant as ID  instead of value  like \cf4\b [$Constant] \cf6 (for folders only)\cf0\b0\par
 \cf11\b\fs28 Important:\cf0\b0\fs22\par
-1- In case of any conflict between \cf5\b Commander \cf0\b0 & \b CMD commands \b0 add '\cf11 cmd:\cf0 ' at the first:\par
+1- In case of any conflict between \cf6\b Commander \cf0\b0 & \b CMD commands \b0 add '\cf11 cmd:\cf0 ' at the first:\par
 \cf11 cmd:\cf15 ....batch command....\cf0\par
 2- When you run multiple scripts at once \cf4\b clean \cf0\b0 command will be \cf11 ignored \cf0 because all scripts will be using the same shared storage\par
 3-Also when you run multiple scripts at once \cf11 don't \cf0 use same functions names and variables names, shared storage is very good when you need to pass value from script to another but \cf4 it will break the process in case you started to use \cf11 same names \cf4 everywhere\cf0\par
@@ -95,124 +97,124 @@ ____________________________________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf5\b\fs44 SCRIPT TRICKS\par
+\pard\sa200\sl276\slmult1\qc\cf6\b\fs44 SCRIPT TRICKS\par
 \cf4\fs32\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf2\fs28 Script Bundle:\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\cf2\fs28 Script Bundle:\cf0\b0\fs22\par
 As UWP will prevent any access outside the LocalData folder\par
 you cannot use any command that required direct path without picking the file\par
 So this feature will help you to avoid that.\par
 \cf1\b Steps: \par
-\cf0 Note:\b0  the main script \cf11 name \cf0 should be as \cf8\b 'main.wutc' \cf0\b0 or the script will not work\cf1\b\par
-\cf0\b0 1-Compress your script + other contents as \cf5 zip, 7z or rar \cf11 (The files not the parent folder)\cf5\par
+\cf0 Note:\b0  the main script \cf11 name \cf0 should be as \cf9\b 'main.wutc' \cf0\b0 or the script will not work\cf1\b\par
+\cf0\b0 1-Compress your script + other contents as \cf6 zip, 7z or rar \cf11 (The files not the parent folder)\cf6\par
 \cf0 2-Change the extenstion to \cf4\b .wutz\par
 \cf0\b0 3-You are ready to run the script with all it's libraries\par
 \cf1\b Explain: \cf0\b0\par
-Commander will move the script and extract the files to \cf4\b\f1\fs19 TemporaryFolder\lang1033  \cf0\b0\f0\fs22\lang9 and start it from there\par
-You can now use the \cf4\b $ScriptLocation\cf0\b0  as folder ID \cf8\b [\cf4 $ScriptLocation\cf8 ]\cf0\b0\par
+Commander will move the script and extract the files to \cf4\b\f3\fs19 TemporaryFolder\lang1033  \cf0\b0\f0\fs22\lang9 and start it from there\par
+You can now use the \cf4\b $ScriptLocation\cf0\b0  as folder ID \cf9\b [\cf4 $ScriptLocation\cf9 ]\cf0\b0\par
 Password protected scripts supported \cf11 (Only for ZIP legacy encryption)\cf0\par
 \cf2\b\fs28\par
 Update \cf4\b0 (FROM 1.0.4)\cf2\b :\par
-\cf8\b0\fs22 You can use  \cf4\b update\cf8  command \b0 to update the current script using web url\par
+\cf9\b0\fs22 You can use  \cf4\b update\cf9  command \b0 to update the current script using web url\par
 \cf0 Commander will ask if the user want to update or not in case of any change\par
 the update will work for both normal and bundled scripts\par
-\cf5 for bundled scripts you can update only \cf4 main.wutc \cf5\par
+\cf6 for bundled scripts you can update only \cf4 main.wutc \cf6\par
 \cf1\b EXAMPLE:\cf0\b0\par
 \cf4\b update {\cf0\b0{\field{\*\fldinst{HYPERLINK https://.....scripturl }}{\fldrslt{https://.....scripturl\ul0\cf0}}}}\cf0\b0\f0\fs22 .....\cf2\b\fs28\par
 \par
 Start and End:\cf0\b0\fs22\par
-\cf8 boundaries  \cf0 will help to avoid any confusing with large code\par
+\cf9 boundaries  \cf0 will help to avoid any confusing with large code\par
 \cf1\b EXAMPLE:\cf2\fs28\par
-\cf0\b0\fs22 with \cf8\b boundaries  \cf11\{-\}\cf8  \cf0\b0\par
+\cf0\b0\fs22 with \cf9\b boundaries  \cf11\{-\}\cf9  \cf0\b0\par
 \cf1\b EXAMPLE:\par
-\cf5 func \cf0\b0 [functionName]\cf8\b\{\cf0\b0\par
-\cf8\b\}\cf2\b0\par
-\cf5\b is\cf0\b0  condition\cf8\b\{\cf0\b0\par
-\cf8\b\}\cf5 else\cf8\{\cf0\b0\par
-\cf8\b\}\cf5\par
-\cf0 -----------------------------\cf5\par
-\cf4 without boundaries\cf5\par
+\cf6 func \cf0\b0 [functionName]\cf9\b\{\cf0\b0\par
+\cf9\b\}\cf2\b0\par
+\cf6\b is\cf0\b0  condition\cf9\b\{\cf0\b0\par
+\cf9\b\}\cf6 else\cf9\{\cf0\b0\par
+\cf9\b\}\cf6\par
+\cf0 -----------------------------\cf6\par
+\cf4 without boundaries\cf6\par
 \cf4 func \cf0\b0 [functionName]\par
 \cf4\b end\cf0\b0\par
-\cf5\b is\cf0\b0  condition\par
-\cf5\b else\cf0\b0\par
-\cf5\b end\cf2\fs28\par
+\cf6\b is\cf0\b0  condition\par
+\cf6\b else\cf0\b0\par
+\cf6\b end\cf2\fs28\par
 \par
 \par
 Styled Code:\cf0\b0\fs22\par
-It's highly preferred to select '\cf2\b Batch\cf0\b0 '  or '\cf5\b Powershell\cf0\b0 ' \cf8 Highlights \cf0 in your text/code editor\par
+It's highly preferred to select '\cf2\b Batch\cf0\b0 '  or '\cf6\b Powershell\cf0\b0 ' \cf9 Highlights \cf0 in your text/code editor\par
 so you can easily edit the script\par
 \cf2\b\fs28\par
-Replace Sensitive:\cf8\par
-\cf0\b0\fs22 You can switch the replace case sensitive during the script by using\cf8\b\fs28\par
-\cf10\f1\fs19 rcase\lang1033  \b0 state\par
-\cf0 default state is \cf10 match\cf1\b\par
-EXAMPLE:\cf10\b0\par
-\b rcase \b0 ignore\cf8\b\f0\fs28\lang9\par
+Replace Sensitive:\cf9\par
+\cf0\b0\fs22 You can switch the replace case sensitive during the script by using\cf9\b\fs28\par
+\cf5\f3\fs19 rcase\lang1033  \b0 state\par
+\cf0 default state is \cf5 match\cf1\b\par
+EXAMPLE:\cf5\b0\par
+\b rcase \b0 ignore\cf9\b\f0\fs28\lang9\par
 \b0\fs22 Now Commander will replace any match  and ignre the case of the letter\par
-\cf13 try always to avoid using similar ids:\cf8\b\fs28\par
+\cf13 try always to avoid using similar ids:\cf9\b\fs28\par
 \cf0\b0\fs22 if we have [\cf11 urlArea\cf0 ] and [\cf11 UrlArea\cf0 Input] when \cf4 rcase \cf0 is \cf4 ignore\cf0\par
 \cf4 [UrlAreaInput]\cf0  will get replace by half [\cf11\strike UrlArea\cf0\strike0 Input]\par
-\cf8 to reset to the default state:\cf0\par
-\cf10\b\f1\fs19\lang1033 rcase \b0 match\par
+\cf9 to reset to the default state:\cf0\par
+\cf5\b\f3\fs19\lang1033 rcase \b0 match\par
 \par
 \cf0\f0\fs22\lang9\par
 \cf2\b\fs28 Targeting:\par
-\cf8\b0\fs22 You can use  \cf4\b mintarget\cf8  command \b0 in your script so it will break if the app ver is less\par
+\cf9\b0\fs22 You can use  \cf4\b mintarget\cf9  command \b0 in your script so it will break if the app ver is less\par
 \cf1\b EXAMPLE:\cf0\b0\par
 \cf4\b mintarget \cf0\b0 3.9.8\par
 \par
 \cf2\b\fs28 Debug:\par
-\cf8\b0\fs22 You can use  \cf4\b debug\cf8  command \b0 to enable detailed information log\par
+\cf9\b0\fs22 You can use  \cf4\b debug\cf9  command \b0 to enable detailed information log\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b debug \cf5\b0 state\cf0\par
+\cf4\b debug \cf6\b0 state\cf0\par
 \cf4 state: \cf11\b 0\cf0\b0  (no debug) - \cf2\b 1\cf0\b0  (debug) enabled\par
-Debug logs will be stored in \cf5\b downloads \cf0\b0 folder, if not assigned will be stored in local folder\par
+Debug logs will be stored in \cf6\b downloads \cf0\b0 folder, if not assigned will be stored in local folder\par
 \par
 \cf2\b\fs28 Startup:\par
-\cf8\b0\fs22 If you want to start some scripts with the app startup:\par
-\cf0 1-Create new folder inside \cf5 Downloads Folder \cf0 called '\cf2 Startup\cf0 '\par
+\cf9\b0\fs22 If you want to start some scripts with the app startup:\par
+\cf0 1-Create new folder inside \cf6 Downloads Folder \cf0 called '\cf2 Startup\cf0 '\par
 2-Put the scripts inside it\par
 3-Done, the scripts will run once the app startup\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf5\b\fs44\par
+\pard\sa200\sl276\slmult1\qc\cf6\b\fs44\par
 SCRIPT DIRECTIVES\cf4\fs32\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\f1\fs19\lang1033\par
+\pard\sa200\sl276\slmult1\cf5\f3\fs19\lang1033\par
 notelnet\cf2 : \cf0\b0 ignore the telnet connection \cf11\b [Directive]\f0\fs22\lang9\par
 \cf3 COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 notelnet \cf5\par
-\cf8\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 notelnet \cf6\par
+\cf9\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 backw\cf2 : \cf0\b0 allow the script to run in background \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 backw\cf2 : \cf0\b0 allow the script to run in background \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 backw\cf5\par
-\cf8\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 backw\cf6\par
+\cf9\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 noclean\cf2 : \cf0\b0 prevent the script remove by the clean button \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 noclean\cf2 : \cf0\b0 prevent the script remove by the clean button \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 noclean \cf5\par
-\cf8\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 noclean \cf6\par
+\cf9\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 sensors\cf2 : \cf0\b0 activate sensors values \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 sensors\cf2 : \cf0\b0 activate sensors values \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 sensors \cf5\par
-\cf8\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 sensors \cf6\par
+\cf9\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
 \cf12 Accelerometer & Gyrometer  \cf4 constants \cf12 will not work without this directive\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 keyboard\cf2 : \cf0\b0 activate keyboard values \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 keyboard\cf2 : \cf0\b0 activate keyboard values \cf11\b [Directive]\cf0\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 keyboard \cf5\par
-\cf8\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 keyboard \cf6\par
+\cf9\b0 This should be added at the top of the script \cf0\f0\fs22\lang9\par
 \cf4\b $Key \cf0\b0 will not work without this directive\par
 _______________________________\par
 \par
-\cf8\b Note: \cf11\b0 Directives need to be in the \cf8\b first 3\cf11\b0  lines of the script without any empty \cf2\b lines \cf11\b0 between them...\cf4 otherwise they will be ignored\par
+\cf9\b Note: \cf11\b0 Directives need to be in the \cf9\b first 3\cf11\b0  lines of the script without any empty \cf2\b lines \cf11\b0 between them...\cf4 otherwise they will be ignored\par
 \cf0 directives can be in one line like: \par
 \cf13\b notelnet\cf0\b0 , \cf13\b noclean\cf0\b0\par
 ...\par
@@ -222,340 +224,340 @@ _______________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf5\b\fs44 COMMANDS LIST\cf4\fs32\par
+\pard\sa200\sl276\slmult1\qc\cf6\b\fs44 COMMANDS LIST\cf4\fs32\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf0\b0\fs22\par
-\cf10\b\f1\fs19 define\lang1033 : \cf0\b0 used to define/update new variable\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf0\b0\fs22\par
+\cf5\b\f3\fs19 define\lang1033 : \cf0\b0 used to define/update new variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19 define\lang1033  \cf5 [\b0 variableName]\cf10 ;, variableValue\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19 define\lang1033  \cf6 [\b0 variableName]\cf5 ;, variableValue\cf0\f0\fs22\lang9\par
 if the variable already defined will be updated with the new value\par
 \cf2\b You \cf0\b0 can use value from another variable as ID\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b define \cf5\b0 [variableName]\cf0 ;, \cf2 [sourceVariable Name]\cf0\par
-\cf8 this will help to resolve the issues when you data contains multi lines\cf0\par
+\cf4\b define \cf6\b0 [variableName]\cf0 ;, \cf2 [sourceVariable Name]\cf0\par
+\cf9 this will help to resolve the issues when you data contains multi lines\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 func\cf2 : \cf0\b0 used to define/update new \cf2 function\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 func\cf2 : \cf0\b0 used to define/update new \cf2 function\cf0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 func \cf5 [\b0 functionName]\cf10 ;, \cf5\b (command)\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 func \cf6 [\b0 functionName]\cf5 ;, \cf6\b (command)\cf0\b0\f0\fs22\lang9\par
 use \cf4\b call \cf0\b0 command to invoke the function\par
-you can define multiple command by \cf4 split \cf0 them with \cf11\b !#! or \\n\cf5\par
+you can define multiple command by \cf4 split \cf0 them with \cf11\b !#! or \\n\cf6\par
 \cf1 EXAMPLE:\cf0\b0\par
-\cf4 func \cf0 [variableName];, \cf5\b (command1\cf11 !#!\cf5 command2\cf11 !#!\cf5 command3)\cf0\b0\par
-\cf8 also you can define multiple commands\par
-\cf4\b func \cf0\b0 [variableName]\cf8\b\{\b0\par
+\cf4 func \cf0 [variableName];, \cf6\b (command1\cf11 !#!\cf6 command2\cf11 !#!\cf6 command3)\cf0\b0\par
+\cf9 also you can define multiple commands\par
+\cf4\b func \cf0\b0 [variableName]\cf9\b\{\b0\par
 \cf0 command1\par
 command2\par
-\cf8\b\}\cf4\par
+\cf9\b\}\cf4\par
 \cf1\par
 EXAMPLE:\b0\par
-\cf4\b call \cf0\b0 [\cf5\f1\fs19\lang1033 functionName\cf0\f0\fs22\lang9 ]\par
-\cf4\b call \b0 [variableID]\cf0 |\cf8 paramName1:Value|paramName2:Value..etc\cf0\par
+\cf4\b call \cf0\b0 [\cf6\f3\fs19\lang1033 functionName\cf0\f0\fs22\lang9 ]\par
+\cf4\b call \b0 [variableID]\cf0 |\cf9 paramName1:Value|paramName2:Value..etc\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 set: \cf0\b0 used to set new value for specific variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 set: \cf0\b0 used to set new value for specific variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, variableValue\par
+\cf5\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, variableValue\par
 \cf3\b\par
-IS IT SAME AS \cf6 define\cf3 ?\f0\fs22\lang9\par
-\cf0\b0 No, with '\cf6\b set\cf0\b0 ' command you can deal with specific values as listed below:\par
+IS IT SAME AS \cf7 define\cf3 ?\f0\fs22\lang9\par
+\cf0\b0 No, with '\cf7\b set\cf0\b0 ' command you can deal with specific values as listed below:\par
 
-\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\ltrpar\fi-360\li360\sa200\sl276\slmult1 ++: \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b ++\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}--: \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b --\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}+(varaible or number): \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b +value\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}-(variable or number): \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b -value\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}*(variable or number): \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b *value\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}/(variable or number): \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b /value\cf0\b0\f0\fs22\lang9\par
-{\pntext\f3\'B7\tab}any string/numeric value: \cf10\b\f1\fs19\lang1033 set \cf5 [\b0 variableName]\cf10 ;, \b value\cf0\b0\f0\fs22\lang9\par
+\pard{\pntext\f5\'B7\tab}{\*\pn\pnlvlblt\pnf5\pnindent0{\pntxtb\'B7}}\fi-360\li360\sa200\sl276\slmult1 ++: \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b ++\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}--: \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b --\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}+(varaible or number): \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b +value\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}-(variable or number): \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b -value\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}*(variable or number): \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b *value\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}/(variable or number): \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b /value\cf0\b0\f0\fs22\lang9\par
+{\pntext\f5\'B7\tab}any string/numeric value: \cf5\b\f3\fs19\lang1033 set \cf6 [\b0 variableName]\cf5 ;, \b value\cf0\b0\f0\fs22\lang9\par
 
-\pard\ltrpar\sa200\sl276\slmult1 you can increase the value directly:\par
-\cf5 [variableID]++\cf0 , \cf5 [variableID]--\cf0\par
+\pard\sa200\sl276\slmult1 you can increase the value directly:\par
+\cf6 [variableID]++\cf0 , \cf6 [variableID]--\cf0\par
 you can also use value from another variable as ID\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b define \cf5\b0 [variableName]\cf0 ;, \cf2 [sourceVariable Name]\cf0\par
-\cf8 this will help to resolve the issues when you data contains multi lines\cf0\par
+\cf4\b define \cf6\b0 [variableName]\cf0 ;, \cf2 [sourceVariable Name]\cf0\par
+\cf9 this will help to resolve the issues when you data contains multi lines\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 include: \cf0\b0 used to include another script into the current one\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 include: \cf0\b0 used to include another script into the current one\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 include \cf5 [\b0 fileID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 include \cf6 [\b0 fileID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 includel: \cf0\b0 used to include another script into the current one\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 includel: \cf0\b0 used to include another script into the current one\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 includel \cf5 fileLocation\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 includel \cf6 fileLocation\cf0\b0\f0\fs22\lang9\par
 \cf11 the file should be available in the files storage \cf0\par
-you can include any file in the script folder by it's \cf8 name \cf11 (for script bundle)\cf0\par
+you can include any file in the script folder by it's \cf9 name \cf11 (for script bundle)\cf0\par
 EXAMPLE:\par
-\cf4\b includel \cf5\b0 extraContent.wutc\cf0\par
+\cf4\b includel \cf6\b0 extraContent.wutc\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 regex: \cf0\b0 extract string using regex\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 regex: \cf0\b0 extract string using regex\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 regex \b0 [variableID];\b , \cf6\b0 pattern;, [targetID]\par
+\cf5\f3\fs19\lang1033 regex \b0 [variableID];\b , \cf7\b0 pattern;, [targetID]\par
 pattern \cf0 like:\par
 \cf15\b define [sourceID];, Welcome To (WUT)\cf0\b0\par
-\cf4\b regex \cf0\b0 [testID];, \cf5\b\\(.*\\)\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
-\b\f1\fs19\lang1033 testID \b0 will be \cf4\b (WUT)\par
-\cf11\b0\f0\fs22\lang9 be aware \cf0 to the special chars \cf5\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
+\cf4\b regex \cf0\b0 [testID];, \cf6\b\\(.*\\)\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
+\b\f3\fs19\lang1033 testID \b0 will be \cf4\b (WUT)\par
+\cf11\b0\f0\fs22\lang9 be aware \cf0 to the special chars \cf6\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
 \cf2\b\\\\ - \\( - \\< - \\>\cf0\b0\par
-if you got any \cf11\b parsing error \cf0\b0 message then you have \cf5\b sepcial \cf0\b0 char in your \cf6\b pattern\cf0\b0\par
+if you got any \cf11\b parsing error \cf0\b0 message then you have \cf6\b sepcial \cf0\b0 char in your \cf7\b pattern\cf0\b0\par
 ______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 regexg: \cf0\b0 extract string using regex with group\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 regexg: \cf0\b0 extract string using regex with group\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 regexg \b0 [variableID];\b , \cf6\b0 pattern;, \cf2\b group\cf6\b0 ;, [targetID]\par
+\cf5\f3\fs19\lang1033 regexg \b0 [variableID];\b , \cf7\b0 pattern;, \cf2\b group\cf7\b0 ;, [targetID]\par
 pattern \cf0 like:\par
 \cf15\b define [sourceID];, Welcome To (WUT)\cf0\b0\par
-\cf4\b regexg \cf0\b0 [testID];, \cf5\b Welcome (?<middle>\\w+)\cf0\b0 ;, \cf2\b middle\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
-\b\f1\fs19\lang1033 testID \cf2 To\cf0\b0\f0\fs22\lang9\par
+\cf4\b regexg \cf0\b0 [testID];, \cf6\b Welcome (?<middle>\\w+)\cf0\b0 ;, \cf2\b middle\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
+\b\f3\fs19\lang1033 testID \cf2 To\cf0\b0\f0\fs22\lang9\par
 as you can see this will return only the requested group\par
-\cf11 be aware \cf0 to the special chars \cf5\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
+\cf11 be aware \cf0 to the special chars \cf6\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
 \cf2\b\\\\ - \\( - \\< - \\>\cf0\b0\par
-if you got any \cf11\b parsing error \cf0\b0 message then you have \cf5\b sepcial \cf0\b0 char in your \cf6\b pattern\cf0\b0\par
+if you got any \cf11\b parsing error \cf0\b0 message then you have \cf6\b sepcial \cf0\b0 char in your \cf7\b pattern\cf0\b0\par
 ______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 regexc: \cf0\b0 extract string collection using regex with group\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 regexc: \cf0\b0 extract string collection using regex with group\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 regexc \b0 [variableID];\b , \cf6\b0 pattern;, \cf2\b group\cf6\b0 ;, [targetID]\par
+\cf5\f3\fs19\lang1033 regexc \b0 [variableID];\b , \cf7\b0 pattern;, \cf2\b group\cf7\b0 ;, [targetID]\par
 pattern \cf0 like:\par
 \cf15\b define [sourceID];, Welcome To (WUT) Welcome test collection\cf0\b0\par
-\cf4\b regexc \cf0\b0 [testID];, \cf5\b Welcome (?<middle>\\w+)\cf0\b0 ;, \cf2\b middle\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
-\b\f1\fs19\lang1033 testID \cf2 To,test\cf0\b0\f0\fs22\lang9\par
+\cf4\b regexc \cf0\b0 [testID];, \cf6\b Welcome (?<middle>\\w+)\cf0\b0 ;, \cf2\b middle\cf0\b0 ;, [sourceID]\f0\fs22\lang9\par
+\b\f3\fs19\lang1033 testID \cf2 To,test\cf0\b0\f0\fs22\lang9\par
 as you can see this will return only the requested group\par
-\cf11 be aware \cf0 to the special chars \cf5\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
+\cf11 be aware \cf0 to the special chars \cf6\b\\ - ( - < -> \cf0\b0 and don't forget to add \\ before them\par
 \cf2\b\\\\ - \\( - \\< - \\>\cf0\b0\par
-if you got any \cf11\b parsing error \cf0\b0 message then you have \cf5\b sepcial \cf0\b0 char in your \cf6\b pattern\cf0\b0\par
+if you got any \cf11\b parsing error \cf0\b0 message then you have \cf6\b sepcial \cf0\b0 char in your \cf7\b pattern\cf0\b0\par
 ______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 area: \cf0\b0 used to define custom area like 'label' in CMD\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 area: \cf0\b0 used to define custom area like 'label' in CMD\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 area \cf5 [\b0 areaName]\cf10 ;, \cf4\b (command)\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 area \cf6 [\b0 areaName]\cf5 ;, \cf4\b (command)\cf0\b0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 jump: \cf0\b0 used to jump to specific area like 'goto' in CMD\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 jump: \cf0\b0 used to jump to specific area like 'goto' in CMD\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 jump \cf5 [\b0 areaName]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 jump \cf6 [\b0 areaName]\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 delay: \cf0\b0 used to delay the script for specific time\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 delay: \cf0\b0 used to delay the script for specific time\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 delay \cf6\b0 time\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 delay \cf7\b0 time\cf0\f0\fs22\lang9\par
 \cf17\b time \cf0\b0 in milliseconds\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 break: \cf0\b0 used to break the execution and end the script\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 break: \cf0\b0 used to break the execution and end the script\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 break \cf6\b0 message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 break \cf7\b0 message\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 breakwhen: \cf0\b0 used to break the execution and end the script on specific condition\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 breakwhen: \cf0\b0 used to break the execution and end the script on specific condition\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 breakwhen \cf6\b0 condition;, message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 breakwhen \cf7\b0 condition;, message\cf0\f0\fs22\lang9\par
 check '\cf18\b is' \cf0\b0 command below for condition structure\par
-you can use fixed condition '\cf10\f1\fs19 offline\cf0\lang1033 ' to break when no internet connection\par
+you can use fixed condition '\cf5\f3\fs19 offline\cf0\lang1033 ' to break when no internet connection\par
 check also \cf4 waitic \cf1 (for wait until internet active)\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 is: \cf0\b0 used to execute command when specific condition is true\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 is: \cf0\b0 used to execute command when specific condition is true\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 is \b0 statement;, \cf5\b (command)\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 is \b0 statement;, \cf6\b (command)\cf0\b0\f0\fs22\lang9\par
 \cf4\b statement \cf0\b0 accept the following operators:\par
-\cf19\f1\fs19 <\lang1033  \lang9 |\lang1033  \lang9 >\lang1033  \lang9 |\lang1033  \lang9 >=\lang1033  \lang9 |\lang1033  \lang9 <=\lang1033  \lang9 |\lang1033  \lang9 equ\lang1033  \lang9 |\lang1033  \lang9 ==\lang1033  \lang9 |\lang1033  \lang9 neq\lang1033  \lang9 |\lang1033  \lang9 !=\lang1033  \lang9 |\lang1033  \lang9 lss\lang1033  \lang9 |\lang1033  \lang9 leq\lang1033  \lang9 |\lang1033  \lang9 gtr\lang1033  \lang9 |\lang1033  \lang9 geq\lang1033  \par
+\cf19\f3\fs19 <\lang1033  \lang9 |\lang1033  \lang9 >\lang1033  \lang9 |\lang1033  \lang9 >=\lang1033  \lang9 |\lang1033  \lang9 <=\lang1033  \lang9 |\lang1033  \lang9 equ\lang1033  \lang9 |\lang1033  \lang9 ==\lang1033  \lang9 |\lang1033  \lang9 neq\lang1033  \lang9 |\lang1033  \lang9 !=\lang1033  \lang9 |\lang1033  \lang9 lss\lang1033  \lang9 |\lang1033  \lang9 leq\lang1033  \lang9 |\lang1033  \lang9 gtr\lang1033  \lang9 |\lang1033  \lang9 geq\lang1033  \par
 ~~ | !~ | @ | #\cf0\f0\fs22\lang9\par
 \cf1\b EXAMPLE:\par
-\cf10\f1\fs19\lang1033 is \b0 variable<18;, \cf5\b (\cf6 break \cf5 Age is not allowed)\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 is \b0 variable<18;, \cf6\b (\cf7 break \cf6 Age is not allowed)\cf0\b0\f0\fs22\lang9\par
 \cf4\b ~~ , !~: \cf0\b0 means if the variable contains or not contain\par
 \cf4\b @, #: \cf0\b0 means startWith or endWith\par
 variable (left side) can be also [variableID] \par
 because long data/text with lines will break the script\par
 you can test upto 3 values instead of two\par
-\cf10\b\f1\fs19\lang1033 is \b0 variable==11|18|22;, \cf5\b (\cf6 break \cf5 Age is not allowed)\par
-\cf8 you can run cmd commands with 'is'\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 is \b0 variable==11|18|22;, \cf6\b (\cf7 break \cf6 Age is not allowed)\par
+\cf9 you can run cmd commands with 'is'\cf0\b0\f0\fs22\lang9\par
 you can use mulitple commands with 'is'\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf6\b is \cf0\b0 variable>0\cf8\b\{\cf0\b0\par
+\cf7\b is \cf0\b0 variable>0\cf9\b\{\cf0\b0\par
 command..\par
 command..\par
-\cf8\b\}\cf5\par
+\cf9\b\}\cf6\par
 \cf0\b0 You can get lower case content for the left side\par
-\cf4 is \cf8\b lower:\cf0\b0 content~~test;, \cf5\b (command)\cf2\b0\par
-\cf0 internal multiple \cf6 is \cf0 is possible\cf11\par
+\cf4 is \cf9\b lower:\cf0\b0 content~~test;, \cf6\b (command)\cf2\b0\par
+\cf0 internal multiple \cf7 is \cf0 is possible\cf11\par
 \cf0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 else: \cf0\b0 used to execute command after 'is' condition is false\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 else: \cf0\b0 used to execute command after 'is' condition is false\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 else \b0 statement;, \cf5\b (command)\cf0\b0\f0\fs22\lang9\par
-if you don't have extra statement just use \b '\cf10\f1\fs19\lang1033 else\cf0\f0\fs22\lang9 '\b0\par
-\cf8 if you want to use else without statement in one line do the following:\cf0\par
-\cf8\b\f1\fs19\lang1033 else\b0  \cf5\b (command)\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 else \b0 statement;, \cf6\b (command)\cf0\b0\f0\fs22\lang9\par
+if you don't have extra statement just use \b '\cf5\f3\fs19\lang1033 else\cf0\f0\fs22\lang9 '\b0\par
+\cf9 if you want to use else without statement in one line do the following:\cf0\par
+\cf9\b\f3\fs19\lang1033 else\b0  \cf6\b (command)\cf0\b0\f0\fs22\lang9\par
 multi line is possible \par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf6\b is \cf0\b0 variable>0\cf8\b\{\cf0\b0\par
+\cf7\b is \cf0\b0 variable>0\cf9\b\{\cf0\b0\par
 .....\par
-\cf8\b\}\cf2 else \cf10\b0\f1\fs19\lang1033 statement\cf8\b\{\cf0\b0\f0\fs22\lang9\par
+\cf9\b\}\cf2 else \cf5\b0\f3\fs19\lang1033 statement\cf9\b\{\cf0\b0\f0\fs22\lang9\par
 .....\par
-\cf8\b\}\cf0\b0\par
+\cf9\b\}\cf0\b0\par
 any other details same exatcly as '\cf4\b is\cf0 '\cf4  \cf0\b0 command\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033 call: \cf0\b0 run commander command from variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 call: \cf0\b0 run commander command from variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 call \b0 [variableID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 call \b0 [variableID]\cf0\f0\fs22\lang9\par
 This will solve the issues that could happen because of mulitple internal commands\par
-Use \cf5\b definec \cf0\b0 to define new command with variable\par
+Use \cf6\b definec \cf0\b0 to define new command with variable\par
 or get the command from file\par
-\cf8 Please note that \cf4 call \cf8 command can be used with and \cf5 sub command\cf8\par
-like you can use it with \cf4 loop\cf8 , \cf4 each\cf8 ..etc\par
+\cf9 Please note that \cf4 call \cf9 command can be used with and \cf6 sub command\cf9\par
+like you can use it with \cf4 loop\cf9 , \cf4 each\cf9 ..etc\par
 \cf0 You can send custom param to the define command\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b call \b0 [variableID]\cf0 |\cf8 paramName1:Value|paramName2:Value..etc\cf0\par
+\cf4\b call \b0 [variableID]\cf0 |\cf9 paramName1:Value|paramName2:Value..etc\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 cmd: \cf0\b0 run cmd command from variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 cmd: \cf0\b0 run cmd command from variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 cmd \b0 [variableID]\par
+\cf5\f3\fs19\lang1033 cmd \b0 [variableID]\par
 \cf0 check \cf4\b definec / func \cf0\b0 for commands define\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 cmdout: \cf0\b0 run cmd command and save the output result to variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 cmdout: \cf0\b0 run cmd command and save the output result to variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 cmdout \b0 [outputID];, (command) \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 cmdout \b0 [outputID];, (command) \cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 clean/clear: \cf0\b0 clean all stored variables, storage items, processes, timers..etc\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 clean/clear: \cf0\b0 clean all stored variables, storage items, processes, timers..etc\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 clean/clear \cf6\b0 all\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 clean/clear \cf7\b0 all\cf0\f0\fs22\lang9\par
 if you want to avoid any conflict or unwanted results use this command at the top of each script\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 replace: \cf0\b0 replace content with another content \f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 replace: \cf0\b0 replace content with another content \f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 replace \b0 [targetID];\b , \cf6\b0 original;, replacement\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 replace \b0 [targetID];\b , \cf7\b0 original;, replacement\cf0\f0\fs22\lang9\par
 The results will be saved to the same variable\par
 you can replace multiple words at once\par
-\cf10\b\f1\fs19\lang1033 replace \b0 [targetID];\b , \cf6\b0 w1|w2|w3;, r1|r2|3\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 replace \b0 [targetID];\b , \cf7\b0 w1|w2|w3;, r1|r2|3\cf0\f0\fs22\lang9\par
 You can replace multi target with one source:\par
-\cf10\b\f1\fs19\lang1033 replace \b0 [targetID];\b , \cf6\b0 w1|w2|w3;, r1\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 replace \b0 [targetID];\b , \cf7\b0 w1|w2|w3;, r1\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 replaced: \cf0\b0 replace content with another, then define result\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 replaced: \cf0\b0 replace content with another, then define result\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 replaced [outputVariable];, \b0 [targetID];\b , \cf6\b0 original;, replacement\cf0\f0\fs22\lang9\par
-\cf4\f1\fs19\lang1033 outputVariable \cf0 will be defined by default\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 replaced [outputVariable];, \b0 [targetID];\b , \cf7\b0 original;, replacement\cf0\f0\fs22\lang9\par
+\cf4\f3\fs19\lang1033 outputVariable \cf0 will be defined by default\f0\fs22\lang9\par
 multi replace available as in \cf4\b replace \cf0\b0 command\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 replacer: \cf0\b0 replace content with another content using regex \f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 replacer: \cf0\b0 replace content with another content using regex \f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 replacer [outputVariable];, \b0 [targetID];\b , \cf6\b0 regex;, replacement\cf0\f0\fs22\lang9\par
-\cf4\f1\fs19\lang1033 outputVariable \cf0 will be defined by default\f0\fs22\lang9\par
-multi replace available as in \cf4\b replace \cf0\b0 command \cf11 but \cf0 use '\cf10\f1\fs19 [#]\cf0\lang1033 '\cf10  \cf0 separator instead of \cf10 |\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 replacer [outputVariable];, \b0 [targetID];\b , \cf7\b0 regex;, replacement\cf0\f0\fs22\lang9\par
+\cf4\f3\fs19\lang1033 outputVariable \cf0 will be defined by default\f0\fs22\lang9\par
+multi replace available as in \cf4\b replace \cf0\b0 command \cf11 but \cf0 use '\cf5\f3\fs19 [#]\cf0\lang1033 '\cf5  \cf0 separator instead of \cf5 |\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 substr: \cf0\b0 get sub string using start, end index\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 substr: \cf0\b0 get sub string using start, end index\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 substr [variableID];, \b0 [targetID];\b , \cf6\b0 startIndex;, endIndex\par
+\cf5\f3\fs19\lang1033 substr [variableID];, \b0 [targetID];\b , \cf7\b0 startIndex;, endIndex\par
 start, end index guide:\par
-\cf11\b\fs22 T\cf2 e\cf5 s\cf4 t\cf6\highlight7  \cf2\highlight0 T\cf3 e\cf8 x\cf11 t\cf6\par
-\cf11 0\cf2 1\cf5 2\cf4 3\cf15 4\cf2 5\cf3 6\cf8 7\cf11 8\cf0\f0\fs28\lang9\par
+\cf11\b\fs22 T\cf2 e\cf6 s\cf4 t\cf7\highlight8  \cf2\highlight0 T\cf3 e\cf9 x\cf11 t\cf7\par
+\cf11 0\cf2 1\cf6 2\cf4 3\cf15 4\cf2 5\cf3 6\cf9 7\cf11 8\cf0\f0\fs28\lang9\par
 \b0\fs22 if you want to set \cf4 'end'\cf0  to the last index use \cf4\b 'last'\cf0\b0  instead of number\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 subarr: \cf0\b0 get sub array using start, end index \cf2\b (for arrays)\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 subarr: \cf0\b0 get sub array using start, end index \cf2\b (for arrays)\cf0\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 subarr [variableID];, \b0 [targetID];\b , separator;, \cf6\b0 startIndex;, endIndex\par
+\cf5\f3\fs19\lang1033 subarr [variableID];, \b0 [targetID];\b , separator;, \cf7\b0 startIndex;, endIndex\par
 start, end index guide:\par
-\cf11\b\fs22 item1, \cf2 item2, \cf5 item3, \cf4 item4\cf6\par
-\cf11 0      \cf2 1      \cf5 2      \cf4 3\cf0\f0\fs28\lang9\par
+\cf11\b\fs22 item1, \cf2 item2, \cf6 item3, \cf4 item4\cf7\par
+\cf11 0      \cf2 1      \cf6 2      \cf4 3\cf0\f0\fs28\lang9\par
 \b0\fs22 if you want to set \cf4 'end'\cf0  to the last index use \cf4\b 'last'\cf0\b0  instead of number\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 length: \cf0\b0 get length for string variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 length: \cf0\b0 get length for string variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 length [variableID];, \b0 [targetID]\cf6\par
+\cf5\f3\fs19\lang1033 length [variableID];, \b0 [targetID]\cf7\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 count: \cf0\b0 get items count for array variable\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 count: \cf0\b0 get items count for array variable\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 count [variableID];, \b0 [targetID];, separator\cf6\par
+\cf5\f3\fs19\lang1033 count [variableID];, \b0 [targetID];, separator\cf7\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \cf18\b\fs44\par
-\cf10\f1\fs19\lang1033 clipboard: \cf0\b0 send custom text to clipbloard\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 clipboard: \cf0\b0 send custom text to clipbloard\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 clipboard \b0 title;\b , \cf6\b0 message;, text\par
+\cf5\f3\fs19\lang1033 clipboard \b0 title;\b , \cf7\b0 message;, text\par
 \cf4\b title, message: \cf0\b0 used for the notification\par
 \cf4\b text: \cf0\b0 the content you need to send to clipboard\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 reformat: \cf0\b0 merge two values into one (for arrays)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 reformat: \cf0\b0 merge two values into one (for arrays)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 reformat \b0 [variableID];\b , \cf6\b0 values1;, values2;, mixSymbol;, separator\par
+\cf5\f3\fs19\lang1033 reformat \b0 [variableID];\b , \cf7\b0 values1;, values2;, mixSymbol;, separator\par
 \cf1\b\f0\fs22\lang9 EXAMPLE:\cf0\b0\par
 \cf11\b Values1: \cf0\b0 "United State", "United Kingdom", "China"\par
-\cf5\b Values2:\cf0\b0  "us", "uk", "cn"\par
-\cf17\b reformat \cf2 [CountriesArray]\cf0\b0 ;, \cf11\b Values1;, \cf5 Values2;, :;, |\cf0\b0\par
+\cf6\b Values2:\cf0\b0  "us", "uk", "cn"\par
+\cf17\b reformat \cf2 [CountriesArray]\cf0\b0 ;, \cf11\b Values1;, \cf6 Values2;, :;, |\cf0\b0\par
 \cf2\b CountriesArray \cf0\b0 -> "United State":"us"|"United Kingdom":"uk"|"China":"cn"\par
 you can use these values into \cf20\b list \cf0\b0 or \cf20\b combo\cf0\b0\par
 if you want to remove ", you can call \cf20\b replace \cf0\b0 command\par
 replace [\cf2\b CountriesArray ];, ";,  \cf0\b0 then the output will be:\par
 \cf2\b CountriesArray \cf0\b0 -> United State:us|United Kingdom:uk|China:cn\par
-\cf8 Note: The command currently work only with values separated with \cf6 '\b\fs28 ,\b0\fs22 '\par
-\cf8 so if your input value using something else use \cf6\b replace \cf8\b0 command first\par
+\cf9 Note: The command currently work only with values separated with \cf7 '\b\fs28 ,\b0\fs22 '\par
+\cf9 so if your input value using something else use \cf7\b replace \cf9\b0 command first\par
 \cf0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 unique: \cf0\b0 delete duplicated values (for arrays)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 unique: \cf0\b0 delete duplicated values (for arrays)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 unique \b0 [variableID];\b , \cf6\b0 [arrayID];, separator\par
+\cf5\f3\fs19\lang1033 unique \b0 [variableID];\b , \cf7\b0 [arrayID];, separator\par
 \cf1\b\f0\fs22\lang9 EXAMPLE:\cf0\b0\par
 \cf11\b arrayID: \cf0\b0 "A", "B", "C", "D","A"\par
-\cf10\b\f1\fs19\lang1033 unique \cf2\f0\fs22\lang9 [cleanArray]\cf0\b0 ;, \cf11\b [arrayID];, \cf8\fs28 ,\cf0\b0\fs22\par
+\cf5\b\f3\fs19\lang1033 unique \cf2\f0\fs22\lang9 [cleanArray]\cf0\b0 ;, \cf11\b [arrayID];, \cf9\fs28 ,\cf0\b0\fs22\par
 \cf2\b cleanArray\cf0\b0 -> "A", "B", "C", "D"\par
 you can use the [arrayID] as string instead of ID, just write the arrayID without []\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 sort: \cf0\b0 will sort data by AES, DESC (for arrays)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 sort: \cf0\b0 will sort data by AES, DESC (for arrays)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 unique \b0 [variableID];\b , \cf6\b0 [arrayID];, separator;,, sortType\par
-sortType\cf0 : can be \cf6\b aes \cf0\b0 or \cf6\b desc\b0\par
+\cf5\f3\fs19\lang1033 unique \b0 [variableID];\b , \cf7\b0 [arrayID];, separator;,, sortType\par
+sortType\cf0 : can be \cf7\b aes \cf0\b0 or \cf7\b desc\b0\par
 \cf1\b\f0\fs22\lang9 EXAMPLE:\cf0\b0\par
 \cf11\b arrayID: \cf0\b0 "A", "B", "C", "D","A"\par
-\cf10\b\f1\fs19\lang1033 unique \cf2\f0\fs22\lang9 [cleanArray]\cf0\b0 ;, \cf11\b [arrayID];, \cf8 ,\cf0 ;,\cf8  aes\cf0\b0\par
+\cf5\b\f3\fs19\lang1033 unique \cf2\f0\fs22\lang9 [cleanArray]\cf0\b0 ;, \cf11\b [arrayID];, \cf9 ,\cf0 ;,\cf9  aes\cf0\b0\par
 \cf2\b cleanArray\cf0\b0 -> "A","A", "B", "C", "D"\par
 you can use the [arrayID] as string instead of ID, just write the arrayID without []\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
-\f0\fs24 Working with index\f1\fs19 :\par
+\cf5\b\f3\fs19\lang1033\par
+\f0\fs24 Working with index\f3\fs19 :\par
 \cf0\b0 how to get specific index from variable \cf2 (for arrays)\cf0 ?\f0\fs22\lang9\par
 \cf3\b if you sure that your variable contains value as array use this:\par
-\cf6\b0 variableID\cf3\b :\cf2\b0 (index,separator)\cf3\b\par
-\cf6\b0 index \cf3\b can be \cf5 number \cf3 or \cf5 first\cf3 , \cf5 last\cf3\par
+\cf7\b0 variableID\cf3\b :\cf2\b0 (index,separator)\cf3\b\par
+\cf7\b0 index \cf3\b can be \cf6 number \cf3 or \cf6 first\cf3 , \cf6 last\cf3\par
 \cf1 EXAMPLE:\cf0\b0\par
-In storage our data is like this\cf6\b : variableID\cf0\b0  -> \cf4 value1\cf0 , \cf5 value2\cf0 , \cf11 value3\cf0\par
-with this command:\cf6\b  variableID\cf0\b0 :(\cf11 last\cf0 ,\cf8\b\fs24 ,\cf0\b0\fs22 ) will return \cf11\b value3\par
-\cf0\b0 or  this command:\cf6\b  variableID\cf0\b0 :(\cf11 1\cf0 ,\cf8\b\fs24 ,\cf0\b0\fs22 ) will return \cf5\b value2\cf0\b0\par
+In storage our data is like this\cf7\b : variableID\cf0\b0  -> \cf4 value1\cf0 , \cf6 value2\cf0 , \cf11 value3\cf0\par
+with this command:\cf7\b  variableID\cf0\b0 :(\cf11 last\cf0 ,\cf9\b\fs24 ,\cf0\b0\fs22 ) will return \cf11\b value3\par
+\cf0\b0 or  this command:\cf7\b  variableID\cf0\b0 :(\cf11 1\cf0 ,\cf9\b\fs24 ,\cf0\b0\fs22 ) will return \cf6\b value2\cf0\b0\par
 you can get the item but it's index (whatever it was text or array):\cf2\b\par
 \cf0\b0 [variableID]\cf2 [index]\cf0\par
 _______________________________\par
 \par
-\cf10\b\fs24\lang1033 Working with path\f1\fs19 :\par
+\cf5\b\fs24\lang1033 Working with path\f3\fs19 :\par
 \cf0\b0\f0\fs22\lang9 You can get custom part of the path in case your variable is path\par
-available options: \cf6 name\cf0 , \cf6 nameonly\cf0 , \cf6 extonly\cf0\par
+available options: \cf7 name\cf0 , \cf7 nameonly\cf0 , \cf7 extonly\cf0\par
 \cf1\b EXAMPLE:\cf0\b0\par
 define [pathVariable];, C:\\testfile.exe\par
-\cf6 name:\cf0 pathVariable will return \cf4 testfile.exe\cf0\par
-\cf6 nameonly\cf0 :pathVariable will return \cf4 testfile\par
-\cf6 extonly\cf0 :pathVariable will return \cf4 .exe\cf0\par
+\cf7 name:\cf0 pathVariable will return \cf4 testfile.exe\cf0\par
+\cf7 nameonly\cf0 :pathVariable will return \cf4 testfile\par
+\cf7 extonly\cf0 :pathVariable will return \cf4 .exe\cf0\par
 _______________________________\par
 \cf18\b\fs44\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc LOOP COMMANDS\par
+\pard\sa200\sl276\slmult1\qc LOOP COMMANDS\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\f1\fs19\lang1033 loop: \cf0\b0 create loop with specific rounds\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\f3\fs19\lang1033 loop: \cf0\b0 create loop with specific rounds\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 loop \b0 startIndex;\b , \cf6\b0 endIndex;, step;, \cf5\b (command)\par
+\cf5\f3\fs19\lang1033 loop \b0 startIndex;\b , \cf7\b0 endIndex;, step;, \cf6\b (command)\par
 \cf0\b0 To get the current index use \cf4\b $currentIndex\cf0\b0\f0\fs22\lang9\par
 you can run cmd commands directly\par
 you can use \cf2\b skip, break \cf0\b0 in-commands\par
@@ -563,18 +565,18 @@ you can use \cf2\b skip, break \cf0\b0 in-commands\par
 \cf2\b break: \cf0\b0 will break the loop\par
 if you want to execute multiple commands the do these steps:\par
 1-Create \cf2 func\cf0\par
-2-Call the function with \cf2 call \cf0 inside the (\cf5 command\cf0 )\par
+2-Call the function with \cf2 call \cf0 inside the (\cf6 command\cf0 )\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf6 func \cf2 [test]\cf0\{\par
+\cf7 func \cf2 [test]\cf0\{\par
 \cf15 ..command..\cf0\par
 \cf15 ..command..\cf0\par
 \}\par
-\cf10\b\f1\fs19\lang1033 loop \b0 startIndex;\b , \cf6\b0 endIndex;, step;, \cf5\b (call \cf2 [\b0\f0\fs22\lang9 test]\cf0 )\par
+\cf5\b\f3\fs19\lang1033 loop \b0 startIndex;\b , \cf7\b0 endIndex;, step;, \cf6\b (call \cf2 [\b0\f0\fs22\lang9 test]\cf0 )\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 each: \cf0\b0 create loop with specific value \cf2 (for arrays)\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 each: \cf0\b0 create loop with specific value \cf2 (for arrays)\cf0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 each \b0 [arrayID];\b , \cf6\b0 separator;, \cf5\b (command)\par
+\cf5\f3\fs19\lang1033 each \b0 [arrayID];\b , \cf7\b0 separator;, \cf6\b (command)\par
 \cf0\b0 To get the current value use \cf4\b $currentValue\cf0\b0\f0\fs22\lang9\par
 you can run cmd commands directly\par
 you can use \cf2\b skip, break \cf0\b0 in-commands\par
@@ -584,376 +586,376 @@ _______________________________\par
 \b\fs44\par
 \cf18\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc FILES COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc FILES COMMANDS\cf0\b0\fs22\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033\par
 folder: \cf0\b0 used to select specific folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 folder \b0 [folderID];, extentions\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 folder \b0 [folderID];, extentions\cf0\f0\fs22\lang9\par
 extentions should be like \cf17\b .appx\cf0 |\cf17 .msix\cf0\b0\par
 \cf17\b folderID \cf0\b0 will be stored during the session so yo can use it from any other script\par
 \cf17\b folderID \cf0\b0 will be replaced with folder path during the compiling\par
-use '\cf2\b name:\cf18\f1\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
-use '\cf2\b size:\cf18\f1\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get folder total size formated like 15.3 MB\par
-use '\cf2\b sizelong:\cf18\f1\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get the total size in bytes like 15300000\cf2\b\par
-\cf0\b0 use '\cf2\b date:\cf18\f1\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
-\cf0\b0 use '\cf2\b count:\cf18\f1\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get total files count\par
+use '\cf2\b name:\cf18\f3\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
+use '\cf2\b size:\cf18\f3\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get folder total size formated like 15.3 MB\par
+use '\cf2\b sizelong:\cf18\f3\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get the total size in bytes like 15300000\cf2\b\par
+\cf0\b0 use '\cf2\b date:\cf18\f3\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+\cf0\b0 use '\cf2\b count:\cf18\f3\fs19\lang1033 folderID\cf0\b0\f0\fs22\lang9 '  to get total files count\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 folderf: \cf0\b0 used to select specific folder inside another folder (without picker)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 folderf \b0 [folderID];, [parentID];, folderName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 folderf \b0 [folderID];, [parentID];, folderName\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 file: \cf0\b0 used to select specific file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 file: \cf0\b0 used to select specific file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 file \b0 [fileID];, extentions\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 file \b0 [fileID];, extentions\cf0\f0\fs22\lang9\par
 extentions should be like \cf17\b .appx\cf0 |\cf17 .msix\cf0\b0\par
 \cf17\b fileID \cf0\b0 will be stored during the session so yo can use it from any other script\par
 \cf17\b fileID \cf0\b0 will be replaced with file path during the compiling\par
-use '\cf2\b name:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
-use '\cf2\b size:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get file size formated like 2.5 MB\cf2\b\par
-\cf0\b0 use '\cf2\b sizelong:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get file size in bytes like 2500000\cf2\b\par
-\cf0\b0 use '\cf2\b date:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
-\cf0\b0 use '\cf2\b nameonly:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
-\cf0\b0 use '\cf2\b extonly:\cf18\f1\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\par
+use '\cf2\b name:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
+use '\cf2\b size:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get file size formated like 2.5 MB\cf2\b\par
+\cf0\b0 use '\cf2\b sizelong:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get file size in bytes like 2500000\cf2\b\par
+\cf0\b0 use '\cf2\b date:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+\cf0\b0 use '\cf2\b nameonly:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+\cf0\b0 use '\cf2\b extonly:\cf18\f3\fs19\lang1033 fileID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 filef: \cf0\b0 used to select specific file inside folder (without picker)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 filef: \cf0\b0 used to select specific file inside folder (without picker)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 filef \b0 [fileID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 filef \b0 [fileID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 filel: \cf0\b0 used to select specific file inside folder (without picker) by location\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 filel: \cf0\b0 used to select specific file inside folder (without picker) by location\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 filel \b0 [fileID];, fileLocation\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 filel \b0 [fileID];, fileLocation\cf0\f0\fs22\lang9\par
 \cf11 the file should be available in the files storage \par
-\cf0\f1\fs19\lang1033 if \cf10 fileLocation \cf0 contains " it will be removed by default\f0\fs22\lang9\par
+\cf0\f3\fs19\lang1033 if \cf5 fileLocation \cf0 contains " it will be removed by default\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 files: \cf0\b0 used to select specific files (multiple selection)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 files: \cf0\b0 used to select specific files (multiple selection)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 files \b0 [filesID];, extentions\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 files \b0 [filesID];, extentions\cf0\f0\fs22\lang9\par
 extentions should be like\cf17\b  .appx\cf0 |\cf17 .msix\cf0\b0\par
 \cf17\b filesID \cf0\b0 will be stored during the session so yo can use it from any other script\par
 \cf17\b filesID \cf0\b0 will be replaced with files paths during the compiling\par
 when no files selected the \cf4\b filesID \cf0\b0 will be \cf11 null\cf0\par
 \cf1\b OUTPUT EXAMPLE: \cf0\b0\par
 File1Path, File2Path, File3Path\par
-use '\cf2\b name:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
-use '\cf2\b size:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get file size formated like 2.5 MB, 1.5 MB, 3 KB\cf2\b\par
-\cf0\b0 use '\cf2\b sizelong:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get file size in bytes like 2500000, 1500000, 3000\cf2\b\par
-\cf0\b0 use '\cf2\b count:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get total files count\cf2\b\par
-\cf0\b0 use '\cf2\b date:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
-\cf0\b0 use '\cf2\b namesize:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get name and size in this format \cf4\b FileName (Size)\cf2\par
-\cf0\b0 use '\cf2\b nameonly:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
-\cf0\b0 use '\cf2\b extonly:\cf18\f1\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+use '\cf2\b name:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get only the name not the full path\par
+use '\cf2\b size:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get file size formated like 2.5 MB, 1.5 MB, 3 KB\cf2\b\par
+\cf0\b0 use '\cf2\b sizelong:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get file size in bytes like 2500000, 1500000, 3000\cf2\b\par
+\cf0\b0 use '\cf2\b count:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get total files count\cf2\b\par
+\cf0\b0 use '\cf2\b date:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+\cf0\b0 use '\cf2\b namesize:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get name and size in this format \cf4\b FileName (Size)\cf2\par
+\cf0\b0 use '\cf2\b nameonly:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
+\cf0\b0 use '\cf2\b extonly:\cf18\f3\fs19\lang1033 filesID\cf0\b0\f0\fs22\lang9 '  to get modified date & time\cf2\b\par
 \cf0\b0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 filesf: \cf0\b0 used to select specific files from folder (without picker)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 filesf: \cf0\b0 used to select specific files from folder (without picker)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 filesf \b0 [filesID]\b ;, \b0 [folderID];, extentions\cf0\f0\fs22\lang9\par
-\cf4\b\f1\fs19\lang1033 filesID \cf0\b0 will handle the selected files\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 filesf \b0 [filesID]\b ;, \b0 [folderID];, extentions\cf0\f0\fs22\lang9\par
+\cf4\b\f3\fs19\lang1033 filesID \cf0\b0 will handle the selected files\f0\fs22\lang9\par
 extentions should be like\cf17\b  .appx\cf0 |\cf17 .msix\cf0\b0\par
 descriptions same as \cf4\b files \cf0\b0 command\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
-pick: \cf0\b0 used to \cf8\b re-select \cf0\b0 specific file/folder\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033\par
+pick: \cf0\b0 used to \cf9\b re-select \cf0\b0 specific file/folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 pick \b0 [targetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 pick \b0 [targetID]\cf0\f0\fs22\lang9\par
 extentions should be like \cf17\b .appx\cf0 |\cf17 .msix\par
 \cf0\b0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 exists\cf4\b0  (1.0.4+)\cf10\b : \cf0\b0 used to check if the file exists using the full path\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 exists\cf4\b0  (1.0.4+)\cf5\b : \cf0\b0 used to check if the file exists using the full path\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 exists [variableID];, \b0 fullPath\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 exists [variableID];, \b0 fullPath\cf0\f0\fs22\lang9\par
 will return \cf2\b true \cf0\b0 or \cf11\b false\cf0\b0\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b exists \cf0\b0 [\cf2 testID\cf0 ];, \cf5 c:\\text.txt\cf0\par
+\cf4\b exists \cf0\b0 [\cf2 testID\cf0 ];, \cf6 c:\\text.txt\cf0\par
 \cf4\b is \cf2\b0 testID\cf0 ==\cf2 true\cf0\{\par
-\cf9 //Your code goes here\cf0\par
+\cf10 //Your code goes here\cf0\par
 \}\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 crc\cf4\b0  (1.0.4+)\cf10\b : \cf0\b0 used to get unique identifier for any file using fileID\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 crc\cf4\b0  (1.0.4+)\cf5\b : \cf0\b0 used to get unique identifier for any file using fileID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 crc [variableID];, \b0 [fileID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 crc [variableID];, \b0 [fileID]\cf0\f0\fs22\lang9\par
 it's very helpful to compare the files\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 crcl\cf4\b0  (1.0.4+)\cf10\b : \cf0\b0 used to get unique identifier for any file using full path\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 crcl\cf4\b0  (1.0.4+)\cf5\b : \cf0\b0 used to get unique identifier for any file using full path\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 crcl [variableID];, \b0 filePath\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 crcl [variableID];, \b0 filePath\cf0\f0\fs22\lang9\par
 it's very helpful to compare the files\par
 \cf11 the file should be available in the files storage \cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 get: \cf0\b0 used to get file content\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 get: \cf0\b0 used to get file content\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 get \b0 [targetID];, [variableID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 get \b0 [targetID];, [variableID]\cf0\f0\fs22\lang9\par
 if \cf17\b variableID \cf0\b0 not defined before will be automaticly defined \par
 simple content will work fine with dialogs\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 getl: \cf0\b0 used to get file contents by location\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 getl: \cf0\b0 used to get file contents by location\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 getl \b0 fileLocation;, [variableID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 getl \b0 fileLocation;, [variableID]\cf0\f0\fs22\lang9\par
 this command will look into the storage and get  the file when it's exists\par
 \cf11 the file should be available in the files storage \cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 append: \cf0\b0 used to append content to specific file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 append: \cf0\b0 used to append content to specific file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 append \b0 [targetID];, content\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 append \b0 [targetID];, content\cf0\f0\fs22\lang9\par
 content can be [variableID]\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 write: \cf0\b0 used to write content to specific file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 write: \cf0\b0 used to write content to specific file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 write \b0 [targetID];, content\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 write \b0 [targetID];, content\cf0\f0\fs22\lang9\par
 content can be [variableID]\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 open: \cf0\b0 used to open file/folder with the default launcher by ID\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 open: \cf0\b0 used to open file/folder with the default launcher by ID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 open \b0 [targetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 open \b0 [targetID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 openl: \cf0\b0 used to open file/folder with the default launcher by location\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 openl: \cf0\b0 used to open file/folder with the default launcher by location\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 openl \b0 fileLocation\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 openl \b0 fileLocation\cf0\f0\fs22\lang9\par
 this command will look into the storage and open the file when it's exists\par
 \cf11 the file should be available in the files storage \par
-\cf0\f1\fs19\lang1033 if \cf10 fileLocation \cf0 contains " it will be removed by default\f0\fs22\lang9\par
+\cf0\f3\fs19\lang1033 if \cf5 fileLocation \cf0 contains " it will be removed by default\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 openf: \cf0\b0 used to open file inside folder\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 openf: \cf0\b0 used to open file inside folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 openf \b0 [folderID];, fileName\par
-\cf0 if \cf6 fileName \cf0 contains " it will be removed by default\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 openf \b0 [folderID];, fileName\par
+\cf0 if \cf7 fileName \cf0 contains " it will be removed by default\f0\fs22\lang9\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 create: \cf0\b0 used to create new \b folder\b0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 create \b0 [folderID];, [parentID];, folderName\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 folderID \cf0 will be added to the session storage\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 create \b0 [folderID];, [parentID];, folderName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 folderID \cf0 will be added to the session storage\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 createf: \cf0\b0 used to create new \b file \b0 inside existed folder\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 createf: \cf0\b0 used to create new \b file \b0 inside existed folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 createf \b0 [fileID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 fileID \cf0 will be added to the session storage\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 createf \b0 [fileID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 fileID \cf0 will be added to the session storage\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 delete: \cf0\b0 used to delete folder or file by ID\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 delete: \cf0\b0 used to delete folder or file by ID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 delete \b0 [targetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 delete \b0 [targetID]\cf0\f0\fs22\lang9\par
 targetID can be for folder or file and compiler will search for it automaticlly\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 deletef: \cf0\b0 used to delete file inside folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 deletef \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 deletef \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 play: \cf0\b0 play audio file/sfx \f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 play: \cf0\b0 play audio file/sfx \f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 play \b0 [folderID];\b , \b0 fileName\b ;, \cf6\b0 volume\par
+\cf5\f3\fs19\lang1033 play \b0 [folderID];\b , \b0 fileName\b ;, \cf7\b0 volume\par
 \cf17\b volume \cf0\b0 in double between 0.0 - 1.0\f0\fs22\lang9\par
 to use app sound effects\cf17\b :\cf0\b0\par
-\cf10\b\f1\fs19\lang1033 play \cf4 [$Assets]\cf10 ;, \b0 SFX\b\\\cf4 $AppIcons\cf10\\\b0 error.mp3;, 1.0\par
-\cf0\b available sfx: \cf10\b0\par
+\cf5\b\f3\fs19\lang1033 play \cf4 [$Assets]\cf5 ;, \b0 SFX\b\\\cf4 $AppIcons\cf5\\\b0 error.mp3;, 1.0\par
+\cf0\b available sfx: \cf5\b0\par
 \cf1\b ac-off.mp3, ac-on.mp3, alert.mp3, error.mp3, no-results.mp3, started.mp3\f0\fs22\lang9\par
 \cf0\b0 _______________________________\par
 \par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44 WAIT COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44 WAIT COMMANDS\cf0\b0\fs22\par
 
-\pard\ltrpar\sa200\sl276\slmult1\par
-\cf10\b\f1\fs19\lang1033 hold\cf2 : \cf0\b0 will hold all the script processes\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\par
+\cf5\b\f3\fs19\lang1033 hold\cf2 : \cf0\b0 will hold all the script processes\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 hold \b0 state\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 hold \b0 state\cf0\f0\fs22\lang9\par
 state can be 0 or 1\par
 You can use the \cf4\b waitb \cf0\b0 command to be able to release the hold state\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 waitf: \cf0\b0 will hold the script until the specific file found\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitf \b0 fileName;, waitMessage;, timeout;, \cf5\b (timeoutCommand)\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waitf \b0 fileName;, waitMessage;, timeout;, \cf6\b (timeoutCommand)\f0\fs22\lang9\par
 \cf0\b0 set \cf18\b timout \cf0\b0 to \cf11\b 0 \cf0\b0 to ignore the timeout limit \cf18\b or don't include it\cf0\b0\par
-\cf5\b\f1\fs19\lang1033 timeoutCommand \cf0\b0 called only if the file not found during the specific time\f0\fs22\lang9\par
+\cf6\b\f3\fs19\lang1033 timeoutCommand \cf0\b0 called only if the file not found during the specific time\f0\fs22\lang9\par
 if you want to delete the file after wait use '\cf4\b |1\cf0\b0 ' with the name\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf10\b\f1\fs19\lang1033 waitf \b0 test.txt|1;, Please wait..\par
-\cf0\fs22 don't add \cf10\fs19 timeout \cf0\fs22 if you don't want to use it\f0\lang9\par
+\cf5\b\f3\fs19\lang1033 waitf \b0 test.txt|1;, Please wait..\par
+\cf0\fs22 don't add \cf5\fs19 timeout \cf0\fs22 if you don't want to use it\f0\lang9\par
 \cf17\b timeout \cf0\b0 in milliseconds\par
 because of UWP restriction this command will look in three places:\par
-\cf2 cache folder\cf0 , \cf5 downloads folder\cf0 , \cf4\b script folder (if possible)\cf0\b0\par
+\cf2 cache folder\cf0 , \cf6 downloads folder\cf0 , \cf4\b script folder (if possible)\cf0\b0\par
 if you have your own folder and \cf11 already selected \cf0 use \cf4\b waitfd\cf0\b0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitfd: \cf0\b0 will hold the script until the specific file found\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitfd: \cf0\b0 will hold the script until the specific file found\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitfd \cf2 [folderID]\cf10 ;, \b0 fileName;, waitMessage;, timeout;, \cf5\b (timeoutCommand)\par
+\cf5\f3\fs19\lang1033 waitfd \cf2 [folderID]\cf5 ;, \b0 fileName;, waitMessage;, timeout;, \cf6\b (timeoutCommand)\par
 \cf0\b0\f0\fs22\lang9 set \cf18\b timout \cf0\b0 to \cf11\b 0 \cf0\b0 to ignore the timeout limit \cf18\b or don't include it\cf0\b0\par
-\cf5\b\f1\fs19\lang1033 timeoutCommand \cf0\b0 called only if the file not found during the specific time\par
+\cf6\b\f3\fs19\lang1033 timeoutCommand \cf0\b0 called only if the file not found during the specific time\par
 \cf1\b\f0\fs22\lang9 EXAMPLE:\cf0\b0\par
-\cf10\b\f1\fs19\lang1033 waitfd \cf2 [$LocalFolder]\cf10 ;, \b0 test.txt|1;, Please wait..\cf5\b\f0\fs22\lang9\par
-\cf0\b0 other details same as \cf6\b waitf \cf0\b0 command\par
+\cf5\b\f3\fs19\lang1033 waitfd \cf2 [$LocalFolder]\cf5 ;, \b0 test.txt|1;, Please wait..\cf6\b\f0\fs22\lang9\par
+\cf0\b0 other details same as \cf7\b waitf \cf0\b0 command\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitn: \cf0\b0 will hold the script until the notification pressed\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitn: \cf0\b0 will hold the script until the notification pressed\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitn \b0 waitTitle;, waitMessage;, timeout\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waitn \b0 waitTitle;, waitMessage;, timeout\cf0\f0\fs22\lang9\par
 set \cf18\b timout \cf0\b0 to \cf11\b 0 \cf0\b0 to ignore the timeout limit \cf18\b or don't include it\cf0\b0\par
-\f1\lang1033 don't add \cf10\fs19 timeout \cf0\fs22 if you don't want to use it\f0\lang9\par
+\f3\lang1033 don't add \cf5\fs19 timeout \cf0\fs22 if you don't want to use it\f0\lang9\par
 \cf17\b timeout \cf0\b0 in milliseconds\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitd: \cf0\b0 will hold the script until specific file downloaded\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitd: \cf0\b0 will hold the script until specific file downloaded\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitd \b0 [downloadID];, waitMessage\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waitd \b0 [downloadID];, waitMessage\cf0\f0\fs22\lang9\par
 this command interact with \cf18\b download \cf0\b0 command only (not the repo downloads)\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waite: \cf0\b0 will hold the script until specific file extracted\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waite: \cf0\b0 will hold the script until specific file extracted\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waite \b0 [downloadID];, waitMessage\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waite \b0 [downloadID];, waitMessage\cf0\f0\fs22\lang9\par
 this command interact with \cf18\b download \cf0\b0 command only (not the repo downloads)\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waiti: \cf0\b0 will hold the script until specific file installed\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waiti: \cf0\b0 will hold the script until specific file installed\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waiti \b0 [queueID];, [outputState];, waitMessage\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waiti \b0 [queueID];, [outputState];, waitMessage\cf0\f0\fs22\lang9\par
 this command interact with \cf18\b download \cf0\b0 command only (not the repo downloads)\par
-\cf10\f1\fs19\lang1033 queueID \cf0 or \cf10 downloadID\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 outputState \cf0 will help you to know if the app installed or not\cf10\par
-\cf0 because the \cf10 waiti \cf0 will be skipped if the app \cf2\b installed \cf0\b0 or \cf11\b failed\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 queueID \cf0 or \cf5 downloadID\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 outputState \cf0 will help you to know if the app installed or not\cf5\par
+\cf0 because the \cf5 waiti \cf0 will be skipped if the app \cf2\b installed \cf0\b0 or \cf11\b failed\cf0\b0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitic: \cf0\b0 will hold the script until internet available\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitic: \cf0\b0 will hold the script until internet available\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitic \cf5\b0 message\cf10\par
+\cf5\f3\fs19\lang1033 waitic \cf6\b0 message\cf5\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitp: \cf0\b0 will hold the script until the progress reach 'x' percentage\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitp: \cf0\b0 will hold the script until the progress reach 'x' percentage\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitp \b0 waitMessage;, targetPercentage\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 targetPercentage \cf0 as number like 40, 50 or 100..etc\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waitp \b0 waitMessage;, targetPercentage\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 targetPercentage \cf0 as number like 40, 50 or 100..etc\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitpr: \cf0\b0 will hold the script until the specific process start/end\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitpr: \cf0\b0 will hold the script until the specific process start/end\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitpr \b0 waitMessage;, processName\par
+\cf5\f3\fs19\lang1033 waitpr \b0 waitMessage;, processName\par
 processName: \cf12 Executable File Name like svchost.exe\cf0\f0\fs22\lang9\par
-\cf11\f1\fs19\lang1033 if \cf4\b appDiagnostics \cf11\b0 is not allowed the command will be ignored\par
+\cf11\f3\fs19\lang1033 if \cf4\b appDiagnostics \cf11\b0 is not allowed the command will be ignored\par
 \cf0 if you want to wait until the process end add '\cf2\b !\cf0\b0 ' before the name\par
 \cf1\b EXAMPLE:\cf11\b0\par
-\cf10\b waitpr \b0 waitMessage;, \cf2\b !\cf10\b0 processName\cf11\f0\fs22\lang9\par
+\cf5\b waitpr \b0 waitMessage;, \cf2\b !\cf5\b0 processName\cf11\f0\fs22\lang9\par
 \cf0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 waitb: \cf0\b0 used to show break-wait button near to the script\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 waitb: \cf0\b0 used to show break-wait button near to the script\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 waitb \b0 buttonTitle\cf0\f0\fs22\lang9\par
-use \cf10\b\f1\fs19 waithb\lang1033  \b0 buttonTitle \cf0 command to hide the button\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 waitb \b0 buttonTitle\cf0\f0\fs22\lang9\par
+use \cf5\b\f3\fs19 waithb\lang1033  \b0 buttonTitle \cf0 command to hide the button\f0\fs22\lang9\par
 _______________________________\par
 \par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44 LINKS COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44 LINKS COMMANDS\cf0\b0\fs22\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033\par
 response: \cf0\b0 used to check the response for specific url\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 response [responseID]; \b0 url\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 response [responseID]; \b0 url\cf0\f0\fs22\lang9\par
 will return \cf11 0\cf0  if response failed\par
 or will return \cf2 StatusCode\cf0 ..:\par
 \cf2 Ok: \cf0 the request susccess\par
 \cf4 NotFound or 404\cf0 : Page Not Found\par
-\cf8 for more read about StatusCodes:\cf0\par
+\cf9 for more read about StatusCodes:\cf0\par
 {{\field{\*\fldinst{HYPERLINK https://developer.mozilla.org/en-US/docs/Web/HTTP/Status }}{\fldrslt{https://developer.mozilla.org/en-US/docs/Web/HTTP/Status\ul0\cf0}}}}\f0\fs22\par
-\cf10\b\f1\fs19\lang1033 [responseID]\cf2 |C\cf10  \cf0\b0\fs20 to get the response content (in command structure)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 [responseID]\cf2 |C\cf5  \cf0\b0\fs20 to get the response content (in command structure)\f0\fs22\lang9\par
 use \cf4\b cancelb \cf0\b0 to cancel the request if you want\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 download: \cf0\b0 used to download file by link\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 download \b0 [downloadID];, fileLink\cf0\f0\fs22\lang9\par
-use \cf1\b\f1\fs19\lang1033 waitd \cf0\b0 if you want to wait until the file downloaded\par
+\cf5\f3\fs19\lang1033 download \b0 [downloadID];, fileLink\cf0\f0\fs22\lang9\par
+use \cf1\b\f3\fs19\lang1033 waitd \cf0\b0 if you want to wait until the file downloaded\par
 by default new variable will be defined to handle the file name\par
-just place \cf10 downloadID \cf0 to get the file name\f0\fs22\lang9\par
+just place \cf5 downloadID \cf0 to get the file name\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 downloadf: \cf0\b0 used to download files form links in a file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 downloadf: \cf0\b0 used to download files form links in a file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 downloadf \b0 [downloadID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 downloadf \b0 [downloadID];, [folderID];, fileName\cf0\f0\fs22\lang9\par
 All downloads will be added to Group Downloads section\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 downloadfd: \cf0\b0 used to download files form links in a file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 downloadfd: \cf0\b0 used to download files form links in a file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 downloadfd \b0 [downloadID];, [folderID];, fileName;, [saveFolderID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 downloadfd \b0 [downloadID];, [folderID];, fileName;, [saveFolderID]\cf0\f0\fs22\lang9\par
 All downloads will be added to Group Downloads section\par
 You can download from list of links in variable\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf6\b downloadfd \cf0\b0 [downloadID];, \cf2 [variableID]\cf0 ;, \cf5\b local\cf0\b0 ;, [saveFolderID]\par
-if your list contains \b links \b0 separated with \cf8 custom char\cf0  use: \cf5\b local:(,)\par
-\cf0\b0 You can use some custom option with the fileName:\cf5\b\par
-fileName|IE \cf0\b0 and \cf5\b fileName|SD\par
-\cf0\b0 you can also use both of them \cf5\b fileName|SD|IE\cf0\b0\par
-\cf5\b IE:\cf0  \b0 mean to ignore the files if already exists\par
-\cf5\b SD: \cf0\b0 mean to add the download file to \cf8\b Single downloads \cf0\b0 queue\par
+\cf7\b downloadfd \cf0\b0 [downloadID];, \cf2 [variableID]\cf0 ;, \cf6\b local\cf0\b0 ;, [saveFolderID]\par
+if your list contains \b links \b0 separated with \cf9 custom char\cf0  use: \cf6\b local:(,)\par
+\cf0\b0 You can use some custom option with the fileName:\cf6\b\par
+fileName|IE \cf0\b0 and \cf6\b fileName|SD\par
+\cf0\b0 you can also use both of them \cf6\b fileName|SD|IE\cf0\b0\par
+\cf6\b IE:\cf0  \b0 mean to ignore the files if already exists\par
+\cf6\b SD: \cf0\b0 mean to add the download file to \cf9\b Single downloads \cf0\b0 queue\par
 You can use custom save folder name:\par
-\cf10\f1\fs19\lang1033 [saveFolderID]|customFolderName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 [saveFolderID]|customFolderName\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 cancelb \cf0\b0 Show cancel button under the script\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 cancelb \cf0\b0 Show cancel button under the script\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 cancelb \b0 buttonTitle\cf0\f0\fs22\lang9\par
-to hide the button use \cf4\b cancelhb \cf5\b0 buttonTitle\cf0\par
+\cf5\f3\fs19\lang1033 cancelb \b0 buttonTitle\cf0\f0\fs22\lang9\par
+to hide the button use \cf4\b cancelhb \cf6\b0 buttonTitle\cf0\par
 the button also will be hidden once the script finished/terminated\par
 \cf11 this command for \cf4 downloadf\cf11 /\cf4 downloadfd\cf11 /\cf4 response \cf11 commands only\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 browse: \cf0\b0 used to invoke the built-in browser and open specific website\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 browse: \cf0\b0 used to invoke the built-in browser and open specific website\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 browse \b0 webLink\par
+\cf5\f3\fs19\lang1033 browse \b0 webLink\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 luri: \cf0\b0 used to launch file, app, link using uri\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 luri: \cf0\b0 used to launch file, app, link using uri\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 luri \b0 uri\par
+\cf5\f3\fs19\lang1033 luri \b0 uri\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44\par
-QUEUE COMMANDS\cf10\f1\fs19\lang1033\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44\par
+QUEUE COMMANDS\cf5\f3\fs19\lang1033\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf0\b0\f0\fs22\lang9\par
-\cf10\b\f1\fs19\lang1033 queuef:  \cf0\b0 used to queue file inside folder\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf0\b0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 queuef:  \cf0\b0 used to queue file inside folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 queuef [queueID];, \b0 [folderID];, fileName\par
-\cf0 if \cf6 fileName \cf0 contains " it will be removed by default\par
+\cf5\f3\fs19\lang1033 queuef [queueID];, \b0 [folderID];, fileName\par
+\cf0 if \cf7 fileName \cf0 contains " it will be removed by default\par
 \f0\fs22\lang9 if the file is media commander will launch media viewer\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 queuel:  \cf0\b0 used to queue file by it's location\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 queuel:  \cf0\b0 used to queue file by it's location\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 queuef [queueID];, \b0 fileLocation\par
-\cf0 if \cf10 fileLocation \cf0 contains " it will be removed by default\par
+\cf5\f3\fs19\lang1033 queuef [queueID];, \b0 fileLocation\par
+\cf0 if \cf5 fileLocation \cf0 contains " it will be removed by default\par
 \f0\fs22\lang9 this command will look into the storage and queue  the file when it's exists\par
 if the file is media commander will launch media viewer\par
 \cf11 the file should be available in the files storage \cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 queuer: \cf0\b0 remove the downloaded/added file from the queue\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 queuer: \cf0\b0 remove the downloaded/added file from the queue\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 queuer \b0 [downloadID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 queuer \b0 [downloadID]\cf0\f0\fs22\lang9\par
 this command interact with \cf18\b download/queuef/queuel \cf0\b0 commands only\par
-\cf10\f1\fs19\lang1033 downloadID \cf0 or \cf10 queueID\par
+\cf5\f3\fs19\lang1033 downloadID \cf0 or \cf5 queueID\par
 \cf0 you can use \cf4\b $ScriptID \cf0\b0 to remove the current script from the queue\f0\fs22\lang9\par
 _______________________________\par
 \par
@@ -961,198 +963,198 @@ _______________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44 DIALOGS COMMANDS\par
-\cf6\fs22 The defaul values for dialogs buttons\par
- (button1->\cf2 1\cf6 , button2->\cf2 2\cf6 ) unless you customize it\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44 DIALOGS COMMANDS\par
+\cf7\fs22 The defaul values for dialogs buttons\par
+ (button1->\cf2 1\cf7 , button2->\cf2 2\cf7 ) unless you customize it\par
 \cf0\b0\par
 
-\pard\ltrpar\sa200\sl276\slmult1\par
-\cf10\b\f1\fs19\lang1033 info: \cf0\b0 used to display \b info \b0 dialog with one button\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\par
+\cf5\b\f3\fs19\lang1033 info: \cf0\b0 used to display \b info \b0 dialog with one button\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 info \b0 title;, message;, button\cf0\f0\fs22\lang9\par
-\cf6\b message \cf0\b0 can be styled by using the following words:\par
-\b\f1\fs19\lang1033 Red Words: \cf11\lang9 important\lang1033  \cf0 |\cf10\b0  \cf11\b be careful \cf0 |\cf11  error\cf0\b0\f0\fs22\lang9\par
-\b\f1\fs19\lang1033 Orange Words: \cf4\lang9 note\lang1033  \cf0 |\cf10\b0  \cf4\b note 1 \cf0 |\cf11  \cf4 note 2 \cf0 |\cf11  \cf4 warning\cf0\b0\f0\fs22\lang9\par
-\b\f1\fs19\lang1033 Green Words: \cf2\lang9 remember\lang1033  \cf0 |\cf10\b0  \cf2\b report \cf0 |\cf11  \cf2 success\cf0\b0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 info \b0 title;, message;, button\cf0\f0\fs22\lang9\par
+\cf7\b message \cf0\b0 can be styled by using the following words:\par
+\b\f3\fs19\lang1033 Red Words: \cf11\lang9 important\lang1033  \cf0 |\cf5\b0  \cf11\b be careful \cf0 |\cf11  error\cf0\b0\f0\fs22\lang9\par
+\b\f3\fs19\lang1033 Orange Words: \cf4\lang9 note\lang1033  \cf0 |\cf5\b0  \cf4\b note 1 \cf0 |\cf11  \cf4 note 2 \cf0 |\cf11  \cf4 warning\cf0\b0\f0\fs22\lang9\par
+\b\f3\fs19\lang1033 Green Words: \cf2\lang9 remember\lang1033  \cf0 |\cf5\b0  \cf2\b report \cf0 |\cf11  \cf2 success\cf0\b0\f0\fs22\lang9\par
 (upper or lower) no rule for the case (\cf11 important\cf0 , \cf11 Important \cf0 or \cf11 IMPORTANT\cf0 )\par
 for new line add\cf4\b\fs28  \\n\cf0\b0\fs22  between the lines\par
-Add \cf8\b |telnet \cf0\b0 to button to prevent the \b text wrapping\b0\par
+Add \cf9\b |telnet \cf0\b0 to button to prevent the \b text wrapping\b0\par
 You can use the variable as ID in case it's contains lines\par
-\cf10\b\f1\fs19\lang1033 info \b0 title;, Hello [variableID];, button\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 info \b0 title;, Hello [variableID];, button\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 text \cf0\b0 used to display \b text \b0 dialog (from variable Only)\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 text \cf0\b0 used to display \b text \b0 dialog (from variable Only)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\cf0\b0\par
-\cf10\b\f1\fs19\lang1033 text \b0 title;, [variableID];, button\par
-\cf0\f0\fs22\lang9 Add \cf8\b |telnet \cf0\b0 to button to prevent the \b text wrapping\b0\par
+\cf5\b\f3\fs19\lang1033 text \b0 title;, [variableID];, button\par
+\cf0\f0\fs22\lang9 Add \cf9\b |telnet \cf0\b0 to button to prevent the \b text wrapping\b0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 ask: \cf0\b0 used to display \b question \b0 dialog with two buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 ask: \cf0\b0 used to display \b question \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 ask \b0 [dialogID];, title;, question;, button1;, button2\cf0\f0\fs22\lang9\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\cf6\b\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 ask \b0 [dialogID];, title;, question;, button1;, button2\cf0\f0\fs22\lang9\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\cf7\b\f0\fs22\lang9\par
 message \cf0\b0 can be styled as in the info dialog\par
 for new line add\cf4\b\fs28  \\n\cf0\b0\fs22  between the lines\par
 You can use the variable as ID in case it's contains lines\par
-\cf10\b\f1\fs19\lang1033 info \b0 title;, Hello [variableID];, button\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 info \b0 title;, Hello [variableID];, button\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 input: \cf0\b0 used to display \b input \b0 dialog with two buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 input: \cf0\b0 used to display \b input \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 input \b0 [dialogID];, title;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\cf6\b\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 input \b0 [dialogID];, title;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\cf7\b\f0\fs22\lang9\par
 \cf0\b0 the default value for \cf18\b button1 \cf0\b0 will be returned only if the input is empty\par
 input can be extended with \cf2 descriptions \cf0 option\par
-\cf10\b\f1\fs19\lang1033 input \b0 [dialogID];, title;, \cf2 descriptions\cf10 ;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 input \b0 [dialogID];, title;, \cf2 descriptions\cf5 ;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 slider: \cf0\b0 used to display \b slider \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 slider \b0 [dialogID];, title;, range;, button1;, button2\cf0\f0\fs22\lang9\par
-\cf18\b range \cf0\b0 structure is:  \cf2\b min\cf0 |\cf11 max\cf0 |\cf5 step\par
-\cf0\b0 you can use \cf2\b min\cf0 |\cf11 max\cf0 |\cf5 step\cf18 |after|before\cf0\b0\par
-you can use \cf10\b\f1\fs19 |#P\b0\lang1033  \cf0 in anywhere with the range to convert the value\par
-from percentage to double, exam.. 125% -> 1.2 \b [\cf2\f0\fs22\lang9 0\cf0 |\cf11 250\cf0 |\cf5 1|#P|%]\cf0\b0\par
+\cf5\f3\fs19\lang1033 slider \b0 [dialogID];, title;, range;, button1;, button2\cf0\f0\fs22\lang9\par
+\cf18\b range \cf0\b0 structure is:  \cf2\b min\cf0 |\cf11 max\cf0 |\cf6 step\par
+\cf0\b0 you can use \cf2\b min\cf0 |\cf11 max\cf0 |\cf6 step\cf18 |after|before\cf0\b0\par
+you can use \cf5\b\f3\fs19 |#P\b0\lang1033  \cf0 in anywhere with the range to convert the value\par
+from percentage to double, exam.. 125% -> 1.2 \b [\cf2\f0\fs22\lang9 0\cf0 |\cf11 250\cf0 |\cf6 1|#P|%]\cf0\b0\par
 after, before will be added to the preview text\cf21\b\par
 EXAMPLE: \par
-\cf10\f1\fs19\lang1033 slider \b0 [ageDailog];, Select your age;, 15|55|1;, Confirm|18;, Cancel\cf0\f0\fs22\lang9\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 slider \b0 [ageDailog];, Select your age;, 15|55|1;, Confirm|18;, Cancel\cf0\f0\fs22\lang9\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 combo: \cf0\b0 used to display \b combo \b0 dialog with two buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 combo: \cf0\b0 used to display \b combo \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 combo \b0 [dialogID];, title;, list;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
-\cf18\b list \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf5 item3...etc\cf0\b0\par
+\cf5\f3\fs19\lang1033 combo \b0 [dialogID];, title;, list;, placeholder;, button1;, button2\cf0\f0\fs22\lang9\par
+\cf18\b list \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf6 item3...etc\cf0\b0\par
 \cf21\b EXAMPLE: \cf0\b0\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\par
-\cf5 if you want to use View text and value:\cf10\par
-\cf18\b\f0\fs22\lang9 list \cf0\b0 structure is:  \cf2\b item1:value1\cf0 |\cf11 item2:value2\cf0 |\cf5 item3:value3...etc\cf0\b0\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\par
+\cf6 if you want to use View text and value:\cf5\par
+\cf18\b\f0\fs22\lang9 list \cf0\b0 structure is:  \cf2\b item1:value1\cf0 |\cf11 item2:value2\cf0 |\cf6 item3:value3...etc\cf0\b0\par
 in this case you the value for the default button value: \cf4\b button|value1\cf0\b0\par
 using reformat command:\par
-\cf6\b reformat [\cf2 refValues];, \cf6\b0 name:filesID;, filesID;, \cf11\b :\cf6\b0 ;, |\par
+\cf7\b reformat [\cf2 refValues];, \cf7\b0 name:filesID;, filesID;, \cf11\b :\cf7\b0 ;, |\par
 \b combo \cf0\b0 [comboID];, title;, \cf2\b refValues\cf0\b0 ;, placeholder;, Select|\cf2\b refValues\cf11 :(first,,)\cf0\b0 ;, Cancel\par
 \cf1\b EXPLAIN:\cf0\b0\par
 reformat will merge the two values into one \line\b Values 1: \cf11\b0 Name1, Name2..etc\par
-\cf0\b Values 2: \cf5\b0 Path1, Path2..etc\cf0\par
-\cf2\b refValues: \cf11 Name1\cf2 :\cf5 Path1\cf2 |\cf11 Name2\cf2 :\cf5 Path2\cf2 ..etc\cf0\b0\par
+\cf0\b Values 2: \cf6\b0 Path1, Path2..etc\cf0\par
+\cf2\b refValues: \cf11 Name1\cf2 :\cf6 Path1\cf2 |\cf11 Name2\cf2 :\cf6 Path2\cf2 ..etc\cf0\b0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 comboi: \cf0\b0 used to display \b combo \b0 dialog with extra input\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 comboi: \cf0\b0 used to display \b combo \b0 dialog with extra input\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 comboi \b0 [dialogID];, title;, list;, placeholder;, extraElement;, button1;, button2\cf0\f0\fs22\lang9\par
-descriptions same as \cf6\b combo \cf0\b0 command\par
-extraElement can be: \cf6 input \cf0 or \cf6 slider\cf0\par
+\cf5\f3\fs19\lang1033 comboi \b0 [dialogID];, title;, list;, placeholder;, extraElement;, button1;, button2\cf0\f0\fs22\lang9\par
+descriptions same as \cf7\b combo \cf0\b0 command\par
+extraElement can be: \cf7 input \cf0 or \cf7 slider\cf0\par
 \b input structure: \b0 input|placeholder \cf11 (empty input will return null)\cf0\par
-\b slider structure: \b0 slider|\cf5 min|max|step\cf0  (same as \cf4\b rang \cf0\b0 in \cf2\b slider \cf0\b0 command)\cf5\par
+\b slider structure: \b0 slider|\cf6 min|max|step\cf0  (same as \cf4\b rang \cf0\b0 in \cf2\b slider \cf0\b0 command)\cf6\par
 \cf0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 list: \cf0\b0 used to display \b list \b0 dialog with two buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 list: \cf0\b0 used to display \b list \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 list \b0 [dialogID];, title;, data;, header;, button1;, button2\par
+\cf5\f3\fs19\lang1033 list \b0 [dialogID];, title;, data;, header;, button1;, button2\par
 header \cf0 is the header text\f0\fs22\lang9\par
-\cf18\b data \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf5 item3..etc\cf0\b0\par
-\f1\fs19\lang1033 this dialog will return the value of the selected item\par
-\cf8\f0\fs22\lang9 same data list structure as in \cf6\b combo \cf8\b0 applied\cf0\par
+\cf18\b data \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf6 item3..etc\cf0\b0\par
+\f3\fs19\lang1033 this dialog will return the value of the selected item\par
+\cf9\f0\fs22\lang9 same data list structure as in \cf7\b combo \cf9\b0 applied\cf0\par
 when no selection will return \cf11 null\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 listm: \cf0\b0 used to display \b multi-select list \b0 dialog with two buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 listm: \cf0\b0 used to display \b multi-select list \b0 dialog with two buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 listm \b0 [dialogID];, title;, data;, header;, button1;, button2\par
+\cf5\f3\fs19\lang1033 listm \b0 [dialogID];, title;, data;, header;, button1;, button2\par
 header \cf0 is the header text\f0\fs22\lang9\par
-\cf18\b data \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf5 item3..etc\cf0\b0\par
-\f1\fs19\lang1033 this dialog will return the value of the selected items (as array)\par
+\cf18\b data \cf0\b0 structure is:  \cf2\b item1\cf0 |\cf11 item2\cf0 |\cf6 item3..etc\cf0\b0\par
+\f3\fs19\lang1033 this dialog will return the value of the selected items (as array)\par
 \cf1\b SAMPLE OUTPUT:\cf0\b0\par
 value1, value3, value 5..etc\par
-other descriptions same as \cf6\b list \cf0\b0 command\par
-\cf8\f0\fs22\lang9 same data list structure as in \cf6\b combo \cf8\b0 applied\cf0\par
+other descriptions same as \cf7\b list \cf0\b0 command\par
+\cf9\f0\fs22\lang9 same data list structure as in \cf7\b combo \cf9\b0 applied\cf0\par
 you can use \b '\cf11\fs32 *\cf0\fs22 '\b0  in button1 default value to select all the items\par
 \cf1\b EXAMPLE: \cf0\b0 button1|*\par
 when no selection will return \cf11 null\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 image: \cf0\b0 used to display \b image \b0 dialog with two/one buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 image: \cf0\b0 used to display \b image \b0 dialog with two/one buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 image \b0 [dialogID];, title;, \cf5 [imageFile]\cf10 ;, button1;, button2\par
-\b image \b0 [dialogID];, title;, \cf6 descriptions\cf10 ;, \cf5 [imageFile]\cf10 ;, button1;, button2\cf0\f0\fs22\lang9\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\cf6\b\f0\fs22\lang9\par
-\cf0\b0 if you want only one button just use empty value for \cf6 button2\cf0\par
+\cf5\f3\fs19\lang1033 image \b0 [dialogID];, title;, \cf6 [imageFile]\cf5 ;, button1;, button2\par
+\b image \b0 [dialogID];, title;, \cf7 descriptions\cf5 ;, \cf6 [imageFile]\cf5 ;, button1;, button2\cf0\f0\fs22\lang9\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\cf7\b\f0\fs22\lang9\par
+\cf0\b0 if you want only one button just use empty value for \cf7 button2\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 video: \cf0\b0 used to display \b video \b0 dialog with two/one buttons\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 video: \cf0\b0 used to display \b video \b0 dialog with two/one buttons\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 video \b0 [dialogID];, title;, \cf5 [videoFile]\cf10 ;, button1;, button2\par
-\b video \b0 [dialogID];, title;, \cf6 descriptions\cf10 ;, \cf5 [videoFile]\cf10 ;, button1;, button2\cf0\f0\fs22\lang9\par
-you can add default value to any button: \cf10\f1\fs19\lang1033 button|defaultValue\cf6\b\f0\fs22\lang9\par
-\cf0\b0 if you want only one button just use empty value for \cf6 button2\cf0\par
+\cf5\f3\fs19\lang1033 video \b0 [dialogID];, title;, \cf6 [videoFile]\cf5 ;, button1;, button2\par
+\b video \b0 [dialogID];, title;, \cf7 descriptions\cf5 ;, \cf6 [videoFile]\cf5 ;, button1;, button2\cf0\f0\fs22\lang9\par
+you can add default value to any button: \cf5\f3\fs19\lang1033 button|defaultValue\cf7\b\f0\fs22\lang9\par
+\cf0\b0 if you want only one button just use empty value for \cf7 button2\cf0\par
 _______________________________\par
 \par
 \cf18\b\fs44\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc VISUAL COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc VISUAL COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 icon: \cf0\b0 used to change the script icon (inside downloads queue)\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 icon: \cf0\b0 used to change the script icon (inside downloads queue)\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 icon \b0 fullpath\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 icon \b0 fullpath\cf0\f0\fs22\lang9\par
 you can use built-in icons with this uri: \par
-\cf10\f1\fs19 ms-appx:///Assets/Icons/\cf4\b\f0 $AppIcons\cf10\b0\f1 /\lang1033 security\lang9 .png\cf0\f0\fs22\par
+\cf5\f3\fs19 ms-appx:///Assets/Icons/\cf4\b\f0 $AppIcons\cf5\b0\f3 /\lang1033 security\lang9 .png\cf0\f0\fs22\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 status: \cf0\b0 used to display custom message to the script status\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 status: \cf0\b0 used to display custom message to the script status\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 status \b0 message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 status \b0 message\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 statust: \cf0\b0 used to display custom message to the script type\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 statust: \cf0\b0 used to display custom message to the script type\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 statust \b0 message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 statust \b0 message\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 statusd: \cf0\b0 used to display custom message to the script size\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 statusd: \cf0\b0 used to display custom message to the script size\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 statusd \b0 message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 statusd \b0 message\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 statuslink: \cf0\b0 used to link the status message with file content\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 statuslink: \cf0\b0 used to link the status message with file content\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 statuslink \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 statuslink \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
 this command is very helpful if you want to track status from .bat file\par
 or to track the telnet command status\par
 the command will hold the script until the file created\par
 to stop the monitor process just call \cf4\b status \cf0\b0 command\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 progress: \cf0\b0 used to display custom message to the script status\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 progress: \cf0\b0 used to display custom message to the script status\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 progress \b0 percentage\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 percentage \cf0 as number only, don't add '%' to the value\f0\fs22\lang9\par
-Set progress to \cf8\b -1\cf0\b0  to hide it\par
-Set progress to \cf8\b fake\cf0\b0  show fake progress move\par
-use \cf4\b progress \cf8 release \cf0\b0 to make the progress complete (if fake)\par
-regarding to \cf8\b fake\cf0\b0 , you can set the maximum random value like: \cf8\b fake|\cf2 1000\cf0\b0\par
+\cf5\f3\fs19\lang1033 progress \b0 percentage\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 percentage \cf0 as number only, don't add '%' to the value\f0\fs22\lang9\par
+Set progress to \cf9\b -1\cf0\b0  to hide it\par
+Set progress to \cf9\b fake\cf0\b0  show fake progress move\par
+use \cf4\b progress \cf9 release \cf0\b0 to make the progress complete (if fake)\par
+regarding to \cf9\b fake\cf0\b0 , you can set the maximum random value like: \cf9\b fake|\cf2 1000\cf0\b0\par
 so the fake progress will get random delay between \cf4 0 \cf0 to \cf4 1000 \cf0 milliseconds\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 progresslink: \cf0\b0 used to link the progress value with file content\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 progresslink: \cf0\b0 used to link the progress value with file content\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 progresslink \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 progresslink \b0 [folderID];, fileName\cf0\f0\fs22\lang9\par
 this command is very helpful if you want to track progress  from .bat file\par
 or to track the telnet command progress\par
 the command will hold the script until the file created\par
 to stop the monitor process just call \cf4\b progress \cf0\b0 command\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 notify: \cf0\b0 used to push custom notification\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 notify: \cf0\b0 used to push custom notification\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 notify \b0 title;, message;, timeout \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 notify \b0 title;, message;, timeout \cf0\f0\fs22\lang9\par
 set \cf18\b timout \cf0\b0 to \cf11\b 0 \cf0\b0 to ignore the timeout limit\par
 \cf17\b timeout \cf0\b0 in milliseconds\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 notifyl: \cf0\b0 used to push custom local notification\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 notifyl: \cf0\b0 used to push custom local notification\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 notifyl type;, \b0 message;, icon;, timeout \cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 notifyl type;, \b0 message;, icon;, timeout \cf0\f0\fs22\lang9\par
 \cf17\b timeout \cf0\b0 in milliseconds\par
 \cf2\b type\cf0\b0 : can be \cf13 normal\cf0 , \cf2 success\cf0 , \cf11 error\cf0 , \cf4 warn\cf0  \par
 or any custom color (direct [red, green..etc] or hex [#FF0000])\par
@@ -1161,158 +1163,158 @@ use \cf11 0\cf0  if you don't need icon\par
 for more icons visit\par
 {{\field{\*\fldinst{HYPERLINK https://docs.microsoft.com/en-us/windows/apps/design/style/segoe-ui-symbol-font }}{\fldrslt{https://docs.microsoft.com/en-us/windows/apps/design/style/segoe-ui-symbol-font\ul0\cf0}}}}\f0\fs22\par
 and select use only the unicode like: \cf4\b E700\cf0\b0\par
-\cf8 local notifications is new feature in 3.9.3 to push local notification inside the app\par
+\cf9 local notifications is new feature in 3.9.3 to push local notification inside the app\par
 \cf0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 log: \cf0\b0 used to log custom message to the app local log with display\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 log: \cf0\b0 used to log custom message to the app local log with display\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 log \b0 message\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 log \b0 message\cf0\f0\fs22\lang9\par
 you can log from varaible \par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4 log \cf0 [variableID]\cf8\b |V\cf0\b0\par
+\cf4 log \cf0 [variableID]\cf9\b |V\cf0\b0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 barp\cf2 : \cf0\b0 used to show status bar progress \cf4 (only for mobile)\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 barp\cf2 : \cf0\b0 used to show status bar progress \cf4 (only for mobile)\cf0\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 barp \b0 state\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 barp \b0 state\cf0\f0\fs22\lang9\par
 \cf4 state\cf0 : 0 means stop, 1 means start\par
 by default status bar progress will be stopped once the script finished\par
 _______________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44 ENCRYPTION COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44 ENCRYPTION COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 encrypt: \cf0\b0 encrypt file\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 encrypt: \cf0\b0 encrypt file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 encrypt \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 encrypt \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
 App key will be used for encryption\par
-\cf10\f1\fs19\lang1033 folderID: \cf0 used as save folder\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 folderID: \cf0 used as save folder\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 decrypt: \cf0\b0 decrypt file\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 decrypt: \cf0\b0 decrypt file\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 decrypt \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 decrypt \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
 App key will be used for decryption\par
-\cf10\f1\fs19\lang1033 folderID: \cf0 used as save folder\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 folderID: \cf0 used as save folder\f0\fs22\lang9\par
 _______________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\cf18\b\fs44 FORM COMMANDS\cf0\b0\fs22\par
+\pard\sa200\sl276\slmult1\qc\cf18\b\fs44 FORM COMMANDS\cf0\b0\fs22\par
 
-\pard\ltrpar\sa200\sl276\slmult1\par
+\pard\sa200\sl276\slmult1\par
 \par
-\cf10\b\f1\fs19\lang1033 element: \cf0\b0 used to\cf10\b  \cf0\b0 create new element for settings page\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 element: \cf0\b0 used to\cf5\b  \cf0\b0 create new element for settings page\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 element \b0 [elementID];, type;, value;, description;, hint;, tabName\cf0\f0\fs22\lang9\par
-\cf6\b type\cf0 : \cf5\b0 Combo \cf0 - \cf5 Switch \cf0 - \cf5 TextBox \cf0\par
-\cf10\b\f1\fs19\lang1033 [elementID]: \cf0\b0 is like any variable will contain the current value\f0\fs22\lang9\par
-\cf10\b\f1\fs19\lang1033 value: \b0 will be based on type\par
-\cf0 -for \cf5\b Combo\cf10\b0 : \cf0 value1|value2|value3\cf10\par
-\cf0 -for \cf5\b Switch\cf10\b0 : \cf11\b 0\cf0\b0  or \cf2\b 1\cf0\b0  (\cf11 Off \cf0 - \cf2 On\cf0 )\f0\fs22\lang9\par
-\f1\fs19\lang1033 -for \cf5\b TextBox\cf10\b0 : \cf0 any text content \cf13 (empty value is possible)\cf0\f0\fs22\lang9\par
-\cf10\b\f1\fs19\lang1033 tabName: \cf0\b0 will be used to group the elements in one tab \cf11 (cannot be empty)\cf0\f0\fs22\lang9\par
-\cf6\b hint: \cf0\b0 in case of \cf5\b Combo \cf0\b0 hint will be used as \cf2 default \cf0 value (\cf4 hint will be ignored for \cf5\b Switch\cf0\b0 )\par
+\cf5\f3\fs19\lang1033 element \b0 [elementID];, type;, value;, description;, hint;, tabName\cf0\f0\fs22\lang9\par
+\cf7\b type\cf0 : \cf6\b0 Combo \cf0 - \cf6 Switch \cf0 - \cf6 TextBox \cf0\par
+\cf5\b\f3\fs19\lang1033 [elementID]: \cf0\b0 is like any variable will contain the current value\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 value: \b0 will be based on type\par
+\cf0 -for \cf6\b Combo\cf5\b0 : \cf0 value1|value2|value3\cf5\par
+\cf0 -for \cf6\b Switch\cf5\b0 : \cf11\b 0\cf0\b0  or \cf2\b 1\cf0\b0  (\cf11 Off \cf0 - \cf2 On\cf0 )\f0\fs22\lang9\par
+\f3\fs19\lang1033 -for \cf6\b TextBox\cf5\b0 : \cf0 any text content \cf13 (empty value is possible)\cf0\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 tabName: \cf0\b0 will be used to group the elements in one tab \cf11 (cannot be empty)\cf0\f0\fs22\lang9\par
+\cf7\b hint: \cf0\b0 in case of \cf6\b Combo \cf0\b0 hint will be used as \cf2 default \cf0 value (\cf4 hint will be ignored for \cf6\b Switch\cf0\b0 )\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 container: \cf0\b0 used to\cf10\b  \cf0\b0 create container for form elements\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 container: \cf0\b0 used to\cf5\b  \cf0\b0 create container for form elements\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 container \b0 [containerID];, tabName1,tabName2,tabName3\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 container \b0 [containerID];, tabName1,tabName2,tabName3\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 form: \cf0\b0 used to\cf10\b  \cf0\b0 create settings page\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 form: \cf0\b0 used to\cf5\b  \cf0\b0 create settings page\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 form \b0 [formID];, title;, [containerID];, button1;, button2\cf0\f0\fs22\lang9\par
-\cf6\b\f1\fs19\lang1033 formID \cf0\b0 will return the pressed button's value\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 form \b0 [formID];, title;, [containerID];, button1;, button2\cf0\f0\fs22\lang9\par
+\cf7\b\f3\fs19\lang1033 formID \cf0\b0 will return the pressed button's value\f0\fs22\lang9\par
 all form elements will update and save the values directly\par
-\cf8 form will by default save the structure as \cf10\b\f1\fs19\lang1033 formID.frm \cf8\b0 in the \cf4\b $LocalFolder \cf8\b0 if you want to reset the elements, delete this file each time before calling the command\cf0\f0\fs22\lang9\par
+\cf9 form will by default save the structure as \cf5\b\f3\fs19\lang1033 formID.frm \cf9\b0 in the \cf4\b $LocalFolder \cf9\b0 if you want to reset the elements, delete this file each time before calling the command\cf0\f0\fs22\lang9\par
 \cf1\b EXAMPLE:\cf0\b0\par
-\cf4\b element \cf0\b0 [textElement];, \cf5 TextBox\cf0 ;,  ;, \cf1\b Test text box\cf0\b0 ;, \cf9\b enter text\cf0\b0 ;, \cf6\b General\cf0\b0\par
-\cf4\b element \cf0\b0 [switchElement];, \cf5 Switch\cf0 ;, \cf22\b 0\cf0\b0 ;, \cf1\b Test switch\cf0\b0 ;, \cf9\b switch element\cf0\b0 ;, \cf6\b General\cf0\b0\par
-\cf4\b element \cf0\b0 [ComboElement];, \cf5 Combo\cf0 ;, \cf22\b First|Second|Third\cf0\b0 ;, \cf1\b Test combo\cf0\b0 ;, \cf9\b Second\cf0\b0 ;, \cf6\b General\cf0\b0\par
-\cf5\b container \cf0\b0 [\cf8 containerID\cf0 ];, \cf6\b General\cf0\b0\par
-\cf10\b\f1\fs19\lang1033 form \b0 [formID];, Test Form;, [\cf8\f0\fs22\lang9 containerID\cf10\f1\fs19\lang1033 ];, Reset;, Close\cf0\f0\fs22\lang9\par
+\cf4\b element \cf0\b0 [textElement];, \cf6 TextBox\cf0 ;,  ;, \cf1\b Test text box\cf0\b0 ;, \cf10\b enter text\cf0\b0 ;, \cf7\b General\cf0\b0\par
+\cf4\b element \cf0\b0 [switchElement];, \cf6 Switch\cf0 ;, \cf22\b 0\cf0\b0 ;, \cf1\b Test switch\cf0\b0 ;, \cf10\b switch element\cf0\b0 ;, \cf7\b General\cf0\b0\par
+\cf4\b element \cf0\b0 [ComboElement];, \cf6 Combo\cf0 ;, \cf22\b First|Second|Third\cf0\b0 ;, \cf1\b Test combo\cf0\b0 ;, \cf10\b Second\cf0\b0 ;, \cf7\b General\cf0\b0\par
+\cf6\b container \cf0\b0 [\cf9 containerID\cf0 ];, \cf7\b General\cf0\b0\par
+\cf5\b\f3\fs19\lang1033 form \b0 [formID];, Test Form;, [\cf9\f0\fs22\lang9 containerID\cf5\f3\fs19\lang1033 ];, Reset;, Close\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \cf18\b\fs44 EXTRA COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 rand: \cf0\b0 get random number between max and min value\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 rand: \cf0\b0 get random number between max and min value\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 rand \b0 [variableID];, min;, max\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 rand \b0 [variableID];, min;, max\cf0\f0\fs22\lang9\par
 if any wrong value entered for \cf4 min \cf0 or \cf4 max \cf0 default values will be used\par
-\cf5 min (default)\cf0 : 0\par
-\cf5 max (default)\cf0 : 1000\par
-\cf6 rand \cf0 command can be extended with seed option\par
-\cf10\b\f1\fs19\lang1033 rand \b0 [variableID];, min;, max;, seed\cf0\f0\fs22\lang9\par
+\cf6 min (default)\cf0 : 0\par
+\cf6 max (default)\cf0 : 1000\par
+\cf7 rand \cf0 command can be extended with seed option\par
+\cf5\b\f3\fs19\lang1033 rand \b0 [variableID];, min;, max;, seed\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 psave: \cf0\b0 save value to app data\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 psave: \cf0\b0 save value to app data\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 psave \b0 [variableID];, value\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 psave \b0 [variableID];, value\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 pget: \cf0\b0 get value from app data\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 pget: \cf0\b0 get value from app data\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 pget \b0 [variableID];, default\cf0\f0\fs22\lang9\par
-\cf6 default\cf0 : will be returned in case the variable is not found in app data\par
+\cf5\f3\fs19\lang1033 pget \b0 [variableID];, default\cf0\f0\fs22\lang9\par
+\cf7 default\cf0 : will be returned in case the variable is not found in app data\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 zip: \cf0\b0 used to zip folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 zip \b0 [sourceID];, [targetID];, fileName\cf0\f0\fs22\lang9\par
-be sure that you have access to \cf10\f1\fs19\lang1033 sourceID, targetID\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 zip \b0 [sourceID];, [targetID];, fileName\cf0\f0\fs22\lang9\par
+be sure that you have access to \cf5\f3\fs19\lang1033 sourceID, targetID\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 unzip: \cf0\b0 used to zip folder\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 unzip: \cf0\b0 used to zip folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 unzip \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
-be sure that you have access to \cf10\f1\fs19\lang1033 folderID\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 unzip \b0 [fileID];, [folderID]\cf0\f0\fs22\lang9\par
+be sure that you have access to \cf5\f3\fs19\lang1033 folderID\cf0\f0\fs22\lang9\par
 progress is linked with this command and will show the current percentage\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 ocr: \cf0\b0 used extract text from images\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 ocr: \cf0\b0 used extract text from images\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 ocr \b0 [outputID];, [fileID];, language\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 ocr \b0 [outputID];, [fileID];, language\cf0\f0\fs22\lang9\par
 language should be in short format like: en, ar, ch, fr\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 speak: \cf0\b0 used to speak custom text\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 speak: \cf0\b0 used to speak custom text\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 speak \b0 text;, gender\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 speak \b0 text;, gender\cf0\f0\fs22\lang9\par
 \cf18 gender\cf0 : male or female\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 speakf: \cf0\b0 used to save text speak to file \f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 speakf: \cf0\b0 used to save text speak to file \f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 speakf \b0 text;, gender;, [fileID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 speakf \b0 text;, gender;, [fileID]\cf0\f0\fs22\lang9\par
 \cf18 gender\cf0 : male or female\par
 use \cf18 createf \cf0 to generate file\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 speakr: \cf0\b0 used for SpeechRecognizer\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 speakr: \cf0\b0 used for SpeechRecognizer\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 speakr \b0 [variableID];, filling\par
+\cf5\f3\fs19\lang1033 speakr \b0 [variableID];, filling\par
 \cf18\f0\fs22\lang9 filling\cf0 : like "Phone"..etc\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 images2video: \cf0\b0 convert images to video - or convert video\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 images2video: \cf0\b0 convert images to video - or convert video\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 images2video \b0 [folderID];, outputFile;, [imagesFolder];, imagesType;, options\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 images2video \b0 [folderID];, outputFile;, [imagesFolder];, imagesType;, options\cf0\f0\fs22\lang9\par
 options structure is:\par
-\cf23\f1\fs19 framerate\lang1033 :value\lang9 |bitrate\lang1033 :value\lang9 |width\lang1033 :value\lang9 |height\lang1033 :value\cf15\strike\lang9 |fps\lang1033 :value\cf23\strike0\lang9 |audio\lang1033 :[fileID]\par
+\cf23\f3\fs19 framerate\lang1033 :value\lang9 |bitrate\lang1033 :value\lang9 |width\lang1033 :value\lang9 |height\lang1033 :value\cf15\strike\lang9 |fps\lang1033 :value\cf23\strike0\lang9 |audio\lang1033 :[fileID]\par
 \cf0 you don't have add all of them, just add what is required by your needs\par
-\cf5 if you have to use the param, you can set it to '\cf2\b none\cf5\b0 ' if it's not active\cf8\b\par
+\cf6 if you have to use the param, you can set it to '\cf2\b none\cf6\b0 ' if it's not active\cf9\b\par
 \par
 note: \cf0\b0 it's prefered to use variable for the video name\par
 so when the file exits the variable will updated to the new name\f0\fs22\lang9\par
-\cf23\f1\fs19\lang1033\par
+\cf23\f3\fs19\lang1033\par
 deloriginal:0\b\par
 \cf0\b0 this option by defaul is 1 set it to 0 to prevent the script from remov the images folder\par
 \cf23\par
@@ -1331,9 +1333,9 @@ when you assign this param, each image will stay for x second\par
 \cf23\b\par
 \b0 type:mp4\b\par
 \cf2\b0 type \cf0 used to define the output type (mp4 by default), can be:\par
-\cf8\f0\fs22\lang9 mp4, avi, hevc, wmv, mp3, wav, flac, wma\par
+\cf9\f0\fs22\lang9 mp4, avi, hevc, wmv, mp3, wav, flac, wma\par
 \par
-\cf2\f1\fs19\lang1033 stabilize\cf23 :1\b\par
+\cf2\f3\fs19\lang1033 stabilize\cf23 :1\b\par
 \cf0\b0 for videos only, will be ignored for images\par
 \par
 \cf2 zoom\cf23 :value\b\par
@@ -1348,188 +1350,188 @@ when you assign this param, each image will stay for x second\par
 \par
 \cf2 chroma\cf23 :value\b\par
 \cf0\b0 apply chroma key, value is the color name exam. green\par
-set it to \cf10 none \cf0 if you want to use it in active\par
+set it to \cf5 none \cf0 if you want to use it in active\par
 color value can be hexColor exam. #00FF00\par
-value can be extended to chroma:\cf15 color\cf0 -\cf5\b tolerance\cf12\b0 -\cf8\b feather\cf0\b0\par
-\cf8\b tolerance\cf12\b0 : in float, exam. 0.1 (max 1.0)\par
-\cf5\b feather\cf12\b0 : 1 or 0 (active or disabled)\f2\par
-\cf0\f1\par
-\cf10 background\cf23 :value\b\par
+value can be extended to chroma:\cf15 color\cf0 -\cf6\b tolerance\cf12\b0 -\cf9\b feather\cf0\b0\par
+\cf9\b tolerance\cf12\b0 : in float, exam. 0.1 (max 1.0)\par
+\cf6\b feather\cf12\b0 : 1 or 0 (active or disabled)\f4\par
+\cf0\f3\par
+\cf5 background\cf23 :value\b\par
 \cf0\b0 add clip background, details will be later\par
 \cf23\b\par
 \b0 subtype:value\cf0\par
-\f0\fs22\lang9 for \cf2 subtype \cf0 visit:\cf8\par
+\f0\fs22\lang9 for \cf2 subtype \cf0 visit:\cf9\par
 {\cf0{\field{\*\fldinst{HYPERLINK https://docs.microsoft.com/en-us/uwp/api/windows.media.mediaproperties.videoencodingproperties.subtype }}{\fldrslt{https://docs.microsoft.com/en-us/uwp/api/windows.media.mediaproperties.videoencodingproperties.subtype\ul0\cf0}}}}\cf0\f0\fs22\par
-\cf10\b\f2\fs19\lang1033\par
-\f1 outputFile \cf0\b0 is the video name only \cf15 (extension will added \f0\fs22\lang9 automaticly)\cf4\b\par
-bitrate \cf0\b0 in kb like \cf12\f1\fs20 3000\cf0\f0\fs22\par
+\cf5\b\f4\fs19\lang1033\par
+\f3 outputFile \cf0\b0 is the video name only \cf15 (extension will added \f0\fs22\lang9 automaticly)\cf4\b\par
+bitrate \cf0\b0 in kb like \cf12\f3\fs20 3000\cf0\f0\fs22\par
 output will be MP4 video file (by default) unless you changed the \cf2\b type:.. \cf0\b0 param\par
-if your \cf10\f1\fs19\lang1033 [imagesFolder] \cf0 inside the \cf10 [folderID]\cf0\f0\fs22\lang9\par
-use the \cf10\f1\fs19\lang1033 imagesFolderName|I \cf0 insead of \cf6 [\cf10 imagesFolder]\par
-\cf0 you can add \cf6 |F\cf0  to the \cf6 imagesFolder \cf0 if you want to covert a video file instead of images (Direct file)\par
+if your \cf5\f3\fs19\lang1033 [imagesFolder] \cf0 inside the \cf5 [folderID]\cf0\f0\fs22\lang9\par
+use the \cf5\f3\fs19\lang1033 imagesFolderName|I \cf0 insead of \cf7 [\cf5 imagesFolder]\par
+\cf0 you can add \cf7 |F\cf0  to the \cf7 imagesFolder \cf0 if you want to covert a video file instead of images (Direct file)\par
 Mixed content images/video should be fine\par
-imagesType can be mixed png|jpg|mp4\cf10\par
+imagesType can be mixed png|jpg|mp4\cf5\par
 \cf0 progress is linked by default with this command\par
 \f0\fs22\lang9 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \par
 \cf18\b\fs44 GPIO COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 gopen: \cf0\b0 Opens a connection to I/O (GPIO) pin in exclusive mode\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 gopen: \cf0\b0 Opens a connection to I/O (GPIO) pin in exclusive mode\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 gopen \b0 [pinID];, pinNumber\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 gopen \b0 [pinID];, pinNumber\cf0\f0\fs22\lang9\par
 For errors read:\par
 {{\field{\*\fldinst{HYPERLINK https://docs.microsoft.com/en-us/uwp/api/windows.devices.gpio.gpiocontroller.openpin }}{\fldrslt{https://docs.microsoft.com/en-us/uwp/api/windows.devices.gpio.gpiocontroller.openpin\ul0\cf0}}}}\f0\fs22\par
-To use specific open mode use \cf11\b |S\cf0\b0  with \cf6 pinNumber \cf0 to Opens the GPIO pin as shared, so that other connections in SharedReadOnly mode to the pin can be opened\par
+To use specific open mode use \cf11\b |S\cf0\b0  with \cf7 pinNumber \cf0 to Opens the GPIO pin as shared, so that other connections in SharedReadOnly mode to the pin can be opened\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 gwrite: \cf0\b0 Drives the specified value onto the general purpose I/O (GPIO) pin according to the current drive mode for the pin if the pin is configured as an output, or updates the latched output value for the pin if the pin is configured as an input\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 gwrite: \cf0\b0 Drives the specified value onto the general purpose I/O (GPIO) pin according to the current drive mode for the pin if the pin is configured as an output, or updates the latched output value for the pin if the pin is configured as an input\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 gwrite \b0 [pinID];, state\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 gwrite \b0 [pinID];, state\cf0\f0\fs22\lang9\par
 state: \cf11\b 0\cf0\b0  or \cf2\b 1\cf0\b0  (\cf11\b Low \cf0\b0 - \cf2\b High\cf0\b0 )\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 gread: \cf0\b0 Reads the current value of the general-purpose I/O (GPIO) pin.\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 gread \b0 [outputID];\b , \b0 [pinID]\cf0\f0\fs22\lang9\par
-\cf10\f1\fs19\lang1033 variableID\cf0\f0\fs22\lang9 : \cf11\b 0\cf0\b0  or \cf2\b 1\cf0\b0  (\cf11\b Low \cf0\b0 or \cf2\b High\cf0\b0 )\par
+\cf5\f3\fs19\lang1033 gread \b0 [outputID];\b , \b0 [pinID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 variableID\cf0\f0\fs22\lang9 : \cf11\b 0\cf0\b0  or \cf2\b 1\cf0\b0  (\cf11\b Low \cf0\b0 or \cf2\b High\cf0\b0 )\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 gclose: \cf0\b0 Closes the general-purpose I/O (GPIO) pin and releases the resources associated with it.\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 gclose: \cf0\b0 Closes the general-purpose I/O (GPIO) pin and releases the resources associated with it.\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 gclose \b0 [pinID]\par
+\cf5\f3\fs19\lang1033 gclose \b0 [pinID]\par
 \cf0\f0\fs22\lang9 _______________________________\par
 \par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \par
 \par
 \cf18\b\fs44 ADVANCED COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 telnet: \cf0\b0 used to create new telnet client\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 telnet: \cf0\b0 used to create new telnet client\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 telnet [\b0 telnetID];, hostIP;, hostPort\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 telnet [\b0 telnetID];, hostIP;, hostPort\cf0\f0\fs22\lang9\par
 by default all non-commander commands will be sent to telnet\par
 so you can use this command so more advanced usage \cf2 but not required\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 telnetp: \cf0\b0 used to create new telnet client with authentication\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 telnetp: \cf0\b0 used to create new telnet client with authentication\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 telnetp [\b0 telnetID];, hostIP;, hostPort;, user;, pass\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 telnetp [\b0 telnetID];, hostIP;, hostPort;, user;, pass\cf0\f0\fs22\lang9\par
 by default all non-commander commands will be sent to telnet\par
 so you can use this command so more advanced usage \cf2 but not required\cf0\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 send: \cf0\b0 used to send command using specific telnet client\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 send: \cf0\b0 used to send command using specific telnet client\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 send [\b0 telnetID];, \cf5\b (command)\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 send [\b0 telnetID];, \cf6\b (command)\f0\fs22\lang9\par
 \cf0\b0 As I said before these commands for specific usage and \cf2 it's not required \cf0 to execute command\par
-\cf5\b you can always write the telnet command 'as is' in the script\par
+\cf6\b you can always write the telnet command 'as is' in the script\par
 \cf0\b0 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 reconnect: \cf0\b0 used to re-generate the telnet client and connection\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 reconnect: \cf0\b0 used to re-generate the telnet client and connection\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 reconnect [\b0 telnetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 reconnect [\b0 telnetID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 close: \cf0\b0 used to close the telnet client connection\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 close: \cf0\b0 used to close the telnet client connection\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 close [\b0 telnetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 close [\b0 telnetID]\cf0\f0\fs22\lang9\par
 _______________________________\par
-\cf10\b\f1\fs19\lang1033\par
+\cf5\b\f3\fs19\lang1033\par
 process: \cf0\b0 used to create new process that can handle \strike telnet\strike0  commands\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 process \b0 [processID];, \cf5\b (command);\cf10\b0 , [telnetID]\cf0\f0\fs22\lang9\par
-command can be file as well like \cf5\b (run.bat)\cf0\b0\par
+\cf5\f3\fs19\lang1033 process \b0 [processID];, \cf6\b (command);\cf5\b0 , [telnetID]\cf0\f0\fs22\lang9\par
+command can be file as well like \cf6\b (run.bat)\cf0\b0\par
 this \b process \b0 will not start by default, look at \cf4\b start, stop \cf0\b0 commands below\par
-if you want to use custom non-telnet command use \cf11\b\fs28 0 \cf0\b0\fs22 for \cf10\f1\fs19\lang1033 telnetID\par
+if you want to use custom non-telnet command use \cf11\b\fs28 0 \cf0\b0\fs22 for \cf5\f3\fs19\lang1033 telnetID\par
 \cf0\b custom commands list\b0 :\par
-\cf6\b\f0\fs22\lang9 set\cf0\b0 , \cf6\b notify\cf0\b0 , \cf6\b\f1 info\cf0\b0\f0\par
-\cf8 this command can deal with all commander commands\cf0\par
+\cf7\b\f0\fs22\lang9 set\cf0\b0 , \cf7\b notify\cf0\b0 , \cf7\b\f3 info\cf0\b0\f0\par
+\cf9 this command can deal with all commander commands\cf0\par
 the script will wait until the process finish \par
-\cf8 (you can use it with task if you don't need to wait)\cf0\par
+\cf9 (you can use it with task if you don't need to wait)\cf0\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 task: \cf0\b0 used to create new task that can handle specific process\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 task: \cf0\b0 used to create new task that can handle specific process\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 task \b0 [taskID];, [processID]\par
+\cf5\f3\fs19\lang1033 task \b0 [taskID];, [processID]\par
 \cf0\f0\fs22\lang9 this \b task \b0 will not start by default, look at \cf4\b start, stop \cf0\b0 commands below\par
 call task when you need to execute command without waiting\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 timer: \cf0\b0 used to create new timer with specific process each 'x' time \f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 timer: \cf0\b0 used to create new timer with specific process each 'x' time \f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 timer \b0 [timerID];, [processID];, interval\par
+\cf5\f3\fs19\lang1033 timer \b0 [timerID];, [processID];, interval\par
 \cf0\f0\fs22\lang9 this \b timer  \b0 will not start by default, look at \cf4\b start, stop \cf0\b0 commands below\par
 -it's \cf11 important \cf0 to \cf4\b stop \cf0\b0 the timer when the script done, or \cf24 it will keep working \cf0 even after the script finish\par
 -all the timers that started by the current script \cf4\b will be stopped \cf0\b0 and removed \cf2\b once the script removed from the queue\par
 \cf0\b0 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 start: \cf0\b0 used to start process, task or timer by specific ID\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 start: \cf0\b0 used to start process, task or timer by specific ID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 start [\b0 targetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 start [\b0 targetID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 stop: \cf0\b0 used to stop process, task or timer by specific ID\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 stop: \cf0\b0 used to stop process, task or timer by specific ID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 stop [\b0 targetID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 stop [\b0 targetID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \cf18\b\fs44 EVENTS COMMANDS\cf0\b0\fs22\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 onStart: \cf0\b0 will be called when process, task or timer started\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 onStart: \cf0\b0 will be called when process, task or timer started\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 onStart [\b0 targetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 onStart [\b0 targetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 onFinish: \cf0\b0 will be called when process, task or timer finished\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 onFinish: \cf0\b0 will be called when process, task or timer finished\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 onFinish [\b0 targetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 onFinish [\b0 targetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033 onClose: \cf0\b0 will be called when telnet connection closed for specific ID\f0\fs22\lang9\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033 onClose: \cf0\b0 will be called when telnet connection closed for specific ID\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 onClose [\b0 telnetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 onClose [\b0 telnetID];, \b [\b0 processID]\cf0\f0\fs22\lang9\par
 _______________________________\par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \cf18\b\fs44 DLL COMMAND\cf0\b0\fs22\par
 
-\pard\ltrpar\sa200\sl276\slmult1\cf10\b\f1\fs19\lang1033\par
+\pard\sa200\sl276\slmult1\cf5\b\f3\fs19\lang1033\par
 load: \cf0\b0 this command used to \cf2\b load \cf0\b0 specific dll file to the memory\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 load [\b0 variableID];, dllFile\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 load [\b0 variableID];, dllFile\cf0\f0\fs22\lang9\par
 \cf17\b variableID \cf0\b0 will contain the pointer value\par
 I don't know actual usage for this command but may help someone for advanced usage\par
 _______________________________\par
 \par
-\cf10\b\f1\fs19\lang1033 unload: \cf0\b0 this command used to \cf11\b unload \cf0\b0 specific dll file from the memory\f0\fs22\lang9\par
+\cf5\b\f3\fs19\lang1033 unload: \cf0\b0 this command used to \cf11\b unload \cf0\b0 specific dll file from the memory\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
-\cf10\f1\fs19\lang1033 unload \b0 pointerValue;, [outputID]\cf0\f0\fs22\lang9\par
+\cf5\f3\fs19\lang1033 unload \b0 pointerValue;, [outputID]\cf0\f0\fs22\lang9\par
 \cf17\b outputID \cf0\b0 is a variable that will handle the unload state\par
 _______________________________\par
 \par
 
-\pard\ltrpar\sa200\sl276\slmult1\qc\par
+\pard\sa200\sl276\slmult1\qc\par
 \i End of the documentation\par
-\cf5\i0 All rights reserved to \b Bashar Astifan\b0\par
+\cf6\i0 All rights reserved to \b Bashar Astifan\b0\par
 }
  
