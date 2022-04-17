@@ -42,6 +42,20 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 
 Ex: Surface and for sure any Windows Phone with W10
 
+## Guides
+
+Many thanks to Lasitha Samarasighe for preparing these guides
+
+### Installation
+
+https://www.youtube.com/watch?v=gwEjgnBck-A
+
+
+### Features 
+
+https://www.youtube.com/watch?v=pGwtzEpE-nU
+
+
 ## Download:
 
 <a href="https://github.com/basharast/wut/releases/latest">Click Here</a>
