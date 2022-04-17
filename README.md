@@ -44,7 +44,7 @@ Ex: Surface and for sure any Windows Phone with W10
 
 ## Guides
 
-Many thanks to Lasitha Samarasighe for preparing these guides
+Many thanks to [Lasitha Samarasighe](https://www.t.me/Lasitha_S) for preparing these guides
 
 ### Installation
 
