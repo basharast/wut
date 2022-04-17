@@ -48,12 +48,11 @@ Many thanks to Lasitha Samarasighe for preparing these guides
 
 ### Installation
 
-https://www.youtube.com/watch?v=gwEjgnBck-A
+[![Alt text](https://img.youtube.com/vi/gwEjgnBck-A/0.jpg)](https://www.youtube.com/watch?v=gwEjgnBck-A)
 
 
 ### Features 
-
-https://www.youtube.com/watch?v=pGwtzEpE-nU
+[![Alt text](https://img.youtube.com/vi/pGwtzEpE-nU/0.jpg)](https://www.youtube.com/watch?v=pGwtzEpE-nU)
 
 
 ## Download:
