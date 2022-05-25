@@ -1,0 +1,174 @@
+//Clean any old cached files/folders/variables..etc
+clean all
+
+status Video Encoder..
+delay 500
+
+status By Astifan
+delay 1000
+
+//Show selecting file info
+info Video File;, select video file;, Select
+
+//Define selecting video area, to goback if no file selected
+area [selectingVideo];, (status Selecting video..)
+
+//Request select file using picker
+file [videoFileID];, .mp4|.avi|.wmv|.mkv|.3gp
+
+//Define default value for reselect to avoid endless loop
+define [videoReselect];, none
+
+//Missing file condition
+when videoFileID==null;, (ask [videoReselect];, Video Missing;, No video selected! do you want to try again;, Select|select;, Cancel|cancel)
+
+//Break if the user decided to cancel
+breakwhen videoReselect==cancel|null;, no file selected
+
+//Goback to selecting file if the user press select
+when videoReselect==select;, (jump [selectingVideo])
+
+//Define video name and extension
+define [vidoeFileName];, nameonly:videoFileID
+define [videoFileExt];, extonly:videoFileID
+
+//Clear the dot from the extension (it's not important for our case)
+replace [videoFileExt];, .;,
+
+//Show select output video type
+combo [videoType];, Video Type;, MP4:mp4|AVI:avi|WMV:wmv;, Output type;, Confirm|mp4;, Cancel|cancel
+
+breakwhen videoType==cancel|null;, no type selected
+
+//Define default imagesize (used to force original size) as none
+define [imagesizeValue];, none
+combo [videoQuailty];, Video Quailty;, 7680:7680|4096:4096|3840:3840|1920:1920|Original:original|1280:1280|640:640|320:320;, Output size;, Confirm|original;, Cancel|cancel
+
+breakwhen videoQuailty==cancel|null;, no quality selected
+
+//Activate the imagessize by setting the variable to 1
+when videoQuailty==original;, (set [imagesizeValue];, 1)
+
+//Set videoQuality to none so the encoder will ignore it and use the original size
+when videoQuailty==original;, (set [videoQuailty];, none)
+
+//Display effects list
+listm [selectedFeatures];, Options;, Bitrate|Framerate|Volume|Saturation|Zoom|Chroma|Stabilizer|Audio|SubType;, Multiple select available;, Start|Bitrate;, Cancel|cancel
+
+breakwhen selectedFeatures==cancel|null;, Convert canceled by the user
+
+//Show Notice if mobile device and Saturation, Zoom or Chroma selected (not compatible)
+when selectedFeatures~~Saturation|Zoom|Chroma;, (when $DeviceType==Mobile;, {play [$Assets];, SFX\$AppIcons\downloaded.mp3;, 1.0})
+when selectedFeatures~~Saturation|Zoom|Chroma;, (when $DeviceType==Mobile;, {info Experimental Features;, Please note that Zoom, Saturation and Chroma are not very compatible with mobile devices\nImportant: Possibly they will cause a crash\n\nNote: Keep the default values or 'Skip' to ignore them;, OK})
+
+//Define default values for the effects in case one of them not selected
+define [bitrateLevel];, none
+define [framerateValue];, none
+define [volumeLevel];, none
+define [saturationLevel];, none
+define [zoomLevel];, none
+define [stabilizeValue];, 0
+define [chromaState];, none
+define [SubType];, none
+define [ToleranceValue];, 0.1
+define [FeatherValue];, 0
+define [matchfpsState];, 0
+
+//Display bitrate dialog if selected (~~ mean if the selectedFeatures contains Bitrate)
+when selectedFeatures~~Bitrate;, (slider [bitrateLevel];, Bitrate;, 100|25000|10;, Confirm|3000;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen bitrateLevel==cancel|null;, no bitrate selected
+
+
+when selectedFeatures~~Framerate;, (slider [framerateValue];, Framerate;, 1|144|1;, Confirm|30;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen framerateValue==cancel|null;, no framerate selected
+
+//Here we have check if the Framerate requested then check if framerate assigned activate request to force new framerate
+when selectedFeatures~~Framerate;, (when framerateValue!=cancel|null;, {set [matchfpsState];, 1})
+
+
+when selectedFeatures~~Volume;, (slider [volumeLevel];, Volume;, 0|300|10|#P|%|Volume level:;, Confirm|100;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen volumeLevel==cancel|null;, no volume selected
+
+
+when selectedFeatures~~Saturation;, (slider [saturationLevel];, Saturation;, 0|4|0.1;, Confirm|1.0;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen saturationLevel==cancel|null;, no saturation selected
+
+
+when selectedFeatures~~Zoom;, (slider [zoomLevel];, Zoom;, 0|300|10|#P|%|Zoom level:;, Confirm|100;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen zoomLevel==cancel|null;, no zoom selected
+
+//For stabilizer no need to display any dialog, when it's selected just activate the effect
+when selectedFeatures~~Stabilizer;, (define [stabilizeValue];, 1)
+
+
+when selectedFeatures~~Chroma;, (comboi [chromaState];, Video Chroma;, Green:green|Blue:blue|Red:red|Yellow:yellow|Orange:orange;, Chroma key;, input|ex. oigreen or #00FF00;, Confirm|green;, Skip|none)
+
+//This by default used to cancel if no selection (but it will be ignored mostly as we using skip instead)
+breakwhen chromaState==cancel|null;, no chroma selected
+
+when selectedFeatures~~Chroma;, (when chromaState!=none;, {slider [ToleranceValue];, Chroma Tolerance;, 0|1|0.1;, Confirm|0.1;, Skip|0})
+when selectedFeatures~~Chroma;, (when chromaState!=none;, {combo [FeatherValue];, Chroma Feather;, Disabled:0|Enabled:1;, Select feather state;, Confirm|0;, Skip|0})
+
+//Display selecting audio info dialog
+when selectedFeatures~~Audio;, (info Audio Select;, please select audio file;, Select)
+
+//Define audio select area to goback in case the file is not selected
+area [audioSelection];, (when selectedFeatures~~Audio;, {status Selecting Audio})
+
+//Define default value for reselect to avoid endless loop
+define [reSelectAudio];, none
+
+//Request select file (picker) only if the effect was selected before from the list
+when selectedFeatures~~Audio;, (file [audioFile];, .mp3|.wav|.flac|.aac)
+
+//If no file selected ask the user if want to reselect
+when audioFile==cancel|null;, (ask [reSelectAudio];, Audio Missing;, Do you want to select audio?;, Yes|yes;, Skip|none)
+
+//Goback to audio select if the user pressed select
+when reSelectAudio==yes;, (jump [audioSelection])
+
+when selectedFeatures~~SubType;, (combo [SubType];, SubType;, ARGB32|BGRA8|H263|H264|HEVC|IYUV|MJPG|MPEG1|MPEG2|RGB24|RGB32|WMV3|WVC1|VP9|YUY2|YV12;, Select video subtype;, Confirm|H264;, Skip|none)
+
+//Display selecting save folder info dialog
+info Save Folder;, select save folder;, Save
+
+//Define selecting folder area to goback if the folder is not selected
+area [selectingFolder];, (status Selecting save folder..)
+
+//Request select folder (picker)
+folder [folderID];, .videoType
+
+//Defien reselect to avoid endless loop
+define [folderReselect];, none
+
+//When the folder is not selected as the user if want to retry
+when folderID==null;, (ask [folderReselect];, Folder Missing;, No folder selected, do you want to try again?;, Select|select;, Cancel|cancel)
+
+//When no save folder the script will break, as it's main input
+breakwhen folderReselect==cancel|null;, no save folder selected
+
+//Goback to select folder if the user pressed select
+when folderReselect==select;, (jump [selectingFolder])
+
+status Please wait..
+
+//Call image2video with the user's inputs
+images2video [folderID];, vidoeFileName;, [videoFileID]|F;, videoFileExt;, framerate:framerateValue|matchfps:matchfpsState|type:videoType|saturation:saturationLevel|zoom:zoomLevel|chroma:chromaState-ToleranceValue-FeatherValue|width:videoQuailty|stabilize:stabilizeValue|bitrate:bitrateLevel|audio:[audioFile]|imagesize:imagesizeValue|volume:volumeLevel
+
+status Convert Done..
+
+//Open the converted file
+openf [folderID];, vidoeFileName.videoType
+
+//Exit is not always required for non-telnet scripts
+exit

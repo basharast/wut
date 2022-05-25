@@ -2,14 +2,14 @@
   <img src="assets/img/logo.png" width="176"><br>
   <b>Windows Universal Tool</b><br>
   <br><br>
-  <img src="assets/img/screen.jpg"><br><br>
+  <img src="assets/img/screen.jpg"><br>
 </p>
-
 
 
 ## Overview:
 
-WUT was started as cloud client for W10M Community Group, and by time enhanced and extended to be a very advanced & powerful tool.
+A powerful universal tool, complex tasks work in one place.
+
 
 ## Features:
 
@@ -17,6 +17,7 @@ WUT was started as cloud client for W10M Community Group, and by time enhanced a
 - Privacy (0% data collection).
 - Multi languages (New).
 - Scripts Engine (Commander).
+- Batch Download (New)
 - Cloud Client (New)
 - Print Service (New)
 - Images Effects (New)

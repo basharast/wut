@@ -1,0 +1,207 @@
+noclean backw notelnet
+
+:::Min target is a command and not directive (no need to add it at the top)
+mintarget 1.3.0
+
+clean all
+
+:::::::::::::> INTERNET FUNCTION SECTION (START) <:::::::::::::
+func [internetCheck]{
+is $Internet==0{
+:::waitb Press here to continue
+notify Batch Downloader;, No internet connection;, 30000
+waitic Waiting for internet...
+
+:::Hide wait break button
+waithb ...
+}
+}
+:::::::::::::> INTERNET CHECK SECTION (END) <:::::::::::::
+
+:::Define Play audio command for easy use
+:::Func is same exactly as definec [just for organized code]
+func [playAudio];, (play [$Assets];, SFX\$AppIcons\audioName.mp3;, 1.0)
+
+
+:::Call function exactly as whenc [just for organized code]
+call [playAudio]|audioName:update
+info About;, Batch Downloader\nVersion 1.0.0\nBy Bashar Astifan\n\Note: Be sure to set downloads folder first;, Start
+
+:::Check if battery not in critical level
+breakwhen $Battery<20;, Please charge your phone at least to 30%
+
+
+call [internetCheck]
+
+:::::::::::::> DOWNLOAD SECTION (START) <:::::::::::::
+:::First get links from file to variable
+call [playAudio]|audioName:alert
+info About;, Select your downloads list;, Pick
+area [downloadsCheckerArea];, (status Selecting downloads list...)
+file [downloadsList];, .txt|.xml|.json|.html|.html
+
+is downloadsList==null{
+
+call [playAudio]|audioName:error
+ask [reLocateDownloadsFile];, Missing List;, do you want to try again;, Re-Select|recheck;, Stop|stop
+
+is reLocateDownloadsFile==recheck{
+jump [downloadsCheckerArea]
+}else{
+break Batch Download canceled by the user
+}
+
+}
+
+:::Getting links list from Downloads.txt
+get [downloadsList];, [downloadsArray]
+
+
+:::Define items separator (will be used later)
+define [itemSeparator];, #links
+
+:::Get Total files count
+count [ArrayCount];, [downloadsArray];, itemSeparator
+
+:::Save temp variables for final checkup
+count [TempCount];, [downloadsArray];, itemSeparator
+define [OrininalLinks];, [downloadsArray]
+
+:::Default counters
+define [startingNumber];, 1
+define [totalFailed];, 0
+
+:::Define the download command/function
+func [downloadCommand]{
+
+:::Will check the internet connection each time
+call [internetCheck]
+
+
+:::Check if any download failed
+count [totalFailed];, [$FailedLinks];, ,
+when totalFailed>0{
+statusd Downloading startingNumber of ArrayCount.. (totalFailed Failed)
+}
+
+when totalFailed==0;, (statusd Downloading startingNumber of ArrayCount..)
+
+:::Define the current each item as variable
+define [currentDownload];, $currentValue
+
+:::Define downloadID just to avoid empty result
+define [downloadID];, ...
+
+cancelb Cancel (Getting Info)
+:::Request to download the file with |SD options (add it to Single Downloads)
+define [downloadsMainFolderName];, Batch Download (nameonly:downloadsList)
+downloadfd [downloadID];, [currentDownload];, local|IE|SD;, [$DownloadsFolder]|downloadsMainFolderName
+
+:::Hide the cancel button while downloading as it's useless
+cancelhb ...
+waitd [downloadID];, Downloading downloadID..
+
+:::Clean downloads list by ID
+status Cleaning up..
+queuer [downloadID]
+
+:::This variable only for status counting
+[startingNumber]++
+
+}
+
+barp 0
+
+:::Define area here so we can jump again to re-download the failed downloads (tricky way)
+area [downloadBatchLoop];, (status Preparing...)
+
+:::Each link will be downloaded alone to avoid any issue
+each [downloadsArray];, itemSeparator;, (call [downloadCommand])
+
+:::::::::::::> DOWNLOAD SECTION (END) <:::::::::::::
+
+
+
+
+:::::::::::::> FAILED DOWNLOADS SECTION (START) <:::::::::::::
+
+:::First re-set the failed counter in case of missing rounds
+count [totalFailed];, [$FailedLinks];, ,
+
+:::Check if any downloads failed using counter
+is totalFailed>0{
+
+:::Merge the two arrays into one formated array display:value|display:value..etc
+reformat [failedLinksItems];, $FailedNames;, $FailedLinks;, :;, |
+listm [selectedLinks];, Failed Downloads;, failedLinksItems;, Select downloads to re-download;, Re-Download|*;, Skip|skip
+
+is selectedLinks!=skip{
+
+:::Here we're adding the selected links to the original downloads list
+:::When the variable already defined, define will update the value
+define [downloadsArray];, selectedLinks
+
+:::Reset Counters
+define [startingNumber];, 1
+count [ArrayCount];, [downloadsArray];, ,
+
+:::Change item separator to the new one from \n to , (because FailedLinks use , to separat the items
+set [itemSeparator];, ,
+
+:::Jump to downloads loop
+jump [downloadBatchLoop]
+
+}
+
+}
+:::::::::::::> FAILED DOWNLOADS SECTION (END) <:::::::::::::
+
+
+
+:::::::::::::> FINAL CHECK SECTION (START) <:::::::::::::
+statusd Please wait..
+status Checking all downloads..
+
+:::Select the main downloads folder
+folderf [DownloadsTestFolder];, [$DownloadsFolder];, downloadsMainFolderName
+define [totalFilesInFolder];, count:DownloadsTestFolder
+
+is TempCount>totalFilesInFolder{
+
+status Missing files detected!
+
+define [totalMissing];, TempCount
+set [totalMissing];, -totalFilesInFolder
+
+call [playAudio]|audioName:error
+ask [reCheckRequestState];, Missing Downloads;, Detected (totalMissing) missing downloads\nDo you want to re-check\n\nNote: Don't worry existed downloads will not re-downloaded;, Re-Check|recheck;, Skip|skip
+
+is reCheckRequestState==recheck{
+
+:::Get the links again from the original file
+get [downloadsList];, [downloadsArray]
+
+:::Change item separator to the new one from , back to \n (because original array uses \n as links in lines)
+set [itemSeparator];, \n
+
+:::Reset Counters
+define [startingNumber];, 1
+count [ArrayCount];, [downloadsArray];, itemSeparator
+
+
+:::Jump to downloads loop
+jump [downloadBatchLoop]
+}
+
+}
+:::::::::::::> FINAL CHECK SECTION (END) <:::::::::::::
+
+
+:::Clean the old selectedLinks if it was used
+define [selectedLinks];, 
+
+status Done.
+
+delay 1500
+
+exit
