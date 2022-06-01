@@ -5,6 +5,10 @@
   <img src="assets/img/screen.jpg"><br>
 </p>
 
+<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite</p>
+<a href="https://apps.microsoft.com/store/detail/windows-universal-tool/9PHNCGPK47QR">
+<img src="assets/img/store.png" style="width: 150px;margin-left: 5px;border-radius: 10px;border: 1px white solid;">
+</a>
 
 ## Overview:
 
