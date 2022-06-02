@@ -205,6 +205,15 @@ window.location.replace(url);
 
 setTimeout(function (){ window.location.replace("https://basharast.github.io/wut/"); }, 3500);
 
+}else{
+    var stdValue = getURLParameter("std");
+    if(stdValue!=null && stdValue.length > 0){
+var url =  "ms-windows-store://pdp/?ProductId=" + stdValue;
+window.location.replace(url);
+
+setTimeout(function (){ window.location.replace("https://basharast.github.io/wut/"); }, 3500);
+
+}
 }
 </script>
     <div class="page-container">
