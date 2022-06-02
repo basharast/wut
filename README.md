@@ -6,7 +6,7 @@
 </p>
 
 <p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite</p>
-<a href="https://apps.microsoft.com/store/detail/windows-universal-tool/9PHNCGPK47QR">
+<a href="https://www.microsoft.com/store/apps/9PHNCGPK47QR">
 <img src="assets/img/store.png" style="width: 150px;margin-left: 5px;border-radius: 10px;border: 1px white solid;">
 </a>
 
@@ -23,6 +23,7 @@ A powerful universal tool, complex tasks work in one place.
 - Scripts Engine (Commander).
 - Batch Download (New)
 - Cloud Client (New)
+- Unsplash Client (New)
 - Print Service (New)
 - Images Effects (New)
 - Network Client.
@@ -46,6 +47,9 @@ Windows 10 & Windows 11 (x64 - x86 - arm)
 ARM based devices are strongly supported as the app made on the lowest possible target (14393)
 
 Ex: Surface and for sure any Windows Phone with W10
+
+Build 14393 supported in 1.3.3 and below
+
 
 ## Guides
 
