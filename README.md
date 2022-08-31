@@ -40,6 +40,20 @@ A powerful universal tool, complex tasks work in one place.
 - And more..
 
 
+## Repo + Authentication
+
+This feature made to help content creators to protect their own files and share it with limited users
+
+Check out <a href="https://github.com/basharast/wut/wiki/Mega-Repo">MEGA Repo Wiki</a>
+
+<img src="https://user-images.githubusercontent.com/3244951/187730675-83997527-452a-4403-a398-7d2fa6927c43.jpg" width="500"/>
+
+
+
+
+
+
+
 ## Supported Platforms:
 
 Windows 10 & Windows 11 (x64 - x86 - arm)
