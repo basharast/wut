@@ -62,7 +62,7 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 
 Ex: Surface and for sure any Windows Phone with W10
 
-Build 14393 supported in 1.3.3 and below
+Build 14393 supported in 1.3.3 and below + 1.4.7 special release
 
 
 ## Guides
