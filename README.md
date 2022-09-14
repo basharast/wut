@@ -5,10 +5,9 @@
   <img src="assets/img/screen.jpg"><br>
 </p>
 
-<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite</p>
-<a href="https://www.microsoft.com/store/apps/9PHNCGPK47QR">
-<img src="assets/img/store.png" style="width: 150px;margin-left: 5px;border-radius: 10px;border: 1px white solid;">
-</a>
+<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite (Store not available any more)</p>
+After the app dropped from Microsoft store (under Games Emulator claim) I don't have more time to spend to follow such mistakes
+There will no more any store release
 
 ## Overview:
 
