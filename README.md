@@ -13,6 +13,11 @@ There will no more any store release
 
 A powerful universal tool, complex tasks work in one place.
 
+## Thanks
+
+Speical thanks for everyone tried to support my projects:
+- David Hartanto
+
 
 ## Features:
 
