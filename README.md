@@ -5,14 +5,18 @@
   <img src="assets/img/screen.jpg"><br>
 </p>
 
-<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite</p>
-<a href="https://www.microsoft.com/store/apps/9PHNCGPK47QR">
-<img src="assets/img/store.png" style="width: 150px;margin-left: 5px;border-radius: 10px;border: 1px white solid;">
-</a>
+<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite (Store not available any more)</p>
+After the app dropped from Microsoft store (under Games Emulator claim) I don't have more time to spend to follow such mistakes
+There will no more any store release
 
 ## Overview:
 
 A powerful universal tool, complex tasks work in one place.
+
+## Thanks
+
+Speical thanks for everyone tried to support my projects:
+- David Hartanto
 
 
 ## Features:
@@ -40,6 +44,20 @@ A powerful universal tool, complex tasks work in one place.
 - And more..
 
 
+## Repo + Authentication
+
+This feature made to help content creators to protect their own files and share it with limited users
+
+Check out <a href="https://github.com/basharast/wut/wiki/Mega-Repo">MEGA Repo Wiki</a>
+
+<img src="https://user-images.githubusercontent.com/3244951/187730675-83997527-452a-4403-a398-7d2fa6927c43.jpg" width="500"/>
+
+
+
+
+
+
+
 ## Supported Platforms:
 
 Windows 10 & Windows 11 (x64 - x86 - arm)
@@ -48,7 +66,7 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 
 Ex: Surface and for sure any Windows Phone with W10
 
-Build 14393 supported in 1.3.3 and below
+Build 14393 supported in 1.3.3 and below + 1.4.10 special release
 
 
 ## Guides
