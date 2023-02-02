@@ -12,12 +12,12 @@
             "Title": "Windows Universal Tool (WUT)",
             "ID": "WinUniversalTool",
             "URL": "https://github.com/basharast/wut/releases/latest",
-            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_x64.7z",
-            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_x86.7z",
-            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM.7z",
-            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM.14393.7z",
-            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM64.7z",
-            "Build": "1.4.13"
+            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.14/WUT.1.4.14_x64.7z",
+            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.14/WUT.1.4.14_x86.7z",
+            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.14/WUT.1.4.14_ARM.7z",
+            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.14/WUT.1.4.14_ARM.14393.7z",
+            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.14/WUT.1.4.14_ARM64.7z",
+            "Build": "1.4.14"
         }
 
     ]
