@@ -1,0 +1,18 @@
+{
+    "Servers":{
+        "Server1": "",
+        "Server2": "",
+        "Server3": ""
+    },
+
+    "Apps":[
+
+        {
+            "Title": "Windows Universal Tool (WUT)",
+            "ID": "WinUniversalTool_eyr0bca9nc39y",
+            "URL": "https://github.com/basharast/RetrixGold/releases/latest",
+            "Build": "1.4.12"
+        }
+
+    ]
+}
