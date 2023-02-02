@@ -1,9 +1,10 @@
 {
-    "Servers":{
-        "Server1": "",
-        "Server2": "",
-        "Server3": ""
-    },
+    "Servers":[
+	    { 
+		  "ServerName": "",
+		  "ServerURL": ""
+     	}
+    ],
 
     "Apps":[
 
