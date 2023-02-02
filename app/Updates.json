@@ -11,7 +11,12 @@
         {
             "Title": "Windows Universal Tool (WUT)",
             "ID": "WinUniversalTool",
-            "URL": "https://github.com/basharast/RetrixGold/releases/latest",
+            "URL": "https://github.com/basharast/wut/releases/latest",
+            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.11/WUT.1.4.11_x64.7z",
+            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.11/WUT.1.4.11_x86.7z",
+            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.11/WUT.1.4.11_ARM.7z",
+            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.11/WUT.1.4.11_ARM.14393.7z",
+            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.11/WUT.1.4.11_ARM64.7z",
             "Build": "1.4.13"
         }
 
