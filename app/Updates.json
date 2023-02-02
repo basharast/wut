@@ -17,7 +17,7 @@
             "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM.7z",
             "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM.14393.7z",
             "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.13/WUT.1.4.13_ARM64.7z",
-            "Build": "1.4.13"
+            "Build": "1.4.14"
         }
 
     ]
