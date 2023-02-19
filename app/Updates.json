@@ -18,6 +18,42 @@
             "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM.15393.7z",
             "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM64.7z",
             "Build": "1.4.15"
+        },
+		
+		{
+            "Title": "PPSSPP",
+            "ID": "ppssppnew-c880-44d1-ba5a-c0b46feba525",
+            "URL": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/latest",
+            "URLDirectX64": "",
+            "URLDirectX86": "",
+            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM.7z",
+            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM.15393.7z",
+            "URLDirectARM64": "",
+            "Build": "1.14.15"
+        },
+		
+		{
+            "Title": "RetroArch",
+            "ID": "retroarchnew-f3c2-104f-b9f3-cb2070a5aad8",
+            "URL": "https://github.com/basharast/RetroArch-ARM/releases/latest",
+            "URLDirectX64": "",
+            "URLDirectX86": "",
+            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP_UWP_1.14.15.0_ARM_Gold.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP_UWP_1.14.15.0_ARM_Gold.zip",
+            "URLDirectARM64": "",
+            "Build": "1.14.4"
+        },
+		
+		{
+            "Title": "Kodi",
+            "ID": "XBMCFoundation.KodiNexus",
+            "URL": "https://github.com/basharast/Kodi-UWP-ARM/releases",
+            "URLDirectX64": "",
+            "URLDirectX86": "",
+            "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0a/Kodi.Nexus.20.90.105.0_ARM.zip",
+            "URLDirectARMLow": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0a/Kodi.Nexus.20.90.105.0_ARM.zip",
+            "URLDirectARM64": "",
+            "Build": "20.90.105"
         }
 
     ]
