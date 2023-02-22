@@ -27,7 +27,7 @@
             "URLDirectX64": "",
             "URLDirectX86": "",
             "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP_UWP_1.14.15.0_ARM_Gold.zip",
-            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP_UWP_1.14.15.0_ARM_Gold.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP.for.build.14393.zip",
             "URLDirectARM64": "",
             "Build": "1.14.15"
         },
@@ -39,7 +39,7 @@
             "URLDirectX64": "",
             "URLDirectX86": "",
             "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.5/RetroArch.ARM.1.14.5.zip",
-            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.5/RetroArch.ARM.1.14.5.No.DirectX.zip",
+            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.5/RetroArch.for.build.14393.zip",
             "URLDirectARM64": "",
             "Build": "1.14.5"
         },
