@@ -50,10 +50,10 @@
             "URL": "https://github.com/basharast/Kodi-UWP-ARM/releases",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0a/Kodi.Nexus.20.90.105.0_ARM.zip",
-            "URLDirectARMLow": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0a/Kodi.Nexus.20.90.105.0_ARM.zip",
+            "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.110.0_ARM.zip",
+            "URLDirectARMLow": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.110.0_ARM.zip",
             "URLDirectARM64": "",
-            "Build": "20.90.105"
+            "Build": "20.90.110"
         }
 
     ]
