@@ -5,10 +5,6 @@
   <img src="assets/img/screen.jpg"><br>
 </p>
 
-<p style="padding: 0px;margin-left: 6px;">Try W.U.T Lite (Store not available any more)</p>
-After the app dropped from Microsoft store (under Games Emulator claim) I don't have more time to spend to follow such mistakes
-There will no more any store release
-
 ## Overview:
 
 A powerful universal tool, complex tasks work in one place.
