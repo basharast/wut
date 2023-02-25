@@ -12,12 +12,12 @@
             "Title": "W.U.T",
             "ID": "WinUniversalTool",
             "URL": "https://github.com/basharast/wut/releases/latest",
-            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_x64.7z",
-            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_x86.7z",
-            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM.7z",
-            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM.15393.7z",
-            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.15/WUT.1.4.15_ARM64.7z",
-            "Build": "1.4.15"
+            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_x64.7z",
+            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_x86.7z",
+            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM.7z",
+            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM.14393.7z",
+            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM64.7z",
+            "Build": "1.4.20"
         },
 		
 		{
@@ -26,10 +26,10 @@
             "URL": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP_UWP_1.14.15.0_ARM_Gold.zip",
-            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.15/PPSSPP.for.build.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.20/PPSSPP_UWP_1.14.20.0_ARM_Gold.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.20/PPSSPP.for.build.14393.zip",
             "URLDirectARM64": "",
-            "Build": "1.14.15"
+            "Build": "1.14.20"
         },
 		
 		{
