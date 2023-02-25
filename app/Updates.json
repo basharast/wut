@@ -1,8 +1,8 @@
 {
     "Servers":[
 	    { 
-		  "ServerName": "",
-		  "ServerURL": ""
+		  "ServerName": "RetriXGold",
+		  "ServerURL": "https://github.com/basharast/RetrixGold/blob/main/docs/Updates.json"
      	}
     ],
 
