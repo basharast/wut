@@ -26,10 +26,10 @@
             "URL": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.21/PPSSPP_UWP_1.14.21.0_ARM_Gold.zip",
-            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.21/PPSSPP.for.build.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP_UWP_1.14.22.0_ARM_Gold.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP.for.build.14393.zip",
             "URLDirectARM64": "",
-            "Build": "1.14.21"
+            "Build": "1.14.22"
         },
 		
 		{
