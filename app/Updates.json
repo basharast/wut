@@ -38,10 +38,10 @@
             "URL": "https://github.com/basharast/RetroArch-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.5/RetroArch.ARM.1.14.5.zip",
-            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.5/RetroArch.for.build.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.6/RetroArch.ARM.1.14.6.zip",
+            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.6/RetroArch.for.build.14393.zip",
             "URLDirectARM64": "",
-            "Build": "1.14.5"
+            "Build": "1.14.6"
         },
 		
 		{
