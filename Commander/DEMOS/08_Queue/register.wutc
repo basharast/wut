@@ -1,0 +1,7 @@
+notelnet
+clean all
+
+file [manifest];, .xml
+register [result];, manifest;, 1
+
+break result

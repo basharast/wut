@@ -1,0 +1,14 @@
+notelnet
+clear all
+
+input [launchURI];, URI launcher;, Enter URI;, Launch;, Cancel|cancel
+
+breakwhen launchURI==cancel;, script canceled
+
+file [fileID];, .appx|.appxbundle|.msix|.msixbundle|.txt
+
+breakwhen fileID==null;, file not selected
+
+lurif launchURI;, [fileID]
+
+exit

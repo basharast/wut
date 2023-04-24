@@ -1,7 +1,10 @@
 notelnet
+clear all
 
-clean all
+input [launchURI];, URI launcher;, Enter URI;, Launch;, Cancel|cancel
 
-luri w10mgb::https://google.com
+breakwhen launchURI==cancel;, script canceled
+
+luri launchURI
 
 exit

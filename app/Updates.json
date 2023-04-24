@@ -12,12 +12,13 @@
             "Title": "W.U.T",
             "ID": "WinUniversalTool",
             "URL": "https://github.com/basharast/wut/releases/latest",
-            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_x64.7z",
-            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_x86.7z",
-            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM.7z",
-            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM.14393.7z",
-            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.20/WUT.1.4.20_ARM64.7z",
-            "Build": "1.4.20"
+            "URLDirectX64": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_x64.7z",
+            "URLDirectX86": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_x86.7z",
+            "URLDirectARM": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_ARM.7z",
+            "URLDirectARMLow": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_ARM.14393.7z",
+            "URLDirectARM64": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_ARM64.7z",
+            "URLDirectXBOX": "https://github.com/basharast/wut/releases/download/1.4.21/WUT.1.4.21_XBOX.7z",
+            "Build": "1.4.21"
         },
 		
 		{
@@ -29,6 +30,7 @@
             "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP_UWP_1.14.22.0_ARM_Gold.zip",
             "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP.for.build.14393.zip",
             "URLDirectARM64": "",
+			"URLDirectXBOX": "",
             "Build": "1.14.22"
         },
 		
@@ -41,6 +43,7 @@
             "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.10/RetroArch.ARM.1.14.10.zip",
             "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.10/RetroArch.for.build.14393.zip",
             "URLDirectARM64": "",
+			"URLDirectXBOX": "",
             "Build": "1.14.10"
         },
 		
@@ -53,6 +56,7 @@
             "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.111.0_ARM.zip",
             "URLDirectARMLow": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.111.0_ARM.zip",
             "URLDirectARM64": "",
+			"URLDirectXBOX": "",
             "Build": "20.90.111"
         }
 

@@ -1,6 +1,6 @@
 {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deftab709{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Cascadia Mono;}{\f2\fnil\fcharset0 Consolas;}{\f3\fnil Consolas;}{\f4\fnil\fcharset2 Symbol;}}
 {\colortbl ;\red79\green129\blue189;\red0\green176\blue80;\red100\green107\blue134;\red247\green150\blue70;\red163\green21\blue21;\red0\green77\blue187;\red192\green80\blue77;\red192\green192\blue192;\red155\green0\blue211;\red155\green187\blue89;\red255\green0\blue0;\red0\green0\blue0;\red75\green172\blue198;\red102\green102\blue102;\red165\green165\blue165;\red0\green0\blue255;\red243\green164\blue71;\red209\green99\blue73;\red128\green0\blue0;\red255\green192\blue0;\red128\green158\blue194;\red221\green132\blue132;\red0\green128\blue0;\red255\green0\blue128;}
-{\*\generator Riched20 10.0.22000}\viewkind5\uc1\viewbksp1{\*\background 
+{\*\generator Riched20 10.0.19041}\viewkind5\uc1\viewbksp1{\*\background 
 {\shp{\*\shpinst{\sp{\sn fillType}{\sv 0}}
 {\sp{\sn fillBackColor}{\sv 0}}
 {\sp{\sn fillFocus}{\sv 0}}
@@ -8,7 +8,7 @@
 }}}}}}
 
 \pard\sa200\sl276\slmult1\qc\cf1\b\f0\fs48\lang9 WUT Commander \par
-\cf2\fs22 WUT 1.3.\lang1033 0\fs48\lang9\par
+\cf2\fs22 WUT 1.4.\lang1033 21\fs48\lang9\par
 \cf3\fs22 by Bashar Astifan\fs48\par
 
 \pard\sa200\sl276\slmult1\cf1\par
@@ -18,7 +18,7 @@ WUT scripts can connect and execute commands using telnet, so you can create unl
 WUT Scripts can run mixed contents (Commander, Batch script)\par
 \fs22\par
 \cf4\b\fs32 Recently Added:\cf0\b0\fs24\par
-\cf5\f1\fs19\lang1033 premove\cf0\f0\fs22\lang9\par
+\cf5\f1\fs19\lang1033 register, lurif\cf0\f0\fs22\lang9\par
 
 \pard\sa200\sl276\slmult1\qc\cf6\b\fs44 COMMANDER SCRIPT\cf4\fs32\par
 
@@ -929,13 +929,27 @@ _______________________________\par
 \cf3\b COMMAND STRUCTURE:\par
 \cf5\f2\fs19\lang1033 luri \b0 uri\par
 \cf0\f0\fs22\lang9 _______________________________\par
+\cf5\b\f2\fs19\lang1033\par
+lurif: \cf0\b0 used to launch app with file attachment by URI\f0\fs22\lang9\par
+\cf3\b COMMAND STRUCTURE:\par
+\cf5\f2\fs19\lang1033 lurif \b0 uri;, [fileID]\par
+\cf14 This command available from 1.4.21+\cf5\par
+\cf0\f0\fs22\lang9 _______________________________\par
 \par
 
 \pard\sa200\sl276\slmult1\qc\cf18\b\fs44\par
 QUEUE COMMANDS\cf5\f2\fs19\lang1033\par
 
 \pard\sa200\sl276\slmult1\cf0\b0\f0\fs22\lang9\par
-\cf5\b\f2\fs19\lang1033 queuef:  \cf0\b0 used to queue file inside folder\f0\fs22\lang9\par
+\cf5\b\f2\fs19\lang1033 register:  \cf0\b0 used to register package by `AppxManifest.xml`\f0\fs22\lang9\par
+\cf3\b COMMAND STRUCTURE:\par
+\cf5\f2\fs19\lang1033 queuef [resultID];, \b0 fullpath;, devmode\par
+\cf2\f0\fs22\lang9 devmode: \cf0 1 \cf15 (developer mode)\cf0 , 0 \cf15 (normal mode)\cf0\par
+\cf2 resultID: \cf0 will handle the output result\par
+\cf14\f2\fs19\lang1033 This command available from 1.4.21+\cf0\f0\fs22\lang9\par
+_______________________________\par
+\cf5\b\f2\fs19\lang1033\par
+queuef:  \cf0\b0 used to queue file inside folder\f0\fs22\lang9\par
 \cf3\b COMMAND STRUCTURE:\par
 \cf5\f2\fs19\lang1033 queuef [queueID];, \b0 [folderID];, fileName\par
 \cf0 if \cf7 fileName \cf0 contains " it will be removed by default\par
