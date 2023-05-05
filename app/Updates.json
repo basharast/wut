@@ -27,11 +27,11 @@
             "URL": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP_UWP_1.14.22.0_ARM_Gold.zip",
-            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.14.22/PPSSPP.for.build.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.1/PPSSPP_1.15.1.0_ARM.15035+.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.1/PPSSPP_1.15.1.0_ARM.14393.zip",
             "URLDirectARM64": "",
 			"URLDirectXBOX": "",
-            "Build": "1.14.22"
+            "Build": "1.15.1"
         },
 		
 		{
@@ -40,11 +40,11 @@
             "URL": "https://github.com/basharast/RetroArch-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.10/RetroArch.ARM.1.14.10.zip",
-            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.14.10/RetroArch.for.build.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/RetroArch-ARM/releases/download/1.15.0/RetroArch.ARM.1.15.0.15035+.D3D.zip",
+            "URLDirectARMLow": "https://github.com/basharast/RetroArch-ARM/releases/download/1.15.0/RetroArch.ARM.1.15.0.14393.GL.zip",
             "URLDirectARM64": "",
 			"URLDirectXBOX": "",
-            "Build": "1.14.10"
+            "Build": "1.15.0"
         },
 		
 		{
@@ -53,11 +53,11 @@
             "URL": "https://github.com/basharast/Kodi-UWP-ARM/releases",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.111.0_ARM.zip",
-            "URLDirectARMLow": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0b/Kodi.Nexus.20.90.111.0_ARM.zip",
+            "URLDirectARM": "https://github.com/basharast/Kodi-UWP-ARM/releases/download/20.0.0c/Kodi.Nexus.20.90.125.0_ARM.zip",
+            "URLDirectARMLow": "",
             "URLDirectARM64": "",
 			"URLDirectXBOX": "",
-            "Build": "20.90.111"
+            "Build": "20.90.125"
         }
 
     ]
