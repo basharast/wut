@@ -27,11 +27,11 @@
             "URL": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/latest",
             "URLDirectX64": "",
             "URLDirectX86": "",
-            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.1/PPSSPP_1.15.1.0_ARM.15035+.zip",
-            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.1/PPSSPP_1.15.1.0_ARM.14393.zip",
+            "URLDirectARM": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.3/PPSSPP_1.15.3.0_ARM.15035+.zip",
+            "URLDirectARMLow": "https://github.com/basharast/PPSSPP-UWP-ARM/releases/download/1.15.3/PPSSPP_1.15.3.0_ARM.14393.zip",
             "URLDirectARM64": "",
 			"URLDirectXBOX": "",
-            "Build": "1.15.1"
+            "Build": "1.15.3"
         },
 		
 		{
