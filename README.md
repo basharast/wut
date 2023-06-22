@@ -11,8 +11,10 @@ A powerful universal tool, complex tasks work in one place.
 
 ## Thanks
 
-Speical thanks for everyone tried to support my projects:
+Speical thanks for everyone tried to support my work:
 - David Hartanto
+- Aleksandar Milijevic
+- Julien BANZET
 
 
 ## Features:
