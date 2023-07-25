@@ -11,8 +11,10 @@ A powerful universal tool, complex tasks work in one place.
 
 ## Thanks
 
-Speical thanks for everyone tried to support my projects:
+Speical thanks for everyone tried to support my work:
 - David Hartanto
+- Aleksandar Milijevic
+- Julien BANZET
 
 
 ## Features:
@@ -38,6 +40,20 @@ Speical thanks for everyone tried to support my projects:
 - Advanced Settings.
 - OCR Engine.
 - And more..
+
+## Open Source?
+
+I don't benefit from WUT at all, it's completely free and made to help others for real
+
+In this wild world I have nothing to protect that and I saw many projects copied and sold in front of developers eyes
+
+and they asked MS store for years to take these false copies down, but no luck and they ended with disappointment
+
+I'm good and my well to help but also to protect your rights and mine too.
+
+WUT as stated doesn't collect any usage data and it's completely safe
+
+Many of my friends have access to the code as part of the transparency.
 
 
 ## Repo + Authentication
@@ -101,6 +117,8 @@ Checkout the documentation with the installation file for more details and demos
 ## Thanks:
 
 Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M Community</a> and for their suggestions and support.
+
+Unsplash feature was not possible without [this project](https://github.com/rootasjey/Hangon)
 
 
 ## More Detailes:
