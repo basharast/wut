@@ -41,6 +41,12 @@ Speical thanks for everyone tried to support my work:
 - OCR Engine.
 - And more..
 
+## Support
+If you have any issue, please open request or contact me using telegram
+
+don't use XDA thread for that I'm not active there.
+
+
 ## Open Source?
 
 I don't benefit from WUT at all, it's completely free and made to help others for real
