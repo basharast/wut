@@ -120,7 +120,3 @@ Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M
 
 Unsplash feature was not possible without [this project](https://github.com/rootasjey/Hangon)
 
-
-## More Detailes:
-
-<a href="https://forum.xda-developers.com/t/introducing-windows-universal-tool.4323993/">Read more about WUT at XDA</a>
