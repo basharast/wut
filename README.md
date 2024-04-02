@@ -9,6 +9,10 @@
 
 A powerful universal tool, complex tasks work in one place.
 
+<a href="https://github.com/basharast/wut/wiki/Content">Content Policy</a>
+
+<a href="https://github.com/basharast/wut/wiki/Privacy">Privacy Policy</a>
+
 ## Thanks
 
 Speical thanks for everyone tried to support my work:
