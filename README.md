@@ -51,7 +51,7 @@ don't use XDA thread for that I'm not active there.
 
 I don't benefit from WUT at all, it's completely free and made to help others for real
 
-there is no plans for now to make the project opensource due to some considerations
+there are no plans for now to make the project opensource due to some considerations
 
 this could change in future, but for now consider WUT as closed source project
 
