@@ -51,15 +51,11 @@ don't use XDA thread for that I'm not active there.
 
 I don't benefit from WUT at all, it's completely free and made to help others for real
 
-In this wild world I have nothing to protect that and I saw many projects copied and sold in front of developers eyes
+there is no plans for now to make the project opensource due to some considerations
 
-and they asked MS store for years to take these false copies down, but no luck and they ended with disappointment
+this could change in future, but for now consider WUT as closed source project
 
-I'm good and my well to help but also to protect your rights and mine too.
-
-WUT as stated doesn't collect any usage data and it's completely safe
-
-Many of my friends have access to the code as part of the transparency.
+if you have any concerns (which is perfectly fine and normal) please contact me.
 
 
 ## Repo + Authentication
