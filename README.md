@@ -21,6 +21,13 @@ Speical thanks for everyone tried to support my work:
 - Julien BANZET
 
 
+## Support
+
+Use it as is, it's a community project, fixing issues will not be covered as expected due to my limited time
+
+and the app has reached it limited capacity no further features are expected.
+
+
 ## Features:
 
 - Universal (UWP).
@@ -44,12 +51,6 @@ Speical thanks for everyone tried to support my work:
 - Advanced Settings.
 - OCR Engine.
 - And more..
-
-## Support
-If you have any issue, please open request or contact me using telegram
-
-don't use XDA thread for that I'm not active there.
-
 
 ## Open Source?
 
