@@ -5,7 +5,7 @@
   <img src="assets/img/screen.jpg"><br>
 </p>
 
-## Overview:
+## Overview
 
 A powerful universal tool, complex tasks work in one place.
 
@@ -28,7 +28,7 @@ Use it as is, it's a community project, fixing issues will not be covered as exp
 and the app has reached it limited capacity no further features are expected.
 
 
-## Features:
+## Features
 
 - Universal (UWP).
 - Privacy (0% data collection).
@@ -118,5 +118,5 @@ Checkout the documentation with the installation file for more details and demos
 
 Special thanks for all the friends in <a href="https://t.me/Windows10Phone">W10M Community</a> and for their suggestions and support.
 
-Unsplash feature was not possible without [this project](https://github.com/rootasjey/Hangon)
+Unsplash feature was not possible without [Hangon ](https://github.com/rootasjey/Hangon) by Jeremie Corpinot 
 
