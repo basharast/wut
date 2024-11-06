@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/img/logo.png" width="176"><br>
+  <b>Windows Universal Tool</b><br>
+  <br><br>
+  <img src="assets/img/screen.jpg"><br>
+</p>
 
 ## Overview:
 
@@ -29,21 +35,15 @@ and the app has reached it limited capacity no further features are expected.
 - Multi languages (New).
 - Scripts Engine (Commander).
 - Batch Download (New)
-- Cloud Client (New)
+- MEGA.nz Client (New)
 - Unsplash Client (New)
 - Print Service (New)
 - Images Effects (New)
-- Network Client.
-- Files Browser.
 - Built-in Browser.
-- Tasks Manager.
-- Translation Tool.
 - Packages Management.
 - Download Client.
-- Store Search (New)
 - Media Preview (PDF, Videos..etc).
 - Advanced Settings.
-- OCR Engine.
 - And more..
 
 ## Open Source?
