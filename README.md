@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7791e045-8422-404d-a97c-8eac5d193f91" width="176"><br>
-  <b>ImMobile Shell</b><br>
-  <br><br>
-</p>
 
 ## Overview:
 
