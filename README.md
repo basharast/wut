@@ -66,18 +66,13 @@ Check out <a href="https://github.com/basharast/wut/wiki/Mega-Repo">MEGA Repo Wi
 <img src="https://user-images.githubusercontent.com/3244951/187730675-83997527-452a-4403-a398-7d2fa6927c43.jpg" width="500"/>
 
 
-
-
-
-
-
 ## Supported Platforms:
+
+Windows Phone (W10M)
 
 Windows 10 & Windows 11 (x64 - x86 - arm)
 
 ARM based devices are strongly supported as the app made on the lowest possible target (14393)
-
-Ex: Surface and for sure any Windows Phone with W10
 
 
 ## Guides
