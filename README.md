@@ -74,6 +74,10 @@ Windows 10 & Windows 11 (x64 - x86 - arm)
 
 ARM based devices are strongly supported as the app made on the lowest possible target (14393)
 
+## WUT Mini
+
+Coming soon with legacy support for builds 10586+
+
 
 ## Guides
 
