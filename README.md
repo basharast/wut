@@ -20,6 +20,9 @@ Speical thanks for everyone tried to support my work:
 - Aleksandar Milijevic
 - Julien BANZET
 
+## Credits
+
+[Read here about the full credits](https://github.com/basharast/wut/wiki/Credits)
 
 ## Support
 
