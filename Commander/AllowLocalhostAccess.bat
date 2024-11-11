@@ -4,6 +4,7 @@
 ::to solve that just run AllowAppLocalhost.bat as Adminitrator
 
 @echo off
-checknetisolation loopbackexempt -a -n=WinUniveralTool_eyr0bca9nc39y
+checknetisolation loopbackexempt -a -n=WinUniversalTool_eyr0bca9nc39y
+checknetisolation loopbackexempt -a -n=wut-mini-c6a2_44kb9g2z2a90y
 echo Done
 timeout 10
