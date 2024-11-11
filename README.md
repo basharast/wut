@@ -35,13 +35,13 @@ and the app has reached it limited capacity no further features are expected.
 
 - Universal (UWP).
 - Privacy (0% data collection).
-- Multi languages (New).
+- Multi languages.
 - Scripts Engine (Commander).
-- Batch Download (New)
-- MEGA.nz Client (New)
-- Unsplash Client (New)
-- Print Service (New)
-- Images Effects (New)
+- Batch Download.
+- MEGA.nz Client.
+- Unsplash Client.
+- Print Service.
+- Images Effects.
 - Built-in Browser.
 - Packages Management.
 - Download Client.
