@@ -79,7 +79,12 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 
 ## WUT Mini
 
-Coming soon with legacy support for builds 10586+
+- Compatible with builds 10240+
+- Lite Cache
+- RAM Friendly
+- Commander (WUT Scripts)
+- Astoria Tools
+- Much more..
 
 
 ## Guides
