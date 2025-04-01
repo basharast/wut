@@ -59,6 +59,8 @@ this could change in future, but for now consider WUT as closed source project
 
 if you have any concerns (which is perfectly fine and normal) please contact me.
 
+However, parts of WUT already published for help and educational usage
+
 
 ## Repo + Authentication
 
