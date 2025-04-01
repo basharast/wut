@@ -1,6 +1,6 @@
 ## Description
 
-Some web helpers I created to deal with url resolved, responses and more
+Some web helpers I created to deal with url resolvers, responses and more
 
 ## Examples
 
