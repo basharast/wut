@@ -113,6 +113,16 @@ Many thanks to [Lasitha Samarasighe](https://www.t.me/Lasitha_S) for preparing t
 
 <a href="https://github.com/basharast/wut/releases/latest">Click Here</a>
 
+<details>
+  <summary><strong>Install Via ImMobile (Click Here)</strong></summary>
+  <br>
+
+
+https://github.com/user-attachments/assets/86d0218a-8785-4c36-a33b-0a9869d6b157
+
+
+</details>
+
 
 ## About Commander (Scripts Engine):
 
