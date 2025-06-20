@@ -92,8 +92,6 @@ ARM based devices are strongly supported as the app made on the lowest possible 
 Note that issues below may occur on certain builds only,
 - **Issue 1:** If you tried to open file WUT Mini may crash
 - **Solution:** Navigate to the queue once before opening any file, then all will be ok
-- **Issue 2:** Featured apps section may ask for setting downloads folder (and you already did)
-- **Solution:** Load the repos once, I probably missed to assign that by default on app startup
 
 
 ## Guides
