@@ -103,8 +103,7 @@ Many thanks to [Lasitha Samarasighe](https://www.t.me/Lasitha_S) for preparing t
   <summary><strong>Install Via ImMobile (Click Here)</strong></summary>
   <br>
 
-https://github.com/user-attachments/assets/d4e24972-cc46-4195-b847-72cf5d72d20c
-
+https://github.com/user-attachments/assets/6c060841-6458-4a6a-9781-5b479afcbe9c
 
 </details>
 
